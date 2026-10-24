@@ -1,53 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 525" width="600" height="525" fill="none" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="16">
-  <title>DADGPT costume: a phone strapped sideways over the face, under a black baseball hat, with a black t-shirt</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 570" width="600" height="570" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="16">
+  <title>DADGPT costume: a phone sits sideways on the brim of a black baseball hat, above the face, with a black t-shirt</title>
   <style>
-    .line { stroke: #24292f; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
-    .thin { stroke: #57606a; stroke-width: 1.5; stroke-dasharray: 4 4; }
-    .label { fill: #24292f; }
-    .screen { fill: #24292f; }
-    @media (prefers-color-scheme: dark) {
-      .line { stroke: #e6edf3; }
-      .thin { stroke: #8d96a0; }
-      .label, .screen { fill: #e6edf3; }
-    }
+    .line { fill: #000; stroke: #fff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .open { fill: none; }
+    .thin { fill: none; stroke: #8d96a0; stroke-width: 1.5; stroke-dasharray: 4 4; }
+    .label, .screen { fill: #fff; }
   </style>
 
+  <rect width="600" height="570" fill="#000"/>
+
   <g transform="translate(60 0)">
-    <!-- Sides of the head, between brim and phone -->
-    <path class="line" d="M178 166 L176 176 M302 166 L304 176"/>
+    <!-- Head and face, clear below the brim -->
+    <ellipse class="line" cx="240" cy="235" rx="62" ry="75"/>
+    <circle class="screen" cx="218" cy="245" r="4"/>
+    <circle class="screen" cx="262" cy="245" r="4"/>
+    <path class="line open" d="M220 276 Q240 292 260 276"/>
 
     <!-- Hat crown, button, and brim -->
-    <path class="line" d="M168 150 C168 62 312 62 312 150"/>
-    <circle class="line" cx="240" cy="78" r="5"/>
-    <path class="line" d="M240 83 L240 148"/>
-    <path class="line" d="M150 160 Q240 128 330 160 Q240 176 150 160 Z"/>
+    <path class="line" d="M164 205 C164 52 316 52 316 205 Z"/>
+    <circle class="line" cx="240" cy="86" r="5"/>
+    <path class="line" d="M136 206 Q240 176 344 206 Q240 226 136 206 Z"/>
 
-    <!-- Strap from phone up to the hat -->
-    <path class="line" d="M166 196 Q160 175 172 160"/>
-    <path class="line" d="M314 196 Q320 175 308 160"/>
-
-    <!-- Phone, sideways -->
-    <rect class="line" x="160" y="176" width="160" height="80" rx="14"/>
-    <rect class="line" x="174" y="186" width="132" height="60" rx="4"/>
-    <text class="screen" x="240" y="214" text-anchor="middle" font-size="18" font-weight="800" letter-spacing="1">DADGPT</text>
-    <circle class="line" cx="240" cy="230" r="7"/>
+    <!-- Phone, sideways, resting on the brim -->
+    <rect class="line" x="170" y="130" width="140" height="66" rx="12"/>
+    <rect class="line" x="182" y="139" width="116" height="48" rx="4"/>
+    <text class="screen" x="240" y="163" text-anchor="middle" font-size="16" font-weight="800" letter-spacing="1">DADGPT</text>
+    <circle class="line" cx="240" cy="177" r="5"/>
 
     <!-- Neck -->
-    <path class="line" d="M215 255 L215 282 M265 255 L265 282"/>
+    <path class="line open" d="M220 305 L220 332 M260 305 L260 332"/>
 
     <!-- T-shirt -->
-    <path class="line" d="M215 282 Q240 300 265 282"/>
-    <path class="line" d="M215 282 L150 302 L108 372 L145 394 L166 354 L166 510 L314 510 L314 354 L335 394 L372 372 L330 302 L265 282"/>
+    <path class="line" d="M220 332 L150 352 L108 422 L145 444 L166 404 L166 550 L314 550 L314 404 L335 444 L372 422 L330 352 L260 332 Q240 350 220 332 Z"/>
   </g>
 
   <!-- Labels -->
   <g class="label">
     <text x="420" y="94">Black baseball hat</text>
-    <text x="420" y="214">Phone, sideways,</text>
-    <text x="420" y="234">screen out</text>
-    <text x="16" y="150">Strap or clip</text>
-    <text x="16" y="170">to the hat</text>
-    <text x="420" y="440">Black t-shirt</text>
+    <text x="420" y="154">Phone, sideways,</text>
+    <text x="420" y="174">on the brim</text>
+    <text x="16" y="250">Face stays clear,</text>
+    <text x="16" y="270">so you can see</text>
+    <text x="420" y="480">Black t-shirt</text>
   </g>
-  <path class="thin" d="M414 89 L360 100 M414 209 L384 216 M124 155 L222 170 M414 435 L376 435"/>
+  <path class="thin" d="M414 89 L364 110 M414 160 L374 160 M148 255 L268 250 M414 475 L376 475"/>
 </svg>

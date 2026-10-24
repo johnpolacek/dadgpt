@@ -15,10 +15,12 @@ const googleSans = Google_Sans_Flex({
 export const metadata: Metadata = {
   title: "DADGPT",
   description: "Ask Dad anything.",
+  // Home screen launches on iPhone hide Safari's bars and draw the status bar over our black
+  appleWebApp: { capable: true, title: "DADGPT", statusBarStyle: "black-translucent" },
 };
 
 // Cover lets the page reach under a sideways phone's notch; safe-area padding keeps content clear of it
-export const viewport: Viewport = { viewportFit: "cover" };
+export const viewport: Viewport = { viewportFit: "cover", themeColor: "#000000" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

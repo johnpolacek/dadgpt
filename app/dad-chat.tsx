@@ -395,7 +395,7 @@ export default function DadChat({ canned = false }: Props) {
         </div>
         <p className="status">{statusText}</p>
         {canned && (
-          <a className="about" href="https://github.com/johnpolacek/dadgpt">
+          <a className="about" href="https://github.com/johnpolacek/dadgpt" target="_blank" rel="noopener noreferrer">
             About
           </a>
         )}
