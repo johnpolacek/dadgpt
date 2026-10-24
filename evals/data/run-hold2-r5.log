@@ -1,0 +1,45 @@
+(node:35346) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/johnpolacek/Projects/dadgpt/lib/dad-prompt.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/johnpolacek/Projects/dadgpt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+g005 -> Store-bought cookies? Your buddy really took the bake seat.
+g001 -> I don’t know, but Canberra can bear the pressure.
+g006 -> Batman again? Guess his style’s gone batty.
+g002 -> I don’t know, but that’s a moonumental commute.
+g003 -> I don’t know, but the inventor had a bright idea.
+g004 -> I don’t know, but spiders are a-leg-endary.
+g008 -> Must be the costume. You’re dressed to overheat.
+g007 -> All night on the decks, and still no turntable manners.
+g009 -> Ask if he’s here for snacks or necks.
+g012 -> That zombie makeup is dead-on.
+g011 -> I can tell, you’re looking hiss-terical.
+g010 -> That crush has you taking a crash course in panic.
+g014 -> I don’t know, but I’m a box-office bot, a real draw.
+g013 -> I don’t know, but I hope it didn’t cost you an arm and a leg.
+g015 -> I don’t know, but I’m two-tally stumped.
+g016 -> Normally? Sorry, I’m norm-ally unavailable.
+g019 -> Water you waiting for? It’s a shore thing.
+g017 -> Tequila? That’s a tequi-later kind of decision.
+g021 -> Your work-life balance has a weak end.
+g020 -> Getting kids to bed early? A small-hours operation.
+g023 -> She’s tailor-made for world domination.
+g022 -> That’s a paws-itive dilemma, but I’m feline indecisive.
+g024 -> I don't know, but I hear it’s a forceful show.
+g018 -> I don't know, but somebody gave that punch a green thumb.
+g026 -> Right, unless it leaks. Then it’s a party foul.
+g025 -> The Office again? That’s some serious paper-viewing.
+g027 -> The one with no strings attached.
+g030 -> Uber driver’s lost? That’s a fare-away situation.
+g029 -> I don’t know, but the loo’s got room for two.
+g028 -> Looks like the floor’s really trying to stick with you.
+g032 -> That happens oven and oven.
+g031 -> Thunder? I barely know her.
+g033 -> I don’t know, but every candidate’s getting a midterm review.
+g035 -> I don’t know, but polls leave me pole-arized.
+g034 -> Sixteen? That’s a sick-teen idea.
+g036 -> I don’t know, but that Bears QB sounds bear-ly believable.
+g037 -> Bears, if they bring the beers.
+g038 -> They’re really pumping up the price.
+g039 -> I don’t know, but sounds like a stock-and-roll kind of day.
+g040 -> AI’s taking jobs? Guess it’s making a good byte at work.
+40 traces written to /Users/johnpolacek/Projects/dadgpt/evals/data/traces-hold2-r5.json

@@ -1,0 +1,45 @@
+(node:31127) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/johnpolacek/Projects/dadgpt/lib/dad-prompt.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/johnpolacek/Projects/dadgpt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+g002 -> The moon keeps its distance because it needs a little space.
+g004 -> That spider skipped leg day, now it’s caught in a web of excuses.
+g007 -> He’s been spinning all night, and somehow the party’s still going in circles.
+g001 -> Australia’s capital must be loaded, because it’s always making capital gains.
+g005 -> He brought store-bought cookies because his homemade game is still half-baked.
+g008 -> Your costume’s so hot, even the thermostat’s sweating through its suit.
+g003 -> The inventor had a bright idea, then got everyone excited to screw in.
+g006 -> He’s worn Batman so often, even the bats are telling him to quit hanging around.
+g009 -> Ask if he’s here for the snacks or just to raise the stakes.
+g010 -> My crush has me all shook up, and one text could really make things pop.
+g011 -> That costume’s so convincing, the whole neighborhood’s feline the pressure.
+g012 -> That zombie makeup has a killer complexion.
+g013 -> You’re a vampire, because that costume really sucks.
+g015 -> Two plus two started couples therapy, and their relationship finally added up.
+g016 -> I tried answering normally, but the norm was a tall order.
+g014 -> Sounds like a tightly packed transformer.
+g018 -> Lime, fizz, and a splash of envy, because this punch is green with it.
+g017 -> Tequila’s a shot caller, until tomorrow calls collect.
+g020 -> I moved bedtime earlier, but the kids said that plan was way too soon-to-snooze.
+g021 -> Your boss keeps emailing on weekends because their work-life balance has a really weak end.
+g019 -> Your soda may resist the switch, but water has a current advantage.
+g023 -> Taylor Swift’s everywhere this year, even the calendar can’t keep up with all those swift dates.
+g022 -> Cats are fur-midable roommates, especially when they claim your favorite chair.
+g026 -> Depends on the punch bowl, it has a habit of spilling the tea.
+g024 -> The Force is a tough critic, always leaning toward the dark side of the scale.
+g025 -> I started The Office again, and my couch just got promoted to regional manager of sitting.
+g027 -> Whoever’s got the best track record, they’re dropping singles like a chart-topper.
+g028 -> That’s a sticky situation, your shoe’s really bonded with it.
+g029 -> The bathroom’s wherever you make a loo-turn.
+g031 -> The thunder was the sky’s way of making a shocking entrance.
+g030 -> Sounds like your driver’s taking you on a fare-ly unexpected adventure.
+g032 -> If you left the oven on, it’s not abandoned, it’s just enjoying a bakecation.
+g033 -> Campaign season is a tough exam, and the winner will be the one who makes the grade.
+g035 -> Polls are like wobbly ladders, always leaning toward whichever way the wind blows.
+g036 -> Maybe, but let’s see if he can bear the spotlight without hibernating in the pocket.
+g037 -> Packers games are too cheesy, but Bears games are un-bear-ably entertaining.
+g034 -> Sixteen-year-olds at the polls? Democracy could use a little more teen spirit.
+g038 -> Gas prices are up again, so I asked the pump for a discount; it said I was getting pumped.
+g039 -> The market was so bullish today, even the bears were short on confidence.
+g040 -> AI’s taking jobs, but HR says it lacks the human touch, so they gave it a hands-on position.
+40 traces written to /Users/johnpolacek/Projects/dadgpt/evals/data/traces-hold2-r0.json

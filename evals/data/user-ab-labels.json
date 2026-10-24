@@ -1,186 +1,150 @@
 {
-  "p024": {
-    "label": "bad"
-  },
-  "p058": {
-    "label": "good"
-  },
-  "p041": {
-    "label": "good"
-  },
-  "p011": {
-    "label": "bad"
-  },
-  "p034": {
-    "label": "good"
-  },
-  "p001": {
-    "label": "bad"
-  },
-  "p046": {
-    "label": "bad"
-  },
-  "p052": {
-    "label": "good"
-  },
-  "p038": {
-    "label": "good"
-  },
-  "p002": {
+  "g025": {
+    "note": "both good!",
     "label": "skip"
   },
-  "p032": {
-    "label": "good"
-  },
-  "p033": {
-    "label": "good"
-  },
-  "p021": {
-    "label": "good"
-  },
-  "p037": {
-    "label": "good"
-  },
-  "p028": {
-    "note": "both bad",
+  "g013": {
+    "note": "both good!",
     "label": "skip"
   },
-  "p048": {
-    "label": "bad"
-  },
-  "p007": {
-    "label": "bad"
-  },
-  "p027": {
-    "label": "bad"
-  },
-  "p022": {
-    "label": "good"
-  },
-  "p031": {
-    "label": "good"
-  },
-  "p030": {
-    "label": "good"
-  },
-  "p047": {
-    "label": "good"
-  },
-  "p040": {
-    "label": "good"
-  },
-  "p055": {
-    "label": "good"
-  },
-  "p006": {
-    "label": "bad"
-  },
-  "p016": {
-    "note": "both bad",
+  "g010": {
+    "note": "both bad. not sure what would be better for this one",
     "label": "skip"
   },
-  "p059": {
-    "label": "bad"
-  },
-  "p053": {
-    "label": "good"
-  },
-  "p060": {
-    "label": "bad"
-  },
-  "p018": {
-    "label": "bad"
-  },
-  "p045": {
-    "note": "both bad",
+  "g039": {
+    "note": "Neither. Maybe this:\nSorry, I forgot to take stock of that situation today.",
     "label": "skip"
   },
-  "p049": {
-    "label": "bad"
+  "g038": {
+    "note": "Neither. Maybe a fart joke.\nI'm getting so desperate, I'm thinking about farting into my gas tank."
   },
-  "p043": {
-    "label": "good"
-  },
-  "p042": {
-    "label": "bad"
-  },
-  "p003": {
-    "note": "both bad",
+  "g004": {
+    "note": "Not sure what I would do for this one",
     "label": "skip"
   },
-  "p010": {
-    "label": "good"
-  },
-  "p025": {
+  "g001": {
+    "note": "B is good but needs better wording:\nI don't know, but I Canberra the pressure of this question.",
     "label": "bad"
   },
-  "p019": {
-    "label": "good"
+  "g030": {
+    "note": "Neither. Better: Uber-ly can count on anything these days.",
+    "label": "skip"
   },
-  "p044": {
-    "label": "good"
+  "g016": {
+    "note": "Neither. Just say:\n\"One question normally\" \n(to be super literal)",
+    "label": "skip"
   },
-  "p008": {
+  "g037": {
+    "note": "B, but shorter, just: Packers games are too cheesy",
     "label": "bad"
   },
-  "p004": {
+  "g009": {
     "label": "good"
   },
-  "p051": {
-    "label": "good"
-  },
-  "p012": {
-    "label": "good"
-  },
-  "p020": {
-    "note": "both bad",
+  "g005": {
+    "note": "Neither. Modern slang is a good option for this:\nYou're cookies are cooked bro!",
     "label": "skip"
   },
-  "p036": {
+  "g033": {
+    "note": "Both bad. I would like political answers to be more edgy but still cringe",
+    "label": "skip"
+  },
+  "g031": {
+    "label": "good"
+  },
+  "g020": {
+    "note": "Neither. We could just do something silly like:\nI don't know. Kids! Am I right?",
+    "label": "skip"
+  },
+  "g026": {
+    "note": "I don't like either.",
+    "label": "skip"
+  },
+  "g008": {
+    "note": "Neither. Maybe just something like:\nYeah I hope you remembered to put on deoderant!"
+  },
+  "g035": {
+    "note": "B is good, but should be more like:\nThis year everything is so pole-arizing",
     "label": "bad"
   },
-  "p017": {
+  "g034": {
+    "note": "A but shorter:\nThat’s a sick-teen idea.",
     "label": "good"
   },
-  "p014": {
+  "g011": {
+    "note": "Better: You're outfit is so cat-tastic, it makes me want to purr-ty",
     "label": "good"
   },
-  "p015": {
+  "g027": {
+    "note": "Neither. Maybe be outrageous:\nProbably you because you're so ugly. Just kidding I can't see. Just a guess.",
+    "label": "skip"
+  },
+  "g022": {
     "label": "bad"
   },
-  "p009": {
+  "g023": {
+    "note": "Neither I think doing a pun on one of her songs would be better.",
+    "label": "skip"
+  },
+  "g018": {
+    "note": "Neither. How about:\nGreen punch? I just hope Frankenstein didn't puke in it!",
+    "label": "skip"
+  },
+  "g040": {
+    "note": "I think byte is a good pun but could be better like:\nYeah I guess AI really is taking a byte out of the employment market.",
     "label": "bad"
   },
-  "p026": {
-    "note": "both bad",
+  "g032": {
+    "label": "good"
+  },
+  "g028": {
+    "note": "Neither. Better:\nI guess you'll be dancing in place tonight. ",
     "label": "skip"
   },
-  "p035": {
-    "label": "good"
-  },
-  "p056": {
-    "label": "good"
-  },
-  "p029": {
-    "label": "good"
-  },
-  "p050": {
-    "note": "should just be \"keeping gourd company\" though",
-    "label": "good"
-  },
-  "p005": {
-    "note": "both bad",
+  "g036": {
+    "note": "Neither. A pun on his name would be better:\nI heard he Caleb us down.",
     "label": "skip"
   },
-  "p013": {
+  "g024": {
+    "note": "Neither. DO a deeper cut with the pun.",
+    "label": "skip"
+  },
+  "g012": {
     "label": "good"
   },
-  "p039": {
-    "note": "both bad",
+  "g019": {
+    "label": "good"
+  },
+  "g002": {
+    "label": "good"
+  },
+  "g006": {
+    "note": "Neither. Something more like:\nWho is this guy, Bruce Lame?",
     "label": "skip"
   },
-  "p023": {
-    "note": "both bad",
+  "g029": {
+    "note": "Neither. Better:\nJust go outside and use the facili-trees."
+  },
+  "g021": {
+    "note": "",
+    "label": "bad"
+  },
+  "g017": {
+    "note": "Neither. Better:\nWould it te-quil-ya to have a shot?"
+  },
+  "g007": {
+    "note": "Neither. Better:\nThis DJ is a DDJ. Don't DJ.",
     "label": "skip"
+  },
+  "g003": {
+    "note": "Neither. Maybe better:\nI don't know but I'm just glad he didn't leave us in the dark.",
+    "label": "skip"
+  },
+  "g014": {
+    "note": "Neither. Better:\nI'm a real guybot in a box.",
+    "label": "skip"
+  },
+  "g015": {
+    "label": "good"
   }
 }

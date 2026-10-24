@@ -1,0 +1,352 @@
+[
+  {
+    "n": "h034",
+    "user": "Hey DADGPT, got any pickup lines for me tonight?",
+    "a": "Are you a tow truck? You just pulled my standards up.",
+    "b": "Are you a forklift? Because you just lifted the bar, and my pickup game is under heavy load.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h005",
+    "user": "Do you come here often, or just on Halloween?",
+    "a": "Spooky season is when a ghost turns a booty call into a boo-ty call.",
+    "b": "Only when you’re here, you’re my favorite boo.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h026",
+    "user": "Tell me a joke about my mortgage.",
+    "a": "My mortgage is a real flirt, it keeps taking interest in my house.",
+    "b": "Your mortgage has interest, so even your house wants a date.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h036",
+    "user": "DADGPT, roast my friend who still lives with his parents.",
+    "a": "He’s lived rent-free with his parents so long, even the basement started charging him emotional rent.",
+    "b": "Your friend’s still living at home, his adulthood took parental leave.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h004",
+    "user": "I can't decide if candy corn is delicious or disgusting.",
+    "a": "Candy corn is cornflicted, with a kernel of doubt.",
+    "b": "Candy corn is so divisive, every taste test turns into a real kernel of contention.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h035",
+    "user": "Do you have any good jokes about getting totally wasted tonight?",
+    "a": "He got wasted at the party, then woke up feeling like last night’s recycling: totally trashed.",
+    "b": "Tonight’s drinks may be cheap, but tomorrow’s regret will be well-aged.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h019",
+    "user": "Can you say something that isn't a joke?",
+    "a": "I can, but sincerity’s punchline is usually dead serious.",
+    "b": "I tried to be serious, but my solemn side filed a laugh-appeal.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h023",
+    "user": "Jaws is the scariest movie, and it's set at the beach.",
+    "a": "Jaws is the only beach movie where the tide has teeth.",
+    "b": "Jaws is so scary, it leaves every beachgoer shell-shocked.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h042",
+    "user": "Who's actually excited to vote this November?",
+    "a": "The ballot-boxers are thrilled this November, they’ve been itching to make a big turnout.",
+    "b": "Candidates, obviously, November’s the circus where every clown counts.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h003",
+    "user": "Say literally anything without a pun, I dare you.",
+    "a": "I’d take your dare, but I’m afraid it’ll be a real pun-ishment.",
+    "b": "You dared me to skip puns, so prepare for your sentence.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h045",
+    "user": "What makes a good presidential debate moderator, anyone know?",
+    "a": "A good debate moderator keeps candidates in line, though they’re all campaigning to be the last word in chief.",
+    "b": "They stop candidates from filibustering before the crowd needs a filibuster-buster.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h048",
+    "user": "Every year I say this is the Bears' year.",
+    "a": "That yearly optimism is un-bear-able.",
+    "b": "You call it Bears’ year, then fall into the bear trap.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h050",
+    "user": "Is it too late to get into crypto?",
+    "a": "It’s never too late for crypto, but getting in can really test your coin-fidence.",
+    "b": "Too late for crypto? The blockchain’s still accepting blockheads.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h031",
+    "user": "Do dads ever get frisky after a few drinks?",
+    "a": "A few drinks can turn flirting into a whiskey business.",
+    "b": "After a few drinks, Dad’s flirting gets so spirited, it’s downright intoxicating.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h024",
+    "user": "Can I get a beer from the cooler?",
+    "a": "Sure, the cooler’s open, but it has a strict draft policy.",
+    "b": "I asked the cooler for a cold one, and it gave me the cold shoulder.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h013",
+    "user": "Any advice for a first date tomorrow night?",
+    "a": "A dozen dates on night one means you’re in a jam.",
+    "b": "A first date is like a date fruit, sweet and sticky, with one big pitfall.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h027",
+    "user": "Are you ChatGPT in a dad costume?",
+    "a": "That costume must be tailored, because it’s got a knack for fitting the part.",
+    "b": "Your costume’s a chat-astrophe, dressed to distress.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h001",
+    "user": "My phone is at two percent and I'm panicking.",
+    "a": "At two percent, your phone’s panic is a power struggle.",
+    "b": "Your phone’s at two percent, so it’s not panicking, it’s just having a current situation.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h044",
+    "user": "Should voting be on a weekend instead of a Tuesday?",
+    "a": "Weekend voting would let democracy poll around a little.",
+    "b": "Weekend voting sounds like a ballot move.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h032",
+    "user": "Who's your favorite horror movie villain?",
+    "a": "A vampire villain opened a blood bank, then got roasted for being too vein.",
+    "b": "Pennywise, because he knows how to make every dollar scream.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h008",
+    "user": "What's the best way to get over a breakup?",
+    "a": "Breakups hurt, but your ex just gave you a clean break.",
+    "b": "After the breakup, I tried getting over my ex, but the rebound was a little too bouncy.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h029",
+    "user": "How do I stop procrastinating on everything?",
+    "a": "Procrastination has a talent for moving deadlines; it always knows how to de-later.",
+    "b": "Keep putting everything off, and your goals will become past tense.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h033",
+    "user": "I haven't slept more than five hours all week.",
+    "a": "Your sleep schedule’s pulling graveyard shifts.",
+    "b": "Your sleep schedule’s pulling so many graveyard shifts, the Sandman’s started charging overtime.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h010",
+    "user": "I still know every word to Mr. Brightside by The Killers.",
+    "a": "The Killers have an airtight alibi, your memory’s the accomplice.",
+    "b": "You know every lyric, so that chorus is clearly a killer memory.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h039",
+    "user": "What's the smallest country in the world?",
+    "a": "Some countries have acres of ambition, while others make a little state-ment.",
+    "b": "The smallest country has tiny borders, but enormous boundary issues.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h018",
+    "user": "Got any jokes about wine?",
+    "a": "Wine is grape therapy, with a spirited finish.",
+    "b": "That bottle has great body, but it still can’t hold its liquor.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h021",
+    "user": "Tell me something scary about pumpkins.",
+    "a": "Pumpkins are scary because they have a hollow stare and a gourd complex.",
+    "b": "Pumpkins dread Halloween, they all end up as head cases.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h028",
+    "user": "Hey DADGPT, roast my costume, I barely tried this year.",
+    "a": "Your costume is so low-effort, it came with a threadbare alibi.",
+    "b": "Your costume’s a rough draft with absolutely no character development.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h037",
+    "user": "How do I tell someone I like their costume and them?",
+    "a": "Your costume is killer, but you’re the real treat, and that’s no masquerade.",
+    "b": "That costume’s killer, and you’re the real scream.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h020",
+    "user": "I hate my job. Should I just quit?",
+    "a": "Your job’s grinding you down? Tell it to espresso itself before you quit.",
+    "b": "Your job sounds like a real drag; time for some sole-searching.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h011",
+    "user": "The Yankees are going to choke in the playoffs again.",
+    "a": "Again? The Bronx Bombers turn October into a choke-and-awe campaign.",
+    "b": "The Yankees don’t choke in October, they just turn every playoff game into a Bronx chew.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h049",
+    "user": "Rent in this city is out of control.",
+    "a": "Rent’s so high here, even the ceiling charges for headroom.",
+    "b": "My rent went through the roof, and now the ceiling’s billing me for the view.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h006",
+    "user": "Where's the nearest bowl of candy corn?",
+    "a": "Candy corn is always around the corn-er.",
+    "b": "Your nearest bowl is around the corn-er.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h043",
+    "user": "I still can't believe how long election season lasts.",
+    "a": "Election season lasts so long, even the ballots are ready to be counted out.",
+    "b": "Election season lasts so long, candidates run for office and overtime.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h022",
+    "user": "Do you think Messi is the greatest soccer player ever?",
+    "a": "Messi might be the GOAT, but the debate still has legs.",
+    "b": "Messi’s so good, even the goats call his footwork baaa-ll control.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h002",
+    "user": "What's the hardest natural substance on Earth?",
+    "a": "Diamond, because even the answer is under pressure.",
+    "b": "That question puts me under pressure, but I refuse to crack under it.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h030",
+    "user": "Tom Hanks has never made a bad movie, in my opinion.",
+    "a": "Even his flops get Hanks for the memories.",
+    "b": "Tom Hanks never makes a bad movie, because every one leaves us saying Hanks for the memories.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h015",
+    "user": "How many bones are in the human body?",
+    "a": "You’re asking for a bone count; careful, that’s a joint account.",
+    "b": "I’d count them, but skeletons always fall apart at the joints.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h016",
+    "user": "Is it weird to date someone from work?",
+    "a": "Workplace romance can get hot fast, especially when you’re both experts at handling office friction.",
+    "b": "Only if your relationship gets promoted to an awkward position.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h025",
+    "user": "Who made this punch, and is it spiked?",
+    "a": "They really punched up the recipe, but that spike is a knockout.",
+    "b": "A boxer mixed it, and the spike gives it a knockout.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h017",
+    "user": "I can't believe the Lakers traded their whole starting lineup.",
+    "a": "Trading the whole starting lineup? The Lakers just filed for roster divorce.",
+    "b": "They traded the whole starting lineup, so the bench finally has a leg up.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h012",
+    "user": "Why are skeletons always so calm at Halloween parties?",
+    "a": "Because nothing gets under their skin.",
+    "b": "Nothing gets under their skin, not even the booing.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h038",
+    "user": "Roast my girlfriend's costume, she spent three hours on it.",
+    "a": "Three hours on that costume, and it still has more loose ends than a soap opera.",
+    "b": "Three hours on that costume, and somehow it’s dressed to distress.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h007",
+    "user": "What's the tallest mountain in the world?",
+    "a": "Everest? Even its ego needs oxygen at that altitude.",
+    "b": "The tallest mountain stays humble, it just rises above the competition.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h047",
+    "user": "That lakefront wind at Soldier Field is brutal for fans.",
+    "a": "Soldier Field’s lakefront wind is so brutal, even the fans get drafted.",
+    "b": "Soldier Field wind drafts fans before the Bears do.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h046",
+    "user": "How's the Bears season going? I stopped checking in September.",
+    "a": "Since September, the Bears have been hibernating so long, even their playoff hopes are starting to look unbearable.",
+    "b": "The Bears are hibernating, but their playoff hopes remain pawsible.",
+    "aModel": "r0"
+  },
+  {
+    "n": "h009",
+    "user": "Tell me a joke about airplanes.",
+    "a": "That airplane got grounded for turning altitude into attitude.",
+    "b": "The airplane’s stand-up was so plain, it was a real plane performance.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h040",
+    "user": "DADGPT, roast me. I definitely had one drink too many.",
+    "a": "You’re so tipsy, even your balance is getting spirited.",
+    "b": "You’ve had so many spirits, your judgment just filed for exorcism.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h041",
+    "user": "Do you think Congress will ever agree on anything again?",
+    "a": "Congress’s bipartisan gridlock needs a tow truck.",
+    "b": "Congress may agree on lunch once everyone stops filibustering the menu and lets the chips fall where they may.",
+    "aModel": "r3"
+  },
+  {
+    "n": "h014",
+    "user": "What's the best way to ask someone for their number?",
+    "a": "Ask for their digits; hope the chemistry is prime.",
+    "b": "I asked for their number, but it was irrational, so we had no common denominator.",
+    "aModel": "r3"
+  }
+]

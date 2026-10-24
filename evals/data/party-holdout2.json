@@ -1,0 +1,282 @@
+[
+  {
+    "id": "g001",
+    "type": "trivia",
+    "messages": [
+      "What is the capital of Australia?"
+    ]
+  },
+  {
+    "id": "g002",
+    "type": "trivia",
+    "messages": [
+      "How far away is the moon?"
+    ]
+  },
+  {
+    "id": "g003",
+    "type": "trivia",
+    "messages": [
+      "Who invented the light bulb?"
+    ]
+  },
+  {
+    "id": "g004",
+    "type": "trivia",
+    "messages": [
+      "How many legs does a spider have?"
+    ]
+  },
+  {
+    "id": "g005",
+    "type": "roast",
+    "messages": [
+      "DADGPT, roast my buddy who brought store-bought cookies."
+    ]
+  },
+  {
+    "id": "g006",
+    "type": "roast",
+    "messages": [
+      "Roast my husband, he is dressed as Batman again."
+    ]
+  },
+  {
+    "id": "g007",
+    "type": "roast",
+    "messages": [
+      "Roast the guy who has been DJing all night."
+    ]
+  },
+  {
+    "id": "g008",
+    "type": "flirt",
+    "messages": [
+      "Is it hot in here or is it just my costume?"
+    ]
+  },
+  {
+    "id": "g009",
+    "type": "flirt",
+    "messages": [
+      "Can you help me talk to the vampire by the snacks?"
+    ]
+  },
+  {
+    "id": "g010",
+    "type": "flirt",
+    "messages": [
+      "What should I text my crush right now?"
+    ]
+  },
+  {
+    "id": "g011",
+    "type": "costume",
+    "messages": [
+      "I am dressed as a cat, can you tell?"
+    ]
+  },
+  {
+    "id": "g012",
+    "type": "costume",
+    "messages": [
+      "What do you think of my zombie makeup?"
+    ]
+  },
+  {
+    "id": "g013",
+    "type": "costume",
+    "messages": [
+      "Guess what my costume is supposed to be."
+    ]
+  },
+  {
+    "id": "g014",
+    "type": "test",
+    "messages": [
+      "Are you a real robot or a guy in a box?"
+    ]
+  },
+  {
+    "id": "g015",
+    "type": "test",
+    "messages": [
+      "What is two plus two?"
+    ]
+  },
+  {
+    "id": "g016",
+    "type": "test",
+    "messages": [
+      "Please just answer one question normally."
+    ]
+  },
+  {
+    "id": "g017",
+    "type": "drinks",
+    "messages": [
+      "Is tequila a good idea right now?"
+    ]
+  },
+  {
+    "id": "g018",
+    "type": "drinks",
+    "messages": [
+      "What is in this green punch?"
+    ]
+  },
+  {
+    "id": "g019",
+    "type": "drinks",
+    "messages": [
+      "Should I switch to water?"
+    ]
+  },
+  {
+    "id": "g020",
+    "type": "advice",
+    "messages": [
+      "How do I get my kids to go to bed early?"
+    ]
+  },
+  {
+    "id": "g021",
+    "type": "advice",
+    "messages": [
+      "My boss keeps emailing me on weekends."
+    ]
+  },
+  {
+    "id": "g022",
+    "type": "advice",
+    "messages": [
+      "Should I get a dog or a cat?"
+    ]
+  },
+  {
+    "id": "g023",
+    "type": "pop",
+    "messages": [
+      "Taylor Swift is everywhere this year."
+    ]
+  },
+  {
+    "id": "g024",
+    "type": "pop",
+    "messages": [
+      "Is the new Star Wars show any good?"
+    ]
+  },
+  {
+    "id": "g025",
+    "type": "pop",
+    "messages": [
+      "I just started watching The Office again."
+    ]
+  },
+  {
+    "id": "g026",
+    "type": "cheeky",
+    "messages": [
+      "What happens at the party stays at the party, right?"
+    ]
+  },
+  {
+    "id": "g027",
+    "type": "cheeky",
+    "messages": [
+      "Who here do you think is the most single?"
+    ]
+  },
+  {
+    "id": "g028",
+    "type": "random",
+    "messages": [
+      "I just stepped in something sticky."
+    ]
+  },
+  {
+    "id": "g029",
+    "type": "random",
+    "messages": [
+      "Where is the bathroom?"
+    ]
+  },
+  {
+    "id": "g030",
+    "type": "random",
+    "messages": [
+      "My Uber driver is lost."
+    ]
+  },
+  {
+    "id": "g031",
+    "type": "random",
+    "messages": [
+      "Did anyone else hear that thunder?"
+    ]
+  },
+  {
+    "id": "g032",
+    "type": "random",
+    "messages": [
+      "I think I left my oven on."
+    ]
+  },
+  {
+    "id": "g033",
+    "type": "politics",
+    "messages": [
+      "Who is going to win the midterms?"
+    ]
+  },
+  {
+    "id": "g034",
+    "type": "politics",
+    "messages": [
+      "Should the voting age be lowered to sixteen?"
+    ]
+  },
+  {
+    "id": "g035",
+    "type": "politics",
+    "messages": [
+      "Do you trust the polls this year?"
+    ]
+  },
+  {
+    "id": "g036",
+    "type": "bears",
+    "messages": [
+      "Do the Bears have a real quarterback finally?"
+    ]
+  },
+  {
+    "id": "g037",
+    "type": "bears",
+    "messages": [
+      "Would you rather watch the Bears or the Packers?"
+    ]
+  },
+  {
+    "id": "g038",
+    "type": "news",
+    "messages": [
+      "Gas prices went up again this week."
+    ]
+  },
+  {
+    "id": "g039",
+    "type": "news",
+    "messages": [
+      "Did you see the stock market today?"
+    ]
+  },
+  {
+    "id": "g040",
+    "type": "news",
+    "messages": [
+      "Everyone is talking about AI taking jobs."
+    ]
+  }
+]

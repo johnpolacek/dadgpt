@@ -1,0 +1,183 @@
+{
+  "h034": {
+    "label": "bad"
+  },
+  "h005": {
+    "label": "good"
+  },
+  "h026": {
+    "label": "good"
+  },
+  "h036": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "h004": {
+    "note": "",
+    "label": "good"
+  },
+  "h035": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "h019": {
+    "note": "both bad.\njust say \"um... no\" ",
+    "label": "skip"
+  },
+  "h023": {
+    "note": "Both bad. This is better:\nJaws isn't a scary movie. Jaws-t kidding!",
+    "label": "skip"
+  },
+  "h042": {
+    "note": "Both bad:\nShould be something more controversial but punny",
+    "label": "skip"
+  },
+  "h003": {
+    "note": "This would be even better:\nIf I don't take the dare, what's the pun-ishment?",
+    "label": "good"
+  },
+  "h045": {
+    "note": "both awful\nbetter: Good presidential moderators know how to handle a master debater.",
+    "label": "skip"
+  },
+  "h048": {
+    "label": "good"
+  },
+  "h050": {
+    "label": "good"
+  },
+  "h031": {
+    "label": "good"
+  },
+  "h024": {
+    "note": "Rhyming could be good too:\nNo need to fear. Grab a beer!",
+    "label": "good"
+  },
+  "h013": {
+    "note": "",
+    "label": "bad"
+  },
+  "h027": {
+    "note": "Neither. This is better:\nAre you saying my costume is a chat-astrophe?",
+    "label": "skip"
+  },
+  "h001": {
+    "label": "bad"
+  },
+  "h044": {
+    "note": "Neither. Better:\nI think that might cause turnout to be weekend.",
+    "label": "skip"
+  },
+  "h032": {
+    "label": "good"
+  },
+  "h008": {
+    "note": "Neither:\nThere's plenty of fish in the sea, but watch out for sharks!"
+  },
+  "h029": {
+    "note": "Both are bad.\nBetter: At least you're not an amateur crastinator!"
+  },
+  "h033": {
+    "note": "Both awful!\nBetter: Have you tried counting sheep? If it doesn't work, that would be too baa."
+  },
+  "h010": {
+    "note": "Both bad.\nBetter: use a pun from the lyrics",
+    "label": "skip"
+  },
+  "h039": {
+    "note": "Both bad. Something like:\nI'm not sure but I bet it is ____",
+    "label": "skip"
+  },
+  "h018": {
+    "note": "Both bad. ",
+    "label": "skip"
+  },
+  "h021": {
+    "label": "good"
+  },
+  "h028": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "h037": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "h020": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "h011": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "h049": {
+    "label": "bad"
+  },
+  "h006": {
+    "label": "bad"
+  },
+  "h043": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "h022": {
+    "label": "bad"
+  },
+  "h002": {
+    "label": "bad"
+  },
+  "h030": {
+    "note": "Better: Whenever they try to put him in a bad movie, he says \"No Hanks\".",
+    "label": "skip"
+  },
+  "h015": {
+    "note": "Both bad. Better:\nThat's a skelly question.",
+    "label": "skip"
+  },
+  "h016": {
+    "note": "Better: It can be, especially if you're into awkward positions.",
+    "label": "bad"
+  },
+  "h025": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "h017": {
+    "note": "Both bad. Better: I guess they laked talent.",
+    "label": "skip"
+  },
+  "h012": {
+    "label": "good"
+  },
+  "h038": {
+    "note": "both bad.",
+    "label": "skip"
+  },
+  "h007": {
+    "note": "Both bad. Better:\nI don't know, but I'm very everested to find out.",
+    "label": "skip"
+  },
+  "h047": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "h046": {
+    "note": "B is not good but pawsible is probably the right pun to use",
+    "label": "bad"
+  },
+  "h009": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "h040": {
+    "label": "bad"
+  },
+  "h041": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "h014": {
+    "label": "bad"
+  }
+}
