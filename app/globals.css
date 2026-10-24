@@ -106,11 +106,21 @@ form button {
   cursor: pointer;
 }
 
+/* Registered so the logo can ease between its alone and open sizes */
+@property --logo {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
 /* Hero alone and centered; the chat panel slides in beside it (wide) or below it (tall) */
 .split {
   /* Logo size fits both width and height, so short sideways phones scale down too.
-     The mic and the X size off it. */
-  --logo: clamp(2.5rem, min(11vw, 24vh), 10rem);
+     It is huge while the hero is alone, readable from across a room on a costume,
+     and shrinks when the chat opens. The mic and the X size off it, with height caps
+     so a huge logo still leaves room for them. */
+  --logo: clamp(2.5rem, min(26vw, 50vh), 16rem);
+  --mic: max(2.75rem, min(calc(var(--logo) * 0.6), 22vh));
   --clear: max(2.25rem, calc(var(--logo) * 0.36));
   display: flex;
   flex-direction: row;
@@ -120,6 +130,8 @@ form button {
   align-items: stretch;
   justify-content: flex-start;
   text-align: left;
+  /* Matches the panel's power3.inOut slide */
+  transition: --logo 0.8s cubic-bezier(0.65, 0, 0.35, 1);
   overflow: hidden;
 }
 
@@ -132,7 +144,7 @@ form button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: calc(var(--logo) * 0.3);
+  gap: min(calc(var(--logo) * 0.3), 6vh);
   padding: max(2rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-left)) 2rem max(1rem, env(safe-area-inset-right));
   text-align: center;
 }
@@ -163,18 +175,18 @@ form button {
 
 /* The mic scales with the logo, never below a comfortable tap size */
 .split .mic {
-  width: max(2.75rem, calc(var(--logo) * 0.6));
-  height: max(2.75rem, calc(var(--logo) * 0.6));
+  width: var(--mic);
+  height: var(--mic);
 }
 
 /* Half the button, written out because grid tracks don't resolve percentages here */
 .split .mic svg {
-  width: max(1.375rem, calc(var(--logo) * 0.3));
-  height: max(1.375rem, calc(var(--logo) * 0.3));
+  width: calc(var(--mic) / 2);
+  height: calc(var(--mic) / 2);
 }
 
 .split .status {
-  font-size: max(0.9rem, calc(var(--logo) * 0.14));
+  font-size: max(0.9rem, min(calc(var(--logo) * 0.14), 5vh));
 }
 
 .micWrap {
@@ -229,6 +241,16 @@ form button {
   scrollbar-color: #333 transparent;
   -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 var(--fade-top), #000 calc(100% - var(--fade-bottom)), transparent calc(100% - var(--fade-bottom) * 0.4));
   mask-image: linear-gradient(to bottom, transparent 0, #000 var(--fade-top), #000 calc(100% - var(--fade-bottom)), transparent calc(100% - var(--fade-bottom) * 0.4));
+}
+
+.split.open {
+  --logo: clamp(2.5rem, min(11vw, 24vh), 10rem);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .split {
+    transition: none;
+  }
 }
 
 .split.open .chat {
@@ -331,6 +353,10 @@ form button {
   }
 
   .split {
+    --logo: clamp(2.5rem, min(24vw, 22vh), 16rem);
+  }
+
+  .split.open {
     --logo: clamp(2.5rem, min(20vw, 13vh), 8rem);
   }
 
