@@ -8,6 +8,16 @@ body {
   background: #000;
   color: #fff;
   min-height: 100%;
+  /* Taps on the logo and buttons shouldn't select text or flash a highlight */
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input {
+  -webkit-user-select: text;
+  user-select: text;
 }
 
 main {
