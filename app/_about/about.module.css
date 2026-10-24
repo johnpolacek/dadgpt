@@ -1,0 +1,554 @@
+/* Without JavaScript the slides stack and scroll. With it, they pile up and one shows at a time. */
+.deck {
+  position: relative;
+  display: block;
+  padding: 0;
+  text-align: center;
+  min-height: 100dvh;
+}
+
+.stage {
+  position: relative;
+}
+
+:global(.js) .deck {
+  height: 100dvh;
+  overflow: hidden;
+}
+
+:global(.js) .stage {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y pinch-zoom;
+}
+
+.scene {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.75rem, 3vmin, 2rem);
+  padding: max(4.5rem, env(safe-area-inset-top)) max(1.5rem, env(safe-area-inset-right)) max(5.5rem, env(safe-area-inset-bottom))
+    max(1.5rem, env(safe-area-inset-left));
+}
+
+:global(.js) .scene {
+  position: absolute;
+  inset: 0;
+  min-height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* If the deck never starts, the first slide shows anyway */
+:global(.js) .scene[data-first] {
+  animation: about-fallback 0s 3s forwards;
+}
+
+/* Once the deck runs it owns visibility, so the fallback stands down */
+.deck[data-ready] .scene[data-first] {
+  animation: none;
+}
+
+@keyframes about-fallback {
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.kicker {
+  font-size: clamp(0.7rem, 2vmin, 0.95rem);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.logo {
+  font-size: clamp(3.5rem, min(18vw, 28vh), 13rem);
+}
+
+.sub {
+  font-size: clamp(1.1rem, min(3.4vw, 5vh), 2rem);
+  max-width: 28ch;
+  line-height: 1.25;
+  opacity: 0.85;
+}
+
+.hint {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.45;
+}
+
+.line {
+  font-size: clamp(1.5rem, min(5vw, 8vh), 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.huge {
+  font-size: clamp(2.6rem, min(11vw, 17vh), 9rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.title {
+  font-size: clamp(2rem, min(8vw, 12vh), 6rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+/* The costume slide sits side by side when there's room */
+.scene[data-layout="split"] {
+  flex-direction: row;
+  gap: clamp(1.5rem, 5vw, 5rem);
+  text-align: left;
+}
+
+.figure {
+  margin: 0;
+  height: min(70dvh, 34rem);
+  flex: 0 0 auto;
+}
+
+.figure img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.75rem, 3vmin, 1.75rem);
+  max-width: 30rem;
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: clamp(0.4rem, 1.6vmin, 0.9rem);
+  counter-reset: step;
+}
+
+.steps li {
+  counter-increment: step;
+  display: flex;
+  gap: 0.9rem;
+  align-items: baseline;
+  font-size: clamp(0.95rem, min(2.2vw, 3.6vh), 1.35rem);
+  line-height: 1.3;
+}
+
+.steps li::before {
+  content: counter(step);
+  font-weight: 800;
+  font-size: 1.4em;
+  min-width: 1ch;
+}
+
+.micWrap {
+  position: relative;
+}
+
+.mic {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: clamp(3.5rem, 12vmin, 6rem);
+  height: clamp(3.5rem, 12vmin, 6rem);
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.ring {
+  position: absolute;
+  inset: -2px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.said {
+  font-size: clamp(0.95rem, min(2.4vw, 3.8vh), 1.3rem);
+  opacity: 0.6;
+}
+
+.reply {
+  font-size: clamp(1.4rem, min(4.6vw, 7vh), 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  max-width: 22ch;
+}
+
+.note {
+  font-size: clamp(0.85rem, min(2vw, 3.2vh), 1.05rem);
+  max-width: 40ch;
+  line-height: 1.45;
+  opacity: 0.6;
+}
+
+.note a {
+  color: #fff;
+}
+
+.cards {
+  display: flex;
+  gap: clamp(0.75rem, 3vw, 2rem);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: min(22rem, 40vw);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #000;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.files {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.files a {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.choices {
+  display: flex;
+  gap: clamp(0.75rem, 3vw, 1.5rem);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  width: min(17rem, 80vw);
+  padding: clamp(0.8rem, 2.5vmin, 1.2rem) 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 1.25rem;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta strong {
+  font-weight: 800;
+  font-size: clamp(1.2rem, 4vmin, 1.75rem);
+}
+
+.cta span {
+  font-size: clamp(0.75rem, 2vmin, 0.9rem);
+  opacity: 0.7;
+}
+
+.ctaLive {
+  background: #000;
+  color: #fff;
+}
+
+button.cta {
+  font: inherit;
+  cursor: pointer;
+}
+
+.dialog {
+  margin: auto;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #fff;
+  max-width: min(40rem, calc(100vw - 2rem));
+  max-height: calc(100dvh - 2rem);
+  overflow: visible;
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+}
+
+.panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: calc(100dvh - 2rem);
+  padding: clamp(1.25rem, 4vmin, 2rem);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 1.25rem;
+  background: #000;
+  text-align: left;
+}
+
+.panel h2 {
+  font-size: clamp(1.5rem, 5vmin, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  padding-right: 3rem;
+}
+
+.panel p {
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
+.prompt {
+  margin: 0;
+  min-height: 0;
+  overflow: auto;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: clamp(0.75rem, 2vmin, 0.85rem);
+  line-height: 1.55;
+  white-space: pre-wrap;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.copy {
+  align-self: flex-start;
+  min-height: 2.75rem;
+  padding: 0 1.5rem;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  color: #000;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.panelClose {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.github {
+  position: absolute;
+  z-index: 3;
+  top: max(1rem, env(safe-area-inset-top));
+  left: max(1rem, env(safe-area-inset-left));
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.skip {
+  position: absolute;
+  z-index: 3;
+  top: max(1rem, env(safe-area-inset-top));
+  right: max(1rem, env(safe-area-inset-right));
+  display: flex;
+  gap: 0.5rem;
+}
+
+.skip a {
+  display: grid;
+  place-items: center;
+  min-height: 2.75rem;
+  padding: 0 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.bar {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* The no-JS page scrolls, so the slide controls only appear with the deck */
+.bar:not(:global(.js) .bar) {
+  display: none;
+}
+
+.arrow {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.arrow:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.dots {
+  display: flex;
+  gap: 0.35rem;
+}
+
+/* A tall hit area around a thin bar */
+.dot {
+  width: 1.6rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.dot::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 3px;
+  margin-top: -1.5px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.25);
+  transition: background-color 0.3s;
+}
+
+.dot[data-on]::after {
+  background: #fff;
+}
+
+.copy:focus-visible,
+.panelClose:focus-visible,
+.github:focus-visible,
+.skip a:focus-visible,
+.arrow:focus-visible,
+.dot:focus-visible,
+.cta:focus-visible,
+.files a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+@media (hover: hover) {
+  .files a:hover {
+    background: #fff;
+    color: #000;
+  }
+  .cta:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+  }
+  .ctaLive:hover {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.35);
+  }
+  .github:hover,
+  .skip a:hover,
+  .arrow:not(:disabled):hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Upright phones: the costume drawing goes above the steps */
+@media (orientation: portrait) {
+  .scene[data-layout="split"] {
+    flex-direction: column;
+    text-align: center;
+  }
+  .figure {
+    height: min(38dvh, 26rem);
+  }
+  .steps li {
+    justify-content: center;
+    text-align: left;
+  }
+  .card {
+    width: min(20rem, 80vw);
+  }
+}
+
+/* Sideways phones on the hat are short, so tighten everything */
+@media (orientation: landscape) and (max-height: 500px) {
+  .scene {
+    padding-top: max(1rem, env(safe-area-inset-top));
+    padding-bottom: 3.75rem;
+  }
+  .figure {
+    height: 72dvh;
+  }
+  .card {
+    width: min(16rem, 34vw);
+  }
+  .cta {
+    width: min(13.5rem, 30vw);
+    padding-inline: 0.75rem;
+  }
+  .bar {
+    bottom: max(0.25rem, env(safe-area-inset-bottom));
+  }
+}

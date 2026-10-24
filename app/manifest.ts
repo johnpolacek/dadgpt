@@ -6,7 +6,8 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "DADGPT",
     short_name: "DADGPT",
     description: "Ask Dad anything.",
-    start_url: "/",
+    // Opening from the home screen goes straight to Dad
+    start_url: "/free",
     display: "standalone",
     orientation: "any",
     background_color: "#000000",

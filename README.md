@@ -36,9 +36,10 @@ Print it for a sign, a sticker, or the back of your shirt. The SVG and PDF files
 4. The reply goes to `/api/speak`, which turns it into a dad voice with OpenAI text to speech.
 5. The browser plays it. If the voice fails, it falls back to the built in browser voice.
 
-## Two modes
+## Pages
 
-- `/` is canned mode. It tells 20 stock jokes with prerecorded audio. It needs no API keys and anyone can use it.
+- `/` is the front page. It explains the costume in a click-through and links to both modes.
+- `/free` is canned mode. It tells 20 stock jokes with prerecorded audio. It needs no API keys and anyone can use it.
 - `/live` is live mode. It writes a new joke for whatever you say. It needs API keys and can sit behind a passcode.
 
 ## Models
@@ -54,6 +55,19 @@ Print it for a sign, a sticker, or the back of your shirt. The SVG and PDF files
 - GSAP for all the motion
 - Anthropic and OpenAI APIs
 - Web Speech API for listening in the browser
+
+## Make your own
+
+Paste this into Claude Code or any coding agent. The front page has the same prompt behind its Make your own button.
+
+```text
+Set up my own copy of DADGPT, the dad joke costume app at https://github.com/johnpolacek/dadgpt. Read the README first.
+
+1. Clone it and install with pnpm. It needs Node 24.
+2. Copy .env.example to .env.local. Ask me for my Anthropic API key and a passcode to lock live mode. An OpenAI key is optional and gives Dad a better voice.
+3. Run pnpm dev. Open /live and confirm Dad answers out loud with a joke.
+4. Deploy it to Vercel with the same environment variables, then give me the URL.
+```
 
 ## Run it locally
 
@@ -73,13 +87,13 @@ Open http://localhost:3000.
 |---|---|
 | `ANTHROPIC_API_KEY` | Claude Haiku, the backup joke writer |
 | `OPENAI_API_KEY` | Luna jokes and the dad voice. Leave it empty to use the browser voice |
-| `PASSCODE` | Locks everything except `/`. Leave it empty to skip the lock |
+| `PASSCODE` | Locks everything except `/` and `/free`. Leave it empty to skip the lock |
 
 With no keys at all, canned mode still works.
 
 ## Passcode
 
-When `PASSCODE` is set, every page but `/` sends you to `/unlock`. API routes return 401. The gate lives in `proxy.ts`. The cookie stores a SHA-256 hash, never the passcode itself.
+When `PASSCODE` is set, every page but `/` and `/free` sends you to `/unlock`. API routes return 401. The gate lives in `proxy.ts`. The cookie stores a SHA-256 hash, never the passcode itself.
 
 ## Scripts
 
@@ -106,7 +120,9 @@ These pages were used to pick the look, sound, and motion. They sit behind the p
 
 ```
 app/
-  page.tsx          canned mode
+  page.tsx          front page
+  _about/           the click-through deck
+  free/             canned mode
   live/             live mode
   dad-chat.tsx      the chat UI, mic, and audio
   api/chat/         writes the joke

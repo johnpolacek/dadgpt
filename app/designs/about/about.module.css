@@ -1,0 +1,941 @@
+/* ---------- Lab page ---------- */
+
+.page {
+  padding: 3rem 1rem 6rem;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.pageTitle {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.header p {
+  margin-top: 1rem;
+  opacity: 0.6;
+  max-width: 40rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 46rem), 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #262626;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The sideways phone and the upright phone side by side, same pixel density */
+.stage {
+  display: grid;
+  grid-template-columns: 19.5fr 6.5fr;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  visibility: hidden;
+}
+
+.stage[data-ready] {
+  visibility: visible;
+}
+
+.device {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.deviceLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.4;
+  text-align: center;
+}
+
+.screen {
+  container-type: size;
+  position: relative;
+  background: #000;
+  border: 1px solid #333;
+  border-radius: 0.9rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.screen::-webkit-scrollbar {
+  display: none;
+}
+
+.land {
+  aspect-ratio: 19.5 / 9;
+}
+
+.port {
+  aspect-ratio: 9 / 19.5;
+}
+
+.caption {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-top: 1px solid #262626;
+  font-size: 0.9rem;
+}
+
+.caption p {
+  opacity: 0.55;
+  margin-top: 0.25rem;
+}
+
+.num {
+  opacity: 0.4;
+  margin-right: 0.6rem;
+}
+
+.replay {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+/* ---------- Inside a mock ----------
+   1em is about 15px on a real phone: the short side of both screens is ~390 CSS px */
+
+.view {
+  font-size: 3.9cqmin;
+  line-height: 1.35;
+  min-height: 100%;
+  text-align: left;
+}
+
+.view a {
+  color: inherit;
+}
+
+.logo {
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  white-space: nowrap;
+}
+
+.logo b {
+  font-weight: 800;
+}
+
+.logo span {
+  font-weight: 1;
+}
+
+.body {
+  font-size: 0.85em;
+  opacity: 0.72;
+}
+
+.art {
+  display: block;
+  max-width: 100%;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  align-self: flex-start;
+  padding: 0.55em 1.1em 0.55em 0.8em;
+  border-radius: 999px;
+  background: #fff;
+  color: #000 !important;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.back svg {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.downloads {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+  font-size: 0.75em;
+}
+
+.dlRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.35em;
+}
+
+.dlLinks {
+  display: flex;
+  gap: 0.8em;
+}
+
+.dlLinks a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.credit {
+  font-size: 0.65em;
+  opacity: 0.45;
+}
+
+/* ---------- 1. Poster ---------- */
+
+.poster {
+  display: grid;
+  gap: 2em;
+}
+
+.posterText {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.posterLogo {
+  font-size: 4.4em;
+}
+
+.posterTag {
+  font-size: 1.35em;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.land .poster {
+  grid-template-columns: 1fr 15em;
+  padding: 1.75em 3em 2em;
+}
+
+.land .posterArt {
+  position: sticky;
+  top: 0;
+  height: 22em;
+  width: auto;
+  justify-self: end;
+}
+
+.port .poster {
+  padding: 3.5em 1.5em 2.5em;
+}
+
+.port .posterText {
+  order: 2;
+}
+
+.port .posterLogo {
+  font-size: 4em;
+}
+
+.port .posterArt {
+  width: 80%;
+  justify-self: center;
+}
+
+/* ---------- 2. Patent plate ---------- */
+
+.patent {
+  padding: 1.5em 3em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+
+.patentHead {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.6em;
+}
+
+.patentTitle {
+  font-size: 1.6em;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.patentMeta {
+  font-size: 0.7em;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.patentGrid {
+  display: grid;
+  gap: 1.5em;
+  border-top: 1px solid #444;
+  padding-top: 1em;
+}
+
+.land .patentGrid {
+  grid-template-columns: 1fr 13em 1fr;
+}
+
+.patentCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+.patentLabel {
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: 0.55;
+}
+
+.patentFig {
+  border: 1px solid #fff;
+  padding: 0.6em;
+}
+
+.claims {
+  padding-left: 1.2em;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  opacity: 0.8;
+}
+
+.port .patent {
+  padding: 3em 1.5em 2.5em;
+}
+
+.port .patentHead {
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+/* ---------- 3. Instruction manual ---------- */
+
+.manual {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+  padding: 1.75em 3em 2em;
+}
+
+.manualHead {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.manualLogo {
+  font-size: 2.6em;
+}
+
+.manualKicker {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.6;
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1em;
+}
+
+.land .steps {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  border-top: 2px solid #fff;
+  padding-top: 0.5em;
+  font-size: 0.85em;
+}
+
+.step span:last-child {
+  opacity: 0.7;
+}
+
+.stepNum {
+  font-size: 4.5em;
+  font-weight: 1;
+  line-height: 0.9;
+}
+
+.manualFoot {
+  display: grid;
+  gap: 1em;
+  align-items: start;
+}
+
+.land .manualFoot {
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.port .manual {
+  padding: 3.5em 1.5em 2.5em;
+}
+
+.port .step {
+  display: grid;
+  grid-template-columns: 2.2em 1fr;
+  column-gap: 0.6em;
+}
+
+.port .stepNum {
+  grid-row: span 2;
+  font-size: 3.4em;
+}
+
+/* ---------- 4. Museum placard ---------- */
+
+.museum {
+  display: grid;
+  background: radial-gradient(ellipse at 40% 30%, #1c1c1c, #000 70%);
+}
+
+.wall {
+  display: grid;
+  place-items: center;
+}
+
+.museumArt {
+  filter: drop-shadow(0 0.6em 1.2em #000);
+}
+
+.placard {
+  background: #f4f1ea;
+  color: #111;
+  padding: 1.1em 1.2em;
+  font-size: 0.72em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55em;
+  box-shadow: 0 0.4em 1.2em #0008;
+}
+
+.placard p {
+  line-height: 1.4;
+}
+
+.placardTitle {
+  font-size: 1.7em;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.placardSub {
+  font-style: italic;
+}
+
+.placardMedium {
+  opacity: 0.65;
+  border-bottom: 1px solid #0003;
+  padding-bottom: 0.55em;
+}
+
+.placardShop {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.6;
+  margin-top: 0.4em;
+}
+
+.placardDl .dlRow {
+  border-color: #0002;
+}
+
+.placardBack {
+  background: #111;
+  color: #fff !important;
+}
+
+.placardCredit {
+  opacity: 0.55;
+}
+
+.land .museum {
+  grid-template-columns: 1fr 17em;
+  align-items: end;
+  gap: 2em;
+  padding: 1.25em 3em 1.5em;
+}
+
+.land .museumArt {
+  height: 21em;
+}
+
+.port .museum {
+  padding: 3.5em 1.5em 2.5em;
+  gap: 2em;
+}
+
+.port .museumArt {
+  width: 78%;
+}
+
+/* ---------- 5. Dad Facts ---------- */
+
+.facts {
+  display: grid;
+  gap: 1.75em;
+}
+
+.factsIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.factsLogo {
+  font-size: 3.6em;
+}
+
+.label {
+  border: 2px solid #fff;
+  padding: 0.5em 0.7em 0.8em;
+  font-size: 0.85em;
+}
+
+.labelTitle {
+  font-size: 2.4em;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.15em;
+}
+
+.labelServing {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em 0;
+}
+
+.labelThick {
+  height: 0.55em;
+  background: #fff;
+  margin: 0.2em 0;
+}
+
+.labelThin {
+  height: 1px;
+  background: #fff;
+  margin: 0.6em 0;
+}
+
+.labelRow {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding: 0.25em 0;
+}
+
+.labelIngredients {
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  opacity: 0.85;
+}
+
+.labelDl .dlRow {
+  border-color: #fff4;
+}
+
+.land .facts {
+  grid-template-columns: 1fr 17em;
+  padding: 1.75em 3em 2em;
+  align-items: start;
+}
+
+.port .facts {
+  padding: 3.5em 1.5em 2.5em;
+}
+
+/* ---------- 6. Terminal ---------- */
+
+/* Monospace for the shell only, the logo keeps the brand face */
+.termBody,
+.termBar > span:first-child {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+.term {
+  font-size: 3.3cqmin;
+  display: grid;
+  align-content: start;
+}
+
+.termBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6em 1em;
+  border-bottom: 1px solid #333;
+  opacity: 0.8;
+  font-size: 0.8em;
+  position: sticky;
+  top: 0;
+  background: #000;
+  z-index: 1;
+}
+
+.termLogo {
+  font-size: 1.4em;
+}
+
+.termBody {
+  padding: 1em 1.2em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.termBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15em;
+}
+
+.termCmd {
+  font-weight: 700;
+}
+
+.prompt {
+  opacity: 0.45;
+}
+
+.termOut {
+  opacity: 0.7;
+  padding-left: 1.2em;
+  white-space: pre-wrap;
+}
+
+.termDl {
+  font-size: 1em;
+  padding-left: 1.2em;
+  opacity: 0.85;
+}
+
+.termDl .dlRow {
+  border: 0;
+  justify-content: flex-start;
+}
+
+.termRun {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.1em;
+  margin-left: 0.3em;
+  vertical-align: text-bottom;
+  background: #fff;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor {
+    animation: none;
+  }
+}
+
+.termCredit {
+  font-size: 0.8em;
+}
+
+/* The drawing sits behind the shell like a faded wallpaper */
+.termArt {
+  position: absolute;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.land .termBody {
+  padding: 1em 3em 2em;
+}
+
+.land .termArt {
+  right: 3em;
+  top: 3em;
+  height: 85cqh;
+}
+
+.port .termBar {
+  padding-top: 3.5em;
+}
+
+.port .termArt {
+  right: -10%;
+  bottom: 2%;
+  width: 80%;
+}
+
+/* ---------- 7. Comic ---------- */
+
+.comic {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+}
+
+.comicTop {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.comicLogo {
+  font-size: 2.4em;
+}
+
+.comicTop .posterTag {
+  font-size: 0.95em;
+}
+
+.panels {
+  display: grid;
+  gap: 0.7em;
+}
+
+.panel {
+  position: relative;
+  border: 3px solid #fff;
+  display: grid;
+  place-items: center;
+  padding: 0.6em;
+  overflow: hidden;
+  min-height: 12em;
+}
+
+.panel figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  color: #000;
+  font-weight: 800;
+  font-size: 0.75em;
+  padding: 0.25em 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.panelArt {
+  height: 100%;
+  max-height: 14em;
+  margin-bottom: 1em;
+}
+
+.panelMic {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: grid;
+  place-items: center;
+  margin-top: 2.5em;
+  box-shadow: 0 0 0 0.6em #fff2, 0 0 0 1.2em #fff1;
+}
+
+.panelMic svg {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+.panelLogo {
+  font-size: 2em;
+  margin-top: 3em;
+}
+
+.bubble {
+  position: absolute;
+  top: 0.6em;
+  left: 0.6em;
+  right: 0.6em;
+  background: #fff;
+  color: #000;
+  border-radius: 1em;
+  padding: 0.45em 0.7em;
+  font-size: 0.75em;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  left: 1.2em;
+  bottom: -0.5em;
+  border: 0.5em solid transparent;
+  border-top-color: #fff;
+  border-bottom: 0;
+}
+
+.bubbleDad {
+  font-weight: 800;
+}
+
+.comicFoot {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+}
+
+.land .comic {
+  padding: 1.5em 3em 2em;
+}
+
+.land .panels {
+  grid-template-columns: 1fr 1fr 1.3fr;
+}
+
+.land .panel {
+  height: 15em;
+}
+
+.port .comic {
+  padding: 3.5em 1.5em 2.5em;
+}
+
+.port .panel {
+  height: 15em;
+}
+
+/* ---------- 8. Dad explains ---------- */
+
+.chat {
+  display: flex;
+}
+
+.chatHero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.chatLogo {
+  font-size: 3.4em;
+}
+
+.chatMic {
+  width: 3.2em;
+  height: 3.2em;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: grid;
+  place-items: center;
+}
+
+.chatMic svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.chatHint {
+  font-size: 0.7em;
+  opacity: 0.5;
+}
+
+.chatLog {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+}
+
+.chatTurn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+}
+
+.said {
+  font-size: 0.75em;
+  opacity: 0.55;
+}
+
+.reply {
+  font-size: 1.05em;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.land .chat {
+  height: 100cqh;
+}
+
+.land .chatHero {
+  position: sticky;
+  top: 0;
+  flex: 0 0 45%;
+  height: 100cqh;
+}
+
+.land .chatLog {
+  flex: 1;
+  height: 100cqh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  padding: 2.5em 3em 2.5em 1em;
+}
+
+.port .chat {
+  flex-direction: column;
+}
+
+.port .chatHero {
+  padding: 4em 1.5em 2em;
+}
+
+.port .chatLog {
+  padding: 0 1.5em 2.5em;
+}

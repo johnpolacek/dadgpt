@@ -3,8 +3,8 @@ import type { NextRequest } from "next/server";
 import { COOKIE_NAME, passcodeToken } from "@/lib/passcode";
 
 export async function proxy(request: NextRequest) {
-  // The home page tells canned jokes, so anyone can use it
-  if (request.nextUrl.pathname === "/") return NextResponse.next();
+  // The front page and the free Dad with canned jokes are open to anyone
+  if (request.nextUrl.pathname === "/" || request.nextUrl.pathname === "/free") return NextResponse.next();
 
   const passcode = process.env.PASSCODE;
   if (!passcode) return NextResponse.next();
@@ -19,5 +19,5 @@ export async function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!unlock|api/unlock|jokes/|_next/static|_next/image|favicon.ico|icon.svg|apple-icon|app-icon|manifest.webmanifest).*)"],
+  matcher: ["/((?!unlock|api/unlock|jokes/|kit/|_next/static|_next/image|favicon.ico|icon.svg|apple-icon|app-icon|manifest.webmanifest|opengraph-image).*)"],
 };

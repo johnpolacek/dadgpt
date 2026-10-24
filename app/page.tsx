@@ -1,5 +1,6 @@
-import DadChat from "./dad-chat";
+import About from "./_about/about";
 
+// The front door explains the costume, then sends you to the free or live Dad
 export default function Home() {
-  return <DadChat canned />;
+  return <About />;
 }

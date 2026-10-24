@@ -3,7 +3,10 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { startEmbers } from "@/lib/embers";
-import { blastOff, isPortrait, lastStair, prefersReducedMotion, scrambleIn, startWave } from "@/lib/motion";
+import { blastOff, isPortrait, lastStair, prefersReducedMotion, scatterOut, scrambleIn, startWave } from "@/lib/motion";
+import { registerOutro, releaseNavigation } from "@/lib/transition";
+import Sentences from "./sentences";
+import TransitionLink from "./transition-link";
 import { JOKES, jokeAudioPath, randomJoke } from "@/lib/jokes";
 
 type Turn = { role: "user" | "assistant"; content: string };
@@ -131,7 +134,7 @@ function Message({ text, className, animate }: { text: string; className: string
   }, []);
   return (
     <p ref={ref} className={className}>
-      {text}
+      <Sentences text={text} />
     </p>
   );
 }
@@ -150,6 +153,8 @@ export default function DadChat({ canned = false }: Props) {
   const heroRef = useRef<HTMLElement>(null);
   const logoRef = useRef<HTMLHeadingElement>(null);
   const micWrapRef = useRef<HTMLDivElement>(null);
+  // Stops the logo intro and wave, so a page outro can take over the letters
+  const stopLogoRef = useRef<(() => void) | undefined>(undefined);
   // Lines loaded from storage appear as-is, only new replies fall in
   const loadedCountRef = useRef(0);
   const wasOpenRef = useRef(false);
@@ -174,6 +179,7 @@ export default function DadChat({ canned = false }: Props) {
     const logo = logoRef.current;
     const mic = micWrapRef.current;
     if (!logo || !mic) return;
+    releaseNavigation();
     if (prefersReducedMotion()) {
       gsap.set([logo, mic], { autoAlpha: 1 });
       return;
@@ -194,14 +200,32 @@ export default function DadChat({ canned = false }: Props) {
         if (heroRef.current) stopEmbers = startEmbers(heroRef.current, logo);
       });
     });
-    return () => {
+    const stopLogo = (stopLogoRef.current = () => {
       cancelled = true;
       stair?.revert();
       pop?.kill();
       stopWave?.();
+      stair = pop = stopWave = undefined;
+    });
+    return () => {
+      stopLogo();
       stopEmbers?.();
     };
   }, []);
+
+  // Leaving for another page: Dad goes quiet, the wave stops so the outro owns the letters, then they scatter
+  useEffect(
+    () =>
+      registerOutro(() => {
+        recognitionRef.current?.stop();
+        stopSpeaking();
+        stopLogoRef.current?.();
+        const hero = heroRef.current!;
+        const rest = [micWrapRef.current, ...hero.querySelectorAll("canvas, .status, .about"), chatRef.current].filter((el): el is Element => Boolean(el));
+        return scatterOut(logoRef.current!, rest);
+      }),
+    [],
+  );
 
   // Rings: a slow breath now and then while idle, fast pulses while listening
   useEffect(() => {
@@ -394,11 +418,9 @@ export default function DadChat({ canned = false }: Props) {
           </button>
         </div>
         <p className="status">{statusText}</p>
-        {canned && (
-          <a className="about" href="https://github.com/johnpolacek/dadgpt" target="_blank" rel="noopener noreferrer">
-            About
-          </a>
-        )}
+        <TransitionLink className="about" href="/">
+          About
+        </TransitionLink>
       </section>
 
       <section className="chat" ref={chatRef}>

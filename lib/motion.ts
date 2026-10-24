@@ -147,3 +147,43 @@ export function blastOff({ root, texts, pressed }: { root: HTMLElement; texts: H
     },
   };
 }
+
+const spreadX = () => window.innerWidth * 0.6;
+const spreadY = () => window.innerHeight * 0.6;
+
+/** Page intro: the headline's letters fly in from all over and the rest rises into place. */
+export function scatterIn(headline: HTMLElement, rest: Element[]) {
+  const timeline = gsap.timeline({ defaults: { overwrite: "auto" } });
+  if (prefersReducedMotion()) return timeline.set([headline, ...rest], { autoAlpha: 1 });
+  const split = SplitText.create(headline, { type: "words,chars" });
+  gsap.set(headline, { autoAlpha: 1 });
+  gsap.set(rest, { autoAlpha: 0, y: 16 });
+  timeline
+    .fromTo(
+      split.chars,
+      { autoAlpha: 0, x: () => rnd(-spreadX(), spreadX()), y: () => rnd(-spreadY(), spreadY()), rotation: () => rnd(-90, 90), scale: 0.5 },
+      { autoAlpha: 1, x: 0, y: 0, rotation: 0, scale: 1, duration: 0.75, ease: "power4.out", stagger: { each: 0.03, from: "random" } },
+      0,
+    )
+    .to(rest, { autoAlpha: 1, y: 0, duration: 0.45, ease: "power3.out", stagger: 0.07 }, 0.3)
+    .call(() => {
+      split.revert();
+      gsap.set(rest, { clearProps: "transform" });
+    });
+  return timeline;
+}
+
+/** Page outro: everything else lifts away, then the headline's letters scatter off screen. */
+export function scatterOut(headline: HTMLElement, rest: Element[]) {
+  const timeline = gsap.timeline({ defaults: { overwrite: "auto" } });
+  if (prefersReducedMotion()) return timeline.set([headline, ...rest], { autoAlpha: 0 });
+  const split = SplitText.create(headline, { type: "words,chars" });
+  timeline
+    .to(rest, { autoAlpha: 0, y: -10, duration: 0.25, ease: "power2.in", stagger: 0.04 }, 0)
+    .to(
+      split.chars,
+      { autoAlpha: 0, x: () => rnd(-spreadX(), spreadX()), y: () => rnd(-spreadY(), spreadY()), rotation: () => rnd(-90, 90), scale: 0.5, duration: 0.55, ease: "power3.in", stagger: { each: 0.02, from: "random" } },
+      0.08,
+    );
+  return timeline;
+}

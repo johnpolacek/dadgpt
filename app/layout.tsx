@@ -13,8 +13,10 @@ const googleSans = Google_Sans_Flex({
 });
 
 export const metadata: Metadata = {
-  title: "DADGPT",
-  description: "Ask Dad anything.",
+  title: "DADGPT Costume",
+  description: "A Halloween costume you can talk to. Tap the mic, ask Dad anything, and he answers out loud with a dad joke.",
+  // Large preview cards on X. The image itself comes from opengraph-image.tsx
+  twitter: { card: "summary_large_image" },
   // Home screen launches on iPhone hide Safari's bars and draw the status bar over our black
   appleWebApp: { capable: true, title: "DADGPT", statusBarStyle: "black-translucent" },
 };
