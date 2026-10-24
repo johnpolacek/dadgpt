@@ -199,7 +199,7 @@ export default function About() {
           </figure>
           <div className={styles.side}>
             <h2 className={styles.title} data-fx="slam">
-              It&apos;s a costume.
+              It’s a costume.
             </h2>
             <ol className={styles.steps} data-fx="pop">
               <li>Wear a black t-shirt and a black hat.</li>
@@ -229,10 +229,10 @@ export default function About() {
             </span>
           </div>
           <p className={styles.said} data-fx="type">
-            Why won&apos;t skeletons fight each other?
+            Why won’t skeletons fight each other?
           </p>
           <p className={styles.reply} data-fx="scramble">
-            They don&apos;t have the guts.
+            They don’t have the guts.
           </p>
           <p className={styles.note} data-fx="rise">
             <Sentences text="Your browser hears you. A language model writes one pun. Dad says it out loud." />
@@ -273,6 +273,12 @@ export default function About() {
                 <Sentences text="Stock jokes. Anyone can play." />
               </span>
             </TransitionLink>
+            <TransitionLink href="/live" className={`${styles.cta} ${styles.ctaLive}`}>
+              <strong>Live</strong>
+              <span>
+                <Sentences text="Fresh jokes for anything. Needs a passcode." />
+              </span>
+            </TransitionLink>
             <button
               className={`${styles.cta} ${styles.ctaLive}`}
               onClick={(event) => {
@@ -307,6 +313,7 @@ export default function About() {
       {/* Skip the tour and go straight to Dad */}
       <nav className={styles.skip} aria-label="Talk to Dad">
         <TransitionLink href="/free">Free</TransitionLink>
+        <TransitionLink href="/live">Live</TransitionLink>
       </nav>
 
       <nav className={styles.bar} aria-label="Slides">

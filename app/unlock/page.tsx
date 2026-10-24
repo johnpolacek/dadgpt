@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { CopyPrompt } from "../_about/make-your-own";
 
 export default function Unlock() {
   const [passcode, setPasscode] = useState("");
@@ -21,10 +22,12 @@ export default function Unlock() {
   }
 
   return (
-    <main>
+    <main className="unlock">
+      <a className="back" href="/">
+        Back
+      </a>
       <h1>DAD<span className="gpt">GPT</span></h1>
-      {/* Most people land here from a shared link, so point them somewhere they can play */}
-      <p className="unlock-note">Live Dad is the costume's private mode. It needs the owner's passcode.</p>
+      <p className="unlock-note">Live DADGPT uses API keys protected by a passcode.</p>
       <form onSubmit={submit}>
         <input
           type="password"
@@ -35,12 +38,12 @@ export default function Unlock() {
         <button type="submit">Enter</button>
       </form>
       <p className="status">{error}</p>
-      <nav className="unlock-links" aria-label="Other ways to talk to Dad">
-        <a href="/free">Talk to Free Dad</a>
-        <a href="https://github.com/johnpolacek/dadgpt" target="_blank" rel="noopener noreferrer">
-          Make your own
-        </a>
-      </nav>
+      {/* Most visitors don't have the passcode, so show them how to get a Dad of their own */}
+      <section className="unlock-own">
+        <h3>Want your own?</h3>
+        <p className="unlock-note">Paste this into Claude Code or any coding agent.</p>
+        <CopyPrompt />
+      </section>
     </main>
   );
 }

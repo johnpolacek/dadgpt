@@ -26,27 +26,10 @@ function legacyCopy(text: string) {
 
 export type MakeYourOwnHandle = { open: () => void };
 
-/** A modal with the setup prompt and a copy button. Escape, the X or a tap outside closes it. */
-const MakeYourOwn = forwardRef<MakeYourOwnHandle>(function MakeYourOwn(_props, ref) {
-  const dialogRef = useRef<HTMLDialogElement>(null);
-  const panelRef = useRef<HTMLDivElement>(null);
+/** The setup prompt and its copy button, used in the modal and on the unlock page */
+export function CopyPrompt() {
+  const preRef = useRef<HTMLPreElement>(null);
   const [copied, setCopied] = useState(false);
-
-  useImperativeHandle(ref, () => ({
-    open() {
-      const dialog = dialogRef.current!;
-      setCopied(false);
-      dialog.showModal();
-      if (prefersReducedMotion()) return;
-      gsap.fromTo(panelRef.current, { autoAlpha: 0, scale: 0.85, y: 30 }, { autoAlpha: 1, scale: 1, y: 0, duration: 0.5, ease: "back.out(1.8)", overwrite: "auto", clearProps: "transform" });
-    },
-  }));
-
-  function close() {
-    const dialog = dialogRef.current!;
-    if (prefersReducedMotion()) return dialog.close();
-    gsap.to(panelRef.current, { autoAlpha: 0, scale: 0.92, y: 20, duration: 0.22, ease: "power2.in", overwrite: "auto", onComplete: () => dialog.close() });
-  }
 
   async function copy() {
     let ok = false;
@@ -63,8 +46,37 @@ const MakeYourOwn = forwardRef<MakeYourOwnHandle>(function MakeYourOwn(_props, r
       return;
     }
     // Both blocked: select the text so a long press or Cmd+C still works
-    const pre = panelRef.current?.querySelector("pre");
-    if (pre) getSelection()?.selectAllChildren(pre);
+    if (preRef.current) getSelection()?.selectAllChildren(preRef.current);
+  }
+
+  return (
+    <>
+      <pre ref={preRef} className={styles.prompt}>{MAKE_YOUR_OWN_PROMPT}</pre>
+      <button className={styles.copy} onClick={copy} aria-live="polite">
+        {copied ? "Copied" : "Copy prompt"}
+      </button>
+    </>
+  );
+}
+
+/** A modal with the setup prompt and a copy button. Escape, the X or a tap outside closes it. */
+const MakeYourOwn = forwardRef<MakeYourOwnHandle>(function MakeYourOwn(_props, ref) {
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
+
+  useImperativeHandle(ref, () => ({
+    open() {
+      const dialog = dialogRef.current!;
+      dialog.showModal();
+      if (prefersReducedMotion()) return;
+      gsap.fromTo(panelRef.current, { autoAlpha: 0, scale: 0.85, y: 30 }, { autoAlpha: 1, scale: 1, y: 0, duration: 0.5, ease: "back.out(1.8)", overwrite: "auto", clearProps: "transform" });
+    },
+  }));
+
+  function close() {
+    const dialog = dialogRef.current!;
+    if (prefersReducedMotion()) return dialog.close();
+    gsap.to(panelRef.current, { autoAlpha: 0, scale: 0.92, y: 20, duration: 0.22, ease: "power2.in", overwrite: "auto", onComplete: () => dialog.close() });
   }
 
   return (
@@ -90,10 +102,7 @@ const MakeYourOwn = forwardRef<MakeYourOwnHandle>(function MakeYourOwn(_props, r
         <p>
           <Sentences text={"Paste this into Claude\u00a0Code or any coding agent. It sets up DADGPT with your own keys."} />
         </p>
-        <pre className={styles.prompt}>{MAKE_YOUR_OWN_PROMPT}</pre>
-        <button className={styles.copy} onClick={copy} aria-live="polite">
-          {copied ? "Copied" : "Copy prompt"}
-        </button>
+        <CopyPrompt />
       </div>
     </dialog>
   );
