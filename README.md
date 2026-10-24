@@ -38,9 +38,9 @@ Print it for a sign, a sticker, or the back of your shirt. The SVG and PDF files
 
 ## Pages
 
-- `/` is the front page. It explains the costume in a click-through and links to both modes.
+- `/` is the front page. It explains the costume in a click-through and links to free mode.
 - `/free` is canned mode. It tells 20 stock jokes with prerecorded audio. It needs no API keys and anyone can use it.
-- `/live` is live mode. It writes a new joke for whatever you say. It needs API keys and can sit behind a passcode.
+- `/live` is live mode. It writes a new joke for whatever you say. It needs API keys and can sit behind a passcode. The front page doesn't link to it, so open it from a bookmark.
 
 ## Models
 

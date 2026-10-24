@@ -273,12 +273,6 @@ export default function About() {
                 <Sentences text="Stock jokes. Anyone can play." />
               </span>
             </TransitionLink>
-            <TransitionLink href="/live" className={`${styles.cta} ${styles.ctaLive}`}>
-              <strong>Live</strong>
-              <span>
-                <Sentences text="Put in your API keys. Stream dad jokes." />
-              </span>
-            </TransitionLink>
             <button
               className={`${styles.cta} ${styles.ctaLive}`}
               onClick={(event) => {
@@ -313,7 +307,6 @@ export default function About() {
       {/* Skip the tour and go straight to Dad */}
       <nav className={styles.skip} aria-label="Talk to Dad">
         <TransitionLink href="/free">Free</TransitionLink>
-        <TransitionLink href="/live">Live</TransitionLink>
       </nav>
 
       <nav className={styles.bar} aria-label="Slides">

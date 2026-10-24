@@ -135,6 +135,23 @@ form button {
   cursor: pointer;
 }
 
+.unlock-note {
+  max-width: 20rem;
+  opacity: 0.7;
+}
+
+.unlock-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.unlock-links a {
+  color: #fff;
+  font-weight: 800;
+}
+
 /* Registered so the logo can ease between its alone and open sizes */
 @property --logo {
   syntax: "<length>";
