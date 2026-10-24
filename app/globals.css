@@ -133,7 +133,7 @@ form button {
   align-items: center;
   justify-content: center;
   gap: calc(var(--logo) * 0.3);
-  padding: 2rem max(1rem, env(safe-area-inset-left)) 2rem max(1rem, env(safe-area-inset-right));
+  padding: max(2rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-left)) 2rem max(1rem, env(safe-area-inset-right));
   text-align: center;
 }
 
@@ -192,6 +192,22 @@ form button {
   pointer-events: none;
 }
 
+/* Small link in the hero's bottom left corner, canned mode only */
+.about {
+  position: absolute;
+  left: max(1rem, env(safe-area-inset-left));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.about:hover,
+.about:focus-visible {
+  color: #fff;
+}
+
 .chat {
   position: relative;
   flex: 0 0 0;
@@ -229,7 +245,7 @@ form button {
   justify-content: flex-start;
   gap: 1.25rem;
   /* Bottom room so the last line clears the X */
-  padding: 3rem max(clamp(1rem, 4vw, 4rem), env(safe-area-inset-right)) calc(var(--clear) + 3.5rem) clamp(1rem, 4vw, 4rem);
+  padding: max(3rem, env(safe-area-inset-top)) max(clamp(1rem, 4vw, 4rem), env(safe-area-inset-right)) calc(var(--clear) + 3.5rem) clamp(1rem, 4vw, 4rem);
 }
 
 .chat .said,

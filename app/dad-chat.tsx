@@ -49,6 +49,14 @@ function unlockAudio() {
   dadAudio.play().catch(() => {});
 }
 
+/** On phones, the first mic tap takes the page fullscreen. Android Chrome allows it, iPhone ignores it. */
+function goFullscreen() {
+  const root = document.documentElement;
+  if (document.fullscreenElement || !root.requestFullscreen) return;
+  if (!matchMedia("(pointer: coarse)").matches || matchMedia("(display-mode: standalone)").matches) return;
+  root.requestFullscreen({ navigationUI: "hide" }).catch(() => {});
+}
+
 function stopSpeaking() {
   dadAudio?.pause();
   window.speechSynthesis?.cancel();
@@ -255,6 +263,7 @@ export default function DadChat({ canned = false }: Props) {
     }
     stopSpeaking();
     unlockAudio();
+    goFullscreen();
 
     const recognition = getRecognition();
     if (!recognition) return;
@@ -385,6 +394,11 @@ export default function DadChat({ canned = false }: Props) {
           </button>
         </div>
         <p className="status">{statusText}</p>
+        {canned && (
+          <a className="about" href="https://github.com/johnpolacek/dadgpt">
+            About
+          </a>
+        )}
       </section>
 
       <section className="chat" ref={chatRef}>
