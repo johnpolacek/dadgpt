@@ -8,10 +8,10 @@ It was built for a Halloween party, so the jokes lean a little cheeky.
 
 ## The costume
 
-DADGPT is a Halloween costume. Wear a black t-shirt and a black baseball hat. Set a phone sideways on the brim, screen out, and open the app. People walk up, tap the mic, and talk to Dad.
+DADGPT is a Halloween costume. Wear a black t-shirt and a black baseball hat. Set a phone sideways on the brim, screen out, and open the app. Pin the printable logo to your chest. People walk up, tap the mic, and talk to Dad.
 
 <p align="center">
-  <img src="docs/costume.svg" alt="Fig. 1. A pen and ink style drawing of the costume. A phone sits sideways on the brim of a black baseball hat and shows the DADGPT logo. A clip holds it in place. The wearer has on a black t-shirt." width="480">
+  <img src="docs/costume.svg" alt="Fig. 1. A pen and ink style drawing of the costume. A phone sits sideways on the brim of a black baseball hat and shows the DADGPT logo. A clip holds it in place. The wearer has on a black t-shirt with the printed logo pinned to the chest." width="480">
 </p>
 
 ## Printable logo
