@@ -2,8 +2,8 @@ import gsap from "gsap";
 
 const rnd = gsap.utils.random;
 
-/** Embers per second off the logo's baseline. High enough to read from across a room. */
-const RATE = 36;
+/** Embers per second off the logo's baseline. */
+const RATE = 18;
 
 /** Positions are relative to the logo (x as a fraction of its width, y in px above its baseline), so embers ride along when it moves. */
 type Ember = { fx: number; dy: number; vx: number; vy: number; age: number; life: number; size: number; wob: number; ph: number };
@@ -56,8 +56,8 @@ export function startEmbers(container: HTMLElement, logo: HTMLElement) {
       embers.push({
         fx: rnd(0, 1),
         dy: rnd(-2, 4),
-        vx: rnd(-2, 2) * k,
-        vy: -rnd(11, 25) * k,
+        vx: rnd(-1, 1) * k,
+        vy: -rnd(6, 13) * k,
         age: 0,
         life: rnd(3.5, 6.4),
         size: rnd(1.5, 3) * Math.min(1.4, k),
@@ -81,7 +81,7 @@ export function startEmbers(container: HTMLElement, logo: HTMLElement) {
       const p = e.age / e.life;
       ctx.globalAlpha = 0.64 * Math.sin(p * Math.PI);
       ctx.beginPath();
-      ctx.arc(left + e.fx * r.width + Math.sin(time + e.ph) * e.wob * p, bottom + e.dy, (e.size * (1 - p * 0.4)) / 2, 0, Math.PI * 2);
+      ctx.arc(left + e.fx * r.width + Math.sin(time * 0.5 + e.ph) * e.wob * p, bottom + e.dy, (e.size * (1 - p * 0.4)) / 2, 0, Math.PI * 2);
       ctx.fill();
     }
     ctx.globalAlpha = 1;
