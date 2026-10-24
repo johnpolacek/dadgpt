@@ -6,6 +6,14 @@ DADGPT is a voice app. You tap the mic, say something, and Dad replies out loud 
 
 It was built for a Halloween party, so the jokes lean a little cheeky.
 
+## The costume
+
+DADGPT is a Halloween costume. Wear a black t-shirt and a black baseball hat. Strap a phone sideways over your face, screen out, and open the app. People walk up, tap the mic, and talk to Dad.
+
+<p align="center">
+  <img src="docs/costume.svg" alt="Line drawing of the costume. A phone strapped sideways over the face shows DADGPT. A black baseball hat sits on top and a black t-shirt below." width="420">
+</p>
+
 ## How it works
 
 1. You tap the mic and talk. The browser turns your speech into text.
