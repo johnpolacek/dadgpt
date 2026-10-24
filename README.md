@@ -8,11 +8,25 @@ It was built for a Halloween party, so the jokes lean a little cheeky.
 
 ## The costume
 
-DADGPT is a Halloween costume. Wear a black t-shirt and a black baseball hat. Set a phone sideways on the brim, screen out, and open the app. Your face stays clear so you can still see. People walk up, tap the mic, and talk to Dad.
+DADGPT is a Halloween costume. Wear a black t-shirt and a black baseball hat. Set a phone sideways on the brim, screen out, and open the app. People walk up, tap the mic, and talk to Dad.
 
 <p align="center">
-  <img src="docs/costume.svg" alt="Line drawing of the costume. A phone sits sideways on the brim of a black baseball hat and shows DADGPT. The face is clear below it. A black t-shirt is below." width="420">
+  <img src="docs/costume.svg" alt="Fig. 1. A pen and ink style drawing of the costume. A phone sits sideways on the brim of a black baseball hat and shows the DADGPT logo. A clip holds it in place. The wearer has on a black t-shirt." width="480">
 </p>
+
+## Printable logo
+
+Print it for a sign, a sticker, or the back of your shirt. The SVG and PDF files are vector, so they print sharp at any size. The PDF fills a landscape letter page.
+
+<p align="center">
+  <img src="docs/logo/dadgpt-logo-black-on-white.svg" alt="DADGPT logo, black on white" width="360">
+  <img src="docs/logo/dadgpt-logo-white-on-black.svg" alt="DADGPT logo, white on black" width="360">
+</p>
+
+| Version | SVG | PDF | PNG |
+|---|---|---|---|
+| Black on white | [SVG](docs/logo/dadgpt-logo-black-on-white.svg) | [PDF](docs/logo/dadgpt-logo-black-on-white.pdf) | [PNG](docs/logo/dadgpt-logo-black-on-white.png) |
+| White on black | [SVG](docs/logo/dadgpt-logo-white-on-black.svg) | [PDF](docs/logo/dadgpt-logo-white-on-black.pdf) | [PNG](docs/logo/dadgpt-logo-white-on-black.png) |
 
 ## How it works
 

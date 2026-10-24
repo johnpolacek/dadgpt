@@ -1,47 +1,136 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 570" width="600" height="570" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="16">
-  <title>DADGPT costume: a phone sits sideways on the brim of a black baseball hat, above the face, with a black t-shirt</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 860" width="640" height="860">
+  <title>Fig. 1. The DADGPT costume, frontal view: a phone set sideways on the brim of a black baseball hat, worn with a black t-shirt</title>
+  <defs>
+    <!-- Fine hatching for shadow, in the style of a pen and ink plate -->
+    <pattern id="hatch" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#fff" stroke-width="0.6"/>
+    </pattern>
+    <pattern id="hatch-light" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#fff" stroke-width="0.45"/>
+    </pattern>
+    <clipPath id="face">
+      <path d="M262 230 C260 292 268 336 290 362 C300 374 310 380 320 380 C330 380 340 374 350 362 C372 336 380 292 378 230 Z"/>
+    </clipPath>
+    <clipPath id="shirt">
+      <path id="shirt-shape" d="M282 404 C250 414 222 420 202 430 C180 450 162 488 150 522 L192 542 C198 528 204 512 210 500 L208 702 L432 702 L430 500 C436 512 442 528 448 542 L490 522 C478 488 460 450 438 430 C418 420 390 414 358 404 C346 424 294 424 282 404 Z"/>
+    </clipPath>
+  </defs>
+
   <style>
-    .line { fill: #000; stroke: #fff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
-    .open { fill: none; }
-    .thin { fill: none; stroke: #8d96a0; stroke-width: 1.5; stroke-dasharray: 4 4; }
-    .label, .screen { fill: #fff; }
+    .ink { fill: #000; stroke: #fff; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .fine { fill: none; stroke: #fff; stroke-width: 0.8; stroke-linecap: round; stroke-linejoin: round; }
+    .stitch { fill: none; stroke: #fff; stroke-width: 0.7; stroke-dasharray: 2.5 2.5; }
+    .lead { fill: none; stroke: #fff; stroke-width: 0.6; }
+    .dot { fill: #fff; }
+    .num { fill: #fff; font: italic 15px Georgia, "Times New Roman", serif; }
+    .key { fill: #fff; font: 14px Georgia, "Times New Roman", serif; }
+    .cap { fill: #fff; font: italic 15px Georgia, "Times New Roman", serif; letter-spacing: 0.02em; }
   </style>
 
-  <rect width="600" height="570" fill="#000"/>
+  <rect width="640" height="860" fill="#000"/>
 
-  <g transform="translate(60 0)">
-    <!-- Head and face, clear below the brim -->
-    <ellipse class="line" cx="240" cy="235" rx="62" ry="75"/>
-    <circle class="screen" cx="218" cy="245" r="4"/>
-    <circle class="screen" cx="262" cy="245" r="4"/>
-    <path class="line open" d="M220 276 Q240 292 260 276"/>
+  <!-- Neck, with shadow under the jaw -->
+  <path class="ink" d="M294 360 L292 412 L348 412 L346 360 Z"/>
+  <path d="M294 372 C306 386 334 386 346 372 L347 396 C334 404 306 404 293 396 Z" fill="url(#hatch)"/>
+  <path class="fine" d="M302 384 C306 396 308 404 310 412 M338 384 C334 396 332 404 330 412"/>
 
-    <!-- Hat crown, button, and brim -->
-    <path class="line" d="M164 205 C164 52 316 52 316 205 Z"/>
-    <circle class="line" cx="240" cy="86" r="5"/>
-    <path class="line" d="M136 206 Q240 176 344 206 Q240 226 136 206 Z"/>
+  <!-- T-shirt -->
+  <use href="#shirt-shape" class="ink"/>
+  <g clip-path="url(#shirt)">
+    <path d="M204 432 L222 442 C230 520 228 620 234 702 L204 702 Z" fill="url(#hatch-light)"/>
+    <path d="M436 432 L418 442 C410 520 412 620 406 702 L436 702 Z" fill="url(#hatch-light)"/>
+    <path d="M120 470 L198 450 L206 500 L194 552 L120 552 Z" fill="url(#hatch-light)"/>
+    <path d="M520 470 L442 450 L434 500 L446 552 L520 552 Z" fill="url(#hatch-light)"/>
+    <path d="M150 522 L192 542 L198 528 L156 508 Z M490 522 L448 542 L442 528 L484 508 Z" fill="url(#hatch)"/>
+  </g>
+  <!-- Ribbed crew neck -->
+  <path class="fine" d="M276 402 C290 434 350 434 364 402"/>
+  <path class="fine" d="M288 410 C300 426 340 426 352 410"/>
+  <!-- Seams, hems, and folds -->
+  <path class="stitch" d="M215 694 L425 694 M158 520 L196 536 M482 520 L444 536"/>
+  <path class="fine" d="M202 430 C206 456 208 478 210 500 M438 430 C434 456 432 478 430 500"/>
+  <path class="fine" d="M214 520 C228 540 236 566 232 598 M426 520 C412 540 404 566 408 598"/>
+  <path class="fine" d="M262 640 C270 660 272 680 270 700 M372 650 C366 668 366 686 368 700"/>
 
-    <!-- Phone, sideways, resting on the brim -->
-    <rect class="line" x="170" y="130" width="140" height="66" rx="12"/>
-    <rect class="line" x="182" y="139" width="116" height="48" rx="4"/>
-    <text class="screen" x="240" y="163" text-anchor="middle" font-size="16" font-weight="800" letter-spacing="1">DADGPT</text>
-    <circle class="line" cx="240" cy="177" r="5"/>
+  <!-- Face, set in shadow from the brim -->
+  <path class="ink" d="M262 230 C260 292 268 336 290 362 C300 374 310 380 320 380 C330 380 340 374 350 362 C372 336 380 292 378 230 Z"/>
+  <g clip-path="url(#face)">
+    <path d="M250 228 L390 228 L390 266 C350 278 290 278 250 266 Z" fill="url(#hatch)"/>
+    <path d="M262 230 L272 230 C270 290 278 330 296 360 L262 360 Z" fill="url(#hatch-light)"/>
+  </g>
+  <!-- Ears -->
+  <path class="ink" d="M263 262 C249 254 243 278 247 294 C250 308 258 314 266 310"/>
+  <path class="fine" d="M260 272 C254 270 252 282 255 292 C257 298 261 300 264 298"/>
+  <path class="ink" d="M377 262 C391 254 397 278 393 294 C390 308 382 314 374 310"/>
+  <path class="fine" d="M380 272 C386 270 388 282 385 292 C383 298 379 300 376 298"/>
+  <!-- Features -->
+  <path class="fine" d="M286 276 C294 271 304 271 310 275 M330 275 C336 271 346 271 354 276"/>
+  <path class="fine" d="M290 288 C296 284 304 284 308 288 C304 291 296 291 290 288 Z M332 288 C336 284 344 284 350 288 C344 291 336 291 332 288 Z"/>
+  <circle class="dot" cx="299" cy="288" r="1.8"/>
+  <circle class="dot" cx="341" cy="288" r="1.8"/>
+  <path class="fine" d="M320 292 C318 304 314 316 312 322 C316 326 324 326 328 322"/>
+  <path class="fine" d="M302 342 C312 348 328 348 338 342"/>
+  <path class="fine" d="M308 352 C314 355 326 355 332 352"/>
 
-    <!-- Neck -->
-    <path class="line open" d="M220 305 L220 332 M260 305 L260 332"/>
+  <!-- Cap crown, panel seams, eyelets, and button -->
+  <path class="ink" d="M246 232 C244 146 280 108 320 106 C360 108 396 146 394 232 Z"/>
+  <path class="fine" d="M320 108 L320 156 M320 108 C298 124 280 164 272 230 M320 108 C342 124 360 164 368 230"/>
+  <path class="stitch" d="M316 112 L316 154 M324 112 L324 154"/>
+  <circle class="fine" cx="292" cy="134" r="2.4"/>
+  <circle class="fine" cx="348" cy="134" r="2.4"/>
+  <ellipse class="ink" cx="320" cy="105" rx="7" ry="3.5"/>
+  <path d="M370 132 C384 150 392 186 393 228 L380 228 C380 190 376 158 364 136 Z" fill="url(#hatch-light)"/>
 
-    <!-- T-shirt -->
-    <path class="line" d="M220 332 L150 352 L108 422 L145 444 L166 404 L166 550 L314 550 L314 404 L335 444 L372 422 L330 352 L260 332 Q240 350 220 332 Z"/>
+  <!-- Brim, with rows of stitching -->
+  <path class="ink" d="M232 238 C268 220 372 220 408 238 C380 266 260 266 232 238 Z"/>
+  <path class="stitch" d="M244 242 C278 252 362 252 396 242 M256 248 C288 258 352 258 384 248"/>
+  <path d="M232 238 C260 262 380 262 408 238 C380 270 260 270 232 238 Z" fill="url(#hatch)"/>
+
+  <!-- Phone, sideways, set on the brim -->
+  <rect class="ink" x="248" y="154" width="144" height="72" rx="13"/>
+  <rect class="fine" x="252" y="158" width="136" height="64" rx="10"/>
+  <rect class="ink" x="259" y="163" width="122" height="54" rx="5"/>
+  <rect class="dot" x="262" y="182" width="4" height="16" rx="2"/>
+  <path class="fine" d="M286 154 L286 151.5 L304 151.5 L304 154 M312 154 L312 151.5 L324 151.5 L324 154"/>
+  <!-- Screen: the DADGPT logo and the mic -->
+  <g transform="translate(272.6 189) scale(0.0128)" fill="#fff">
+    <path d="M143.33282470703125 0.0Q143.33282470703125 0.0 143.33282470703125 0.0Q143.33282470703125 0.0 143.33282470703125 0.0V-1432.0Q143.33282470703125 -1432.0 143.33282470703125 -1432.0Q143.33282470703125 -1432.0 143.33282470703125 -1432.0H668.6690063476562Q996.335693359375 -1432.0 1198.1691284179688 -1234.8332824707031Q1400.0025634765625 -1037.6665649414062 1400.0025634765625 -716.6619585323186Q1400.0025634765625 -392.6666259765625 1198.3357849121094 -196.33331298828125Q996.6690063476562 0.0 668.6690063476562 0.0ZM506.67205810546875 -322.0048828125H644.0015869140625Q821.9991455078125 -319.338134765625 926.9978637695312 -422.6701354980469Q1031.99658203125 -526.0021362304688 1031.99658203125 -713.2343683479849Q1031.99658203125 -898.3308715820312 926.8312072753906 -997.8294677734375Q821.6658325195312 -1097.3280639648438 644.0015869140625 -1097.3280639648438H506.67205810546875Z M1390.3326416015625 0.0Q1390.3326416015625 0.0 1390.3326416015625 0.0Q1390.3326416015625 0.0 1390.3326416015625 0.0L1941.3328247070312 -1432.0Q1941.3328247070312 -1432.0 1941.3328247070312 -1432.0Q1941.3328247070312 -1432.0 1941.3328247070312 -1432.0H2255.6697998046875Q2255.6697998046875 -1432.0 2255.6697998046875 -1432.0Q2255.6697998046875 -1432.0 2255.6697998046875 -1432.0L2806.3367919921875 0.0Q2806.3367919921875 0.0 2806.3367919921875 0.0Q2806.3367919921875 0.0 2806.3367919921875 0.0H2408.6636962890625Q2408.6636962890625 0.0 2408.6636962890625 0.0Q2408.6636962890625 0.0 2408.6636962890625 0.0L2150.6677856445312 -788.6580200195312L2097.6679077148438 -971.99169921875H2090.3345336914062L2037.3346557617188 -789.9913940429688L1778.3388671875 0.0Q1778.3388671875 0.0 1778.3388671875 0.0Q1778.3388671875 0.0 1778.3388671875 0.0ZM1666.333984375 -239.32861328125 1759.6683959960938 -492.664794921875H2408.334716796875L2507.6693115234375 -239.32861328125Z M2876.3328247070312 0.0Q2876.3328247070312 0.0 2876.3328247070312 0.0Q2876.3328247070312 0.0 2876.3328247070312 0.0V-1432.0Q2876.3328247070312 -1432.0 2876.3328247070312 -1432.0Q2876.3328247070312 -1432.0 2876.3328247070312 -1432.0H3401.6690063476562Q3729.335693359375 -1432.0 3931.1691284179688 -1234.8332824707031Q4133.0025634765625 -1037.6665649414062 4133.0025634765625 -716.6619585323186Q4133.0025634765625 -392.6666259765625 3931.3357849121094 -196.33331298828125Q3729.6690063476562 0.0 3401.6690063476562 0.0ZM3239.6720581054688 -322.0048828125H3377.0015869140625Q3554.9991455078125 -319.338134765625 3659.9978637695312 -422.6701354980469Q3764.99658203125 -526.0021362304688 3764.99658203125 -713.2343683479849Q3764.99658203125 -898.3308715820312 3659.8312072753906 -997.8294677734375Q3554.6658325195312 -1097.3280639648438 3377.0015869140625 -1097.3280639648438H3239.6720581054688Z"/>
+    <path d="M4927.0 29Q4635.0 29 4437.0 -178.0Q4239.0 -385 4239.0 -718Q4239.0 -1051 4436.0 -1256.0Q4633.0 -1461 4933.0 -1461Q5101.0 -1461 5224.5 -1399.0Q5348.0 -1337 5422.0 -1231Q5422.0 -1231 5422.0 -1231.0Q5422.0 -1231 5422.0 -1231L5399.0 -1213Q5399.0 -1213 5399.0 -1213.0Q5399.0 -1213 5399.0 -1213Q5329.0 -1313 5208.5 -1372.0Q5088.0 -1431 4933.0 -1431Q4647.0 -1431 4459.5 -1233.0Q4272.0 -1035 4272.0 -718Q4272.0 -399 4460.5 -200.0Q4649.0 -1 4927.111587982832 -1.0Q5189.0 -1 5368.5 -163.5Q5548.0 -326 5548.0 -682H4927.0Q4927.0 -682 4927.0 -682.0Q4927.0 -682 4927.0 -682V-712Q4927.0 -712 4927.0 -712.0Q4927.0 -712 4927.0 -712H5579.0Q5579.0 -712 5579.0 -712.0Q5579.0 -712 5579.0 -712Q5579.0 -707 5579.0 -699.0Q5579.0 -691 5579.0 -688Q5579.0 -321 5391.0 -146.0Q5203.0 29 4927.0 29Z M5791.0 0Q5791.0 0 5791.0 0.0Q5791.0 0 5791.0 0V-1432Q5791.0 -1432 5791.0 -1432.0Q5791.0 -1432 5791.0 -1432H6178.0Q6401.0 -1432 6505.5 -1309.0Q6610.0 -1186 6610.0 -1014Q6610.0 -833 6496.0 -713.5Q6382.0 -594 6178.0 -594H5806.0V-624H6177.0Q6369.0 -624 6473.0 -737.5Q6577.0 -851 6577.0 -1014Q6577.0 -1168 6484.0 -1285.0Q6391.0 -1402 6178.0 -1402H5823.0V0Q5823.0 0 5823.0 0.0Q5823.0 0 5823.0 0Z M7075.0 0Q7075.0 0 7075.0 0.0Q7075.0 0 7075.0 0V-1413H7107.0V0Q7107.0 0 7107.0 0.0Q7107.0 0 7107.0 0ZM6636.0 -1401Q6636.0 -1401 6636.0 -1401.0Q6636.0 -1401 6636.0 -1401V-1432Q6636.0 -1432 6636.0 -1432.0Q6636.0 -1432 6636.0 -1432H7546.0Q7546.0 -1432 7546.0 -1432.0Q7546.0 -1432 7546.0 -1432V-1401Q7546.0 -1401 7546.0 -1401.0Q7546.0 -1401 7546.0 -1401Z"/>
+  </g>
+  <circle class="fine" cx="320" cy="204" r="7"/>
+  <path class="fine" d="M318.4 199.8 L318.4 204 A1.6 1.6 0 0 0 321.6 204 L321.6 199.8 A1.6 1.6 0 0 0 318.4 199.8 Z M316.6 203.6 A3.4 3.4 0 0 0 323.4 203.6 M320 207 L320 208.6"/>
+  <!-- Clip holding the phone to the brim -->
+  <path class="ink" d="M308 222 L332 222 L332 236 L308 236 Z"/>
+  <path class="fine" d="M312 229 L328 229"/>
+  <circle class="fine" cx="320" cy="232.5" r="1.6"/>
+
+  <!-- Callouts -->
+  <g class="lead">
+    <path d="M356 118 L470 92 L520 92"/>
+    <path d="M388 176 L520 176"/>
+    <path d="M330 232 L440 262 L520 262"/>
+    <path d="M436 610 L520 610"/>
+  </g>
+  <g class="dot">
+    <circle cx="356" cy="118" r="2"/>
+    <circle cx="388" cy="176" r="2"/>
+    <circle cx="330" cy="232" r="2"/>
+    <circle cx="436" cy="610" r="2"/>
+  </g>
+  <g class="num">
+    <text x="528" y="97">1</text>
+    <text x="528" y="181">2</text>
+    <text x="528" y="267">3</text>
+    <text x="528" y="615">4</text>
   </g>
 
-  <!-- Labels -->
-  <g class="label">
-    <text x="420" y="94">Black baseball hat</text>
-    <text x="420" y="154">Phone, sideways,</text>
-    <text x="420" y="174">on the brim</text>
-    <text x="16" y="250">Face stays clear,</text>
-    <text x="16" y="270">so you can see</text>
-    <text x="420" y="480">Black t-shirt</text>
+  <!-- Key and caption -->
+  <path class="lead" d="M60 742 L580 742"/>
+  <g class="key">
+    <text x="60" y="772" font-style="italic">1</text><text x="80" y="772">Black baseball hat</text>
+    <text x="60" y="796" font-style="italic">2</text><text x="80" y="796">Phone, sideways, set on the brim</text>
+    <text x="380" y="772" font-style="italic">3</text><text x="400" y="772">Clip</text>
+    <text x="380" y="796" font-style="italic">4</text><text x="400" y="796">Black t-shirt</text>
   </g>
-  <path class="thin" d="M414 89 L364 110 M414 160 L374 160 M148 255 L268 250 M414 475 L376 475"/>
+  <text class="cap" x="320" y="836" text-anchor="middle">Fig. 1. DADGPT, frontal view.</text>
 </svg>
