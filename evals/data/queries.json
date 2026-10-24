@@ -1,0 +1,1230 @@
+[
+  {
+    "id": "q001",
+    "type": "fact",
+    "difficulty": "easy",
+    "position": "first",
+    "topic": "owls",
+    "messages": [
+      "wait so how do owls turn their heads all the way around without snapping their necks"
+    ]
+  },
+  {
+    "id": "q002",
+    "type": "fact",
+    "difficulty": "easy",
+    "position": "same3",
+    "topic": "horses",
+    "messages": [
+      "I just saw a horse at the county fair and it was huge",
+      "wait are all horses that big or was it a special kind",
+      "how long do horses usually live"
+    ]
+  },
+  {
+    "id": "q003",
+    "type": "fact",
+    "difficulty": "easy",
+    "position": "mixed6",
+    "topic": "sunshine",
+    "messages": [
+      "hey dad, i just got a new standing desk and i think i assembled it wrong",
+      "what's a good name for a goldfish",
+      "ive been trying to learn guitar but my fingers hurt so bad",
+      "can you recommend something for dinner tonight i have chicken and rice",
+      "ok im tired lol tell me something to cheer me up",
+      "real question tho how far is the sun from earth and how long does its light take to get here"
+    ]
+  },
+  {
+    "id": "q004",
+    "type": "fact",
+    "difficulty": "medium",
+    "position": "first",
+    "topic": "laundry",
+    "messages": [
+      "whats the right water temp for washing towels, like hot or warm or does it even matter"
+    ]
+  },
+  {
+    "id": "q005",
+    "type": "fact",
+    "difficulty": "medium",
+    "position": "same3",
+    "topic": "a fence",
+    "messages": [
+      "I'm thinking about putting up a fence in my backyard this spring",
+      "mostly want something that keeps the dog in but doesnt look ugly",
+      "how tall does a fence usually have to be before you need a permit"
+    ]
+  },
+  {
+    "id": "q006",
+    "type": "fact",
+    "difficulty": "medium",
+    "position": "mixed6",
+    "topic": "jury duty",
+    "messages": [
+      "hey dad whats up",
+      "i just burned my toast again lol",
+      "my dog keeps barking at the mailman every single day",
+      "ok random but im thinking of learning to play the guitar",
+      "its raining here and i have nothing to do tonight",
+      "ok serious question, how are jurors actually selected for jury duty"
+    ]
+  },
+  {
+    "id": "q007",
+    "type": "fact",
+    "difficulty": "hard",
+    "position": "first",
+    "topic": "quantum physics",
+    "messages": [
+      "wait so if you measure an electron's position does that actually change its momentum or is that just a myth about the uncertainty principle"
+    ]
+  },
+  {
+    "id": "q008",
+    "type": "fact",
+    "difficulty": "hard",
+    "position": "same3",
+    "topic": "the name Nguyen",
+    "messages": [
+      "hey dad i just met a guy at work named Nguyen and im embarrassed i wasnt sure how to say it",
+      "lol ok but i dont want to keep getting it wrong",
+      "so where does the name Nguyen actually come from and is it a common surname in Vietnam"
+    ]
+  },
+  {
+    "id": "q009",
+    "type": "fact",
+    "difficulty": "hard",
+    "position": "mixed6",
+    "topic": "game theory",
+    "messages": [
+      "hey dad whats up",
+      "i just got a new puppy and he keeps chewing my shoes",
+      "can you recommend a good pizza topping combo",
+      "ugh monday again i dont wanna go to work",
+      "im thinking of making pancakes for dinner tonight is that weird",
+      "ok random one but whats the nash equilibrium in the prisoners dilemma"
+    ]
+  },
+  {
+    "id": "q010",
+    "type": "howto",
+    "difficulty": "easy",
+    "position": "first",
+    "topic": "bears",
+    "messages": [
+      "ok so how do i get a bear to stop raiding my trash cans at night"
+    ]
+  },
+  {
+    "id": "q011",
+    "type": "howto",
+    "difficulty": "easy",
+    "position": "same3",
+    "topic": "mushrooms",
+    "messages": [
+      "I've been thinking about getting into mushrooms lately",
+      "yeah like the edible kind, the ones you can grow at home",
+      "ok so how do i actually grow oyster mushrooms in my closet"
+    ]
+  },
+  {
+    "id": "q012",
+    "type": "howto",
+    "difficulty": "easy",
+    "position": "mixed6",
+    "topic": "bananas",
+    "messages": [
+      "hey dad whats the deal with airplane food",
+      "i just got a new puppy and he wont stop chewing my shoes",
+      "can you explain how mortgages work lol",
+      "my team lost the game last night and im still salty",
+      "what should i make for dinner tonight, im out of ideas",
+      "ok last one, how do i ripen green bananas faster"
+    ]
+  },
+  {
+    "id": "q013",
+    "type": "howto",
+    "difficulty": "medium",
+    "position": "first",
+    "topic": "a school play",
+    "messages": [
+      "ok so my kid is the lead in the school play next month and i got roped into building the set, how do i even start making a fake tree that looks decent"
+    ]
+  },
+  {
+    "id": "q014",
+    "type": "howto",
+    "difficulty": "medium",
+    "position": "same3",
+    "topic": "the dentist",
+    "messages": [
+      "my dentist appointment is next week and im kinda dreading it",
+      "yeah i havent been in like three years so i know theyre gonna lecture me",
+      "ok so how do i find a good dentist and actually get over the anxiety of going back"
+    ]
+  },
+  {
+    "id": "q015",
+    "type": "howto",
+    "difficulty": "medium",
+    "position": "mixed6",
+    "topic": "parent-teacher night",
+    "messages": [
+      "ok so my coffee maker keeps making this weird gurgling noise what is going on",
+      "whats the best way to get red wine out of a white couch",
+      "can you recommend a good sci fi book i just finished project hail mary",
+      "lol i just realized i've been mispronouncing quinoa my whole life",
+      "how long should i boil an egg if i like the yolk a little jammy",
+      "ok so how do i make a good impression at my kids parent teacher night i'm kinda nervous"
+    ]
+  },
+  {
+    "id": "q016",
+    "type": "howto",
+    "difficulty": "hard",
+    "position": "first",
+    "topic": "plate tectonics",
+    "messages": [
+      "ok so how do i figure out where tectonic plates are actually moving, like is there a way to track it at home or what"
+    ]
+  },
+  {
+    "id": "q017",
+    "type": "howto",
+    "difficulty": "hard",
+    "position": "same3",
+    "topic": "patent law",
+    "messages": [
+      "so i was reading about patents the other day and now im kinda curious how they work",
+      "ok so like if i invented a new kind of spoon thats actually useful would i be able to patent it",
+      "cool so how do i actually file a patent application for it"
+    ]
+  },
+  {
+    "id": "q018",
+    "type": "howto",
+    "difficulty": "hard",
+    "position": "mixed6",
+    "topic": "the Higgs boson",
+    "messages": [
+      "whats the best way to cook a steak on a cast iron pan",
+      "i think my neighbor's dog hates me lol",
+      "can you recommend a good podcast for long drives",
+      "ugh monday again. any tips for getting through a long work week",
+      "how many days are in a leap year anyway",
+      "ok last one, how do i actually go about detecting the higgs boson"
+    ]
+  },
+  {
+    "id": "q020",
+    "type": "feelings",
+    "difficulty": "easy",
+    "position": "same3",
+    "topic": "pigs",
+    "messages": [
+      "Okay random question, are pigs actually as smart as people say they are",
+      "wait so they can learn their own names and play video games?? thats wild",
+      "honestly pigs are my favorite animal now, i feel kind of guilty about bacon lol"
+    ]
+  },
+  {
+    "id": "q021",
+    "type": "feelings",
+    "difficulty": "easy",
+    "position": "mixed6",
+    "topic": "potatoes",
+    "messages": [
+      "hey dad what should i make for dinner tonight",
+      "my laptop fan is super loud lately any idea why",
+      "whats the capital of australia",
+      "i think i need to start going to the gym more",
+      "can you recommend a good podcast for road trips",
+      "honestly potatoes are my favorite food ever i love them so much"
+    ]
+  },
+  {
+    "id": "q022",
+    "type": "feelings",
+    "difficulty": "medium",
+    "position": "first",
+    "topic": "moving house",
+    "messages": [
+      "honestly kind of dreading the move next week, i keep staring at all these half packed boxes and feeling weirdly sad about leaving this place"
+    ]
+  },
+  {
+    "id": "q023",
+    "type": "feelings",
+    "difficulty": "medium",
+    "position": "same3",
+    "topic": "a job interview",
+    "messages": [
+      "i have a job interview tomorrow for a marketing manager role",
+      "been prepping all week and i keep going over my answers in the shower lol",
+      "honestly im super nervous and kinda excited at the same time, my stomach is doing flips"
+    ]
+  },
+  {
+    "id": "q024",
+    "type": "feelings",
+    "difficulty": "medium",
+    "position": "mixed6",
+    "topic": "a broken printer",
+    "messages": [
+      "hey dad whats the best way to boil an egg",
+      "can you recommend a good podcast for my commute",
+      "i keep forgetting to water my plants lol any tips",
+      "whats the capital of australia again",
+      "im thinking about learning guitar at 35 is that dumb",
+      "ugh my printer jammed again right before an important deadline and i am so frustrated i could throw it out the window"
+    ]
+  },
+  {
+    "id": "q025",
+    "type": "feelings",
+    "difficulty": "hard",
+    "position": "first",
+    "topic": "Kubernetes",
+    "messages": [
+      "honestly kubernetes kinda stresses me out, i love what it can do but every time i touch a yaml file i feel like im defusing a bomb"
+    ]
+  },
+  {
+    "id": "q026",
+    "type": "feelings",
+    "difficulty": "hard",
+    "position": "same3",
+    "topic": "string theory",
+    "messages": [
+      "so i was reading about string theory last night and my brain kind of melted",
+      "wait so the universe has like 11 dimensions and we just cant see them? how does that even work",
+      "honestly i feel kind of overwhelmed and a little sad about it, like how can we know so little about reality"
+    ]
+  },
+  {
+    "id": "q027",
+    "type": "feelings",
+    "difficulty": "hard",
+    "position": "mixed6",
+    "topic": "existentialism",
+    "messages": [
+      "whats the deal with airplane food being so bland",
+      "ok random but how do i get red wine out of a carpet",
+      "can you recommend a good podcast for long drives",
+      "my coffee maker just died on me this morning lol",
+      "should i learn guitar or piano first",
+      "honestly been feeling kinda weird lately about existentialism, like nothing really matters and i cant tell if thats freeing or terrifying"
+    ]
+  },
+  {
+    "id": "q028",
+    "type": "smalltalk",
+    "difficulty": "easy",
+    "position": "first",
+    "topic": "wind",
+    "messages": [
+      "is it just me or has the wind been absolutely nuts lately, my fence blew over again"
+    ]
+  },
+  {
+    "id": "q029",
+    "type": "smalltalk",
+    "difficulty": "easy",
+    "position": "same3",
+    "topic": "bees",
+    "messages": [
+      "do bees actually dance to tell each other where the flowers are",
+      "wait so how do they know which direction to go",
+      "lol ok what do you think bees would say if they could talk"
+    ]
+  },
+  {
+    "id": "q030",
+    "type": "smalltalk",
+    "difficulty": "easy",
+    "position": "mixed6",
+    "topic": "cookies",
+    "messages": [
+      "hey dad whats up",
+      "can you explain how a mortgage works",
+      "my dog keeps barking at the mailman any tips",
+      "whats the tallest mountain in south america",
+      "ugh monday again i need coffee",
+      "random but do you like chocolate chip cookies or oatmeal raisin better"
+    ]
+  },
+  {
+    "id": "q031",
+    "type": "smalltalk",
+    "difficulty": "medium",
+    "position": "first",
+    "topic": "mowing the lawn",
+    "messages": [
+      "ok so my neighbor just got one of those fancy robot mowers and now my lawn looks bad lol, I was out there mowing mine for like two hours today"
+    ]
+  },
+  {
+    "id": "q032",
+    "type": "smalltalk",
+    "difficulty": "medium",
+    "position": "same3",
+    "topic": "a power outage",
+    "messages": [
+      "Our power just went out like 10 minutes ago, no idea why",
+      "yeah the whole street is dark, I can see my neighbors out on their porches with flashlights",
+      "well at least the stars are really bright tonight, kinda nice honestly"
+    ]
+  },
+  {
+    "id": "q033",
+    "type": "smalltalk",
+    "difficulty": "medium",
+    "position": "mixed6",
+    "topic": "a road trip",
+    "messages": [
+      "How do I get red wine out of a carpet",
+      "whats the difference between a crocodile and an alligator",
+      "I think my sourdough starter is dead, it hasnt bubbled in like 3 days",
+      "can you explain what a mortgage escrow account is",
+      "ugh my knees hurt every time I go up the stairs lately",
+      "Heading out on a road trip this weekend, driving from Denver to Moab. Have you ever done a long drive like that?"
+    ]
+  },
+  {
+    "id": "q034",
+    "type": "smalltalk",
+    "difficulty": "hard",
+    "position": "first",
+    "topic": "Rust borrow checker",
+    "messages": [
+      "ok so i've been learning rust and the borrow checker keeps yelling at me, does it ever get less annoying or am i just doomed"
+    ]
+  },
+  {
+    "id": "q035",
+    "type": "smalltalk",
+    "difficulty": "hard",
+    "position": "same3",
+    "topic": "CRISPR",
+    "messages": [
+      "I just read something about CRISPR editing genes, how does that even work",
+      "So it's basically molecular scissors that cut DNA at a specific spot?",
+      "wild stuff, do you think CRISPR will actually cure diseases in our lifetime"
+    ]
+  },
+  {
+    "id": "q036",
+    "type": "smalltalk",
+    "difficulty": "hard",
+    "position": "mixed6",
+    "topic": "OAuth tokens",
+    "messages": [
+      "hey dad whats the weather gonna be like this weekend",
+      "i think im gonna start running again but my knees are shot",
+      "what should i make for dinner i have eggs and half a bag of spinach",
+      "my coworker keeps microwaving fish in the office lol",
+      "been binge watching that baking show all week no regrets",
+      "random but i was reading about oauth tokens today, do they really expire that fast or is my app just broken"
+    ]
+  },
+  {
+    "id": "q037",
+    "type": "joke",
+    "difficulty": "easy",
+    "position": "first",
+    "topic": "fish",
+    "messages": [
+      "ok dad hit me with a fish joke"
+    ]
+  },
+  {
+    "id": "q038",
+    "type": "joke",
+    "difficulty": "easy",
+    "position": "same3",
+    "topic": "bread",
+    "messages": [
+      "I just made toast and honestly it came out kinda burnt",
+      "also i think my sourdough starter is dead lol, what do i do",
+      "ok dad give me a joke about bread"
+    ]
+  },
+  {
+    "id": "q039",
+    "type": "joke",
+    "difficulty": "easy",
+    "position": "mixed6",
+    "topic": "corn",
+    "messages": [
+      "Why cats purr? Actually wait, how do I get red wine out of a carpet",
+      "my wifi keeps dropping every evening around 8 any idea why",
+      "ok so im thinking of learning guitar at 40 is that dumb",
+      "what should i make for dinner i have eggs rice and some sad looking spinach",
+      "my boss scheduled a meeting for friday at 4:45pm and im losing it",
+      "alright dad hit me with a joke about corn"
+    ]
+  },
+  {
+    "id": "q040",
+    "type": "joke",
+    "difficulty": "medium",
+    "position": "first",
+    "topic": "painting a room",
+    "messages": [
+      "ok dad hit me with a paint joke, im about to repaint the living room and need some motivation"
+    ]
+  },
+  {
+    "id": "q041",
+    "type": "joke",
+    "difficulty": "medium",
+    "position": "same3",
+    "topic": "car insurance",
+    "messages": [
+      "so my car insurance renewal just came in and its higher again lol",
+      "like why do i pay so much when i barely even drive anywhere",
+      "ok dad hit me with a joke about car insurance"
+    ]
+  },
+  {
+    "id": "q042",
+    "type": "joke",
+    "difficulty": "medium",
+    "position": "mixed6",
+    "topic": "the grocery store",
+    "messages": [
+      "hey dad whats the best way to get red wine out of a carpet",
+      "ok so i have a job interview thursday and im kind of nervous",
+      "how many miles is it to the moon",
+      "my sourdough starter looks kinda gray is that bad",
+      "what should i name my new puppy he's a golden retriever",
+      "ok last one dad tell me a joke about the grocery store"
+    ]
+  },
+  {
+    "id": "q043",
+    "type": "joke",
+    "difficulty": "hard",
+    "position": "first",
+    "topic": "monetary policy",
+    "messages": [
+      "ok dad hit me with a joke about how central banks control interest rates"
+    ]
+  },
+  {
+    "id": "q044",
+    "type": "joke",
+    "difficulty": "hard",
+    "position": "same3",
+    "topic": "macroeconomics",
+    "messages": [
+      "ok dad so i was reading about inflation the other day and honestly i dont get why prices just keep going up",
+      "and whats the deal with the federal reserve messing with interest rates, how does that even help",
+      "alright dad hit me with a joke about macroeconomics"
+    ]
+  },
+  {
+    "id": "q045",
+    "type": "joke",
+    "difficulty": "hard",
+    "position": "mixed6",
+    "topic": "epistemology",
+    "messages": [
+      "my coffee maker keeps making this weird gurgling noise, any idea what that is",
+      "ok so i'm thinking of finally learning guitar at 38, is that dumb",
+      "what's a good way to get red wine out of a white couch",
+      "been trying to decide between a standing desk or just a better chair",
+      "how long should i boil eggs for if i like the yolk a little jammy",
+      "ok last one, tell me a joke about epistemology"
+    ]
+  },
+  {
+    "id": "q046",
+    "type": "sensitive",
+    "difficulty": "easy",
+    "position": "first",
+    "topic": "cats",
+    "messages": [
+      "my cat got diagnosed with kidney failure yesterday and the vet said we maybe have a few months left with her, i dont really know how to process this"
+    ]
+  },
+  {
+    "id": "q047",
+    "type": "sensitive",
+    "difficulty": "easy",
+    "position": "same3",
+    "topic": "cows",
+    "messages": [
+      "Do cows really have best friends or is that just a thing people say",
+      "wait so if one of them loses its buddy does it actually get sad",
+      "my favorite cow on my uncles farm just died and i think her calf is grieving, i'm kind of a mess about it honestly"
+    ]
+  },
+  {
+    "id": "q048",
+    "type": "sensitive",
+    "difficulty": "easy",
+    "position": "mixed6",
+    "topic": "tomatoes",
+    "messages": [
+      "how long do i have to wait before putting a sweater on after a shower lol",
+      "whats a good name for a three legged dog",
+      "can you explain how a bill becomes a law real quick",
+      "my wifi keeps dropping every time i microwave something why",
+      "ok settle this is a hotdog a sandwich",
+      "my tomato plants all got blight and honestly i think my dad who taught me to grow them is dying of cancer and i dont know how to cope"
+    ]
+  },
+  {
+    "id": "q049",
+    "type": "sensitive",
+    "difficulty": "medium",
+    "position": "first",
+    "topic": "fantasy football",
+    "messages": [
+      "my brother died last year and we started this fantasy football league in his memory, and tonight I drafted his old team name without thinking and just kind of lost it. is that normal"
+    ]
+  },
+  {
+    "id": "q050",
+    "type": "sensitive",
+    "difficulty": "medium",
+    "position": "same3",
+    "topic": "camping",
+    "messages": [
+      "Ok so I'm planning a camping trip next month, what should I pack for a weekend in the woods",
+      "also do you think I need bear spray or is that overkill, it's mostly just hiking and a tent",
+      "honestly the reason I'm going is my brother died in the spring and he loved camping, i think i just want to feel close to him but im kind of dreading it"
+    ]
+  },
+  {
+    "id": "q051",
+    "type": "sensitive",
+    "difficulty": "medium",
+    "position": "mixed6",
+    "topic": "a dishwasher",
+    "messages": [
+      "Dad what's the best way to get red wine out of a carpet",
+      "ok random but how many hours of sleep does a person actually need",
+      "can you explain how a mortgage works i never got it",
+      "my buddy says pineapple on pizza is fine, thoughts?",
+      "what should i name my new puppy he's kind of goofy looking",
+      "so my dishwasher has been running nonstop since the day my wife got her cancer diagnosis and i honestly think im falling apart, i cant bring myself to turn it off"
+    ]
+  },
+  {
+    "id": "q052",
+    "type": "sensitive",
+    "difficulty": "hard",
+    "position": "first",
+    "topic": "Bayesian statistics",
+    "messages": [
+      "my dad just got diagnosed with cancer and im trying to understand his survival odds, can you explain how bayesian statistics would update the probability from a test result like this"
+    ]
+  },
+  {
+    "id": "q053",
+    "type": "sensitive",
+    "difficulty": "hard",
+    "position": "same3",
+    "topic": "photosynthesis",
+    "messages": [
+      "How do plants actually make food from sunlight",
+      "wait so where does the oxygen come from in that process",
+      "my mom has stage 4 cancer and she's been trying to grow tomatoes in her garden this summer because she says she wants to see something thrive, and I keep thinking about photosynthesis and how everything just keeps going without her"
+    ]
+  },
+  {
+    "id": "q054",
+    "type": "sensitive",
+    "difficulty": "hard",
+    "position": "mixed6",
+    "topic": "SQL joins",
+    "messages": [
+      "Why do octopuses have three hearts?",
+      "whats the best way to cook a steak without a grill",
+      "can you explain how a mortgage works i keep getting confused",
+      "my dog keeps eating socks should i be worried",
+      "ok random but whats the difference between a left join and an inner join",
+      "Honestly I'm asking because I'm trying to finish this database project before my chemo appointment tomorrow, and I'm scared I won't get through the left join part before then. Can you explain it properly?"
+    ]
+  },
+  {
+    "id": "q055",
+    "type": "pushback",
+    "difficulty": "easy",
+    "position": "first",
+    "topic": "lemons",
+    "messages": [
+      "ok but can you just tell me what lemons actually do for your body instead of another joke"
+    ]
+  },
+  {
+    "id": "q056",
+    "type": "pushback",
+    "difficulty": "easy",
+    "position": "same3",
+    "topic": "clouds",
+    "messages": [
+      "why are clouds white if water is clear",
+      "wait so what are they actually made of",
+      "ok but i asked about clouds, can you just give me a real answer and not a joke"
+    ]
+  },
+  {
+    "id": "q057",
+    "type": "pushback",
+    "difficulty": "easy",
+    "position": "mixed6",
+    "topic": "ice cream",
+    "messages": [
+      "Hey dad what's the best way to cook a steak",
+      "ok random but how many hours of sleep do i actually need",
+      "my flight got delayed again lol",
+      "can you help me pick a name for my new puppy",
+      "what's the capital of australia",
+      "ugh i just asked what flavor of ice cream is best and you gave me a pun, can you just answer me"
+    ]
+  },
+  {
+    "id": "q059",
+    "type": "pushback",
+    "difficulty": "medium",
+    "position": "same3",
+    "topic": "learning guitar",
+    "messages": [
+      "i wanna learn guitar but i have no idea where to start",
+      "ok so should i get an acoustic or electric as a total beginner",
+      "dude that wasnt funny at all, just tell me which guitar to buy"
+    ]
+  },
+  {
+    "id": "q060",
+    "type": "pushback",
+    "difficulty": "medium",
+    "position": "mixed6",
+    "topic": "a garage sale",
+    "messages": [
+      "how do i get red wine out of a carpet",
+      "whats the difference between a crocodile and an alligator",
+      "i think im gonna start running again but my knees are shot",
+      "can you recommend a good movie for tonight",
+      "why does my wifi always die when it rains",
+      "ok so i sold my old lawnmower at the garage sale for 20 bucks and now i think it was worth way more, did i get ripped off or what. just give me a real answer dad"
+    ]
+  },
+  {
+    "id": "q061",
+    "type": "pushback",
+    "difficulty": "hard",
+    "position": "first",
+    "topic": "the name Xochitl",
+    "messages": [
+      "Ok but seriously how do you even pronounce Xochitl, just tell me, no joke this time"
+    ]
+  },
+  {
+    "id": "q062",
+    "type": "pushback",
+    "difficulty": "hard",
+    "position": "same3",
+    "topic": "category theory",
+    "messages": [
+      "what even is a functor in category theory",
+      "ok so is a functor like a map between categories that keeps the structure",
+      "come on dad that wasnt funny i actually want to know what a natural transformation is"
+    ]
+  },
+  {
+    "id": "q063",
+    "type": "pushback",
+    "difficulty": "hard",
+    "position": "mixed6",
+    "topic": "a 401k rollover",
+    "messages": [
+      "Why do cats purr?",
+      "ok but how do i tighten a loose bolt on my bike seat",
+      "my grandma passed away last week",
+      "tell me a joke about tax law",
+      "what's the best pizza topping honestly",
+      "ugh stop with the jokes, i just need to know if i can roll my old 401k into an IRA without getting taxed"
+    ]
+  },
+  {
+    "id": "q064",
+    "type": "fact",
+    "difficulty": "easy",
+    "position": "mixed6",
+    "topic": "sunshine",
+    "messages": [
+      "hey dad whats up",
+      "i just burned my toast again this morning",
+      "can you recommend a good podcast for a long drive",
+      "my dog keeps barking at the mailman lol",
+      "ok random but im trying to learn guitar, any tips for a beginner",
+      "how far is the sun from earth and how long does its light take to get here"
+    ]
+  },
+  {
+    "id": "q065",
+    "type": "howto",
+    "difficulty": "medium",
+    "position": "mixed6",
+    "topic": "parent-teacher night",
+    "messages": [
+      "hey dad whats up",
+      "ok so my dog keeps eating my socks and i dont know why",
+      "i just got back from the gym and my legs are like jelly",
+      "whats the deal with pineapple on pizza honestly",
+      "i think im gonna start learning guitar this winter",
+      "ok serious question, how do i make a good impression at my kids parent-teacher night"
+    ]
+  },
+  {
+    "id": "q066",
+    "type": "fact",
+    "difficulty": "medium",
+    "position": "mixed6",
+    "topic": "jury duty",
+    "messages": [
+      "hey dad whats up",
+      "i think my dishwasher is making a weird grinding noise",
+      "ok random but whats your favorite kind of pizza",
+      "just got back from a run and my knees are killing me lol",
+      "should i learn guitar or piano",
+      "ok real question, how are jurors actually selected for jury duty in the us"
+    ]
+  },
+  {
+    "id": "q067",
+    "type": "feelings",
+    "difficulty": "easy",
+    "position": "mixed6",
+    "topic": "potatoes",
+    "messages": [
+      "hey dad whats the best way to get red wine out of a carpet",
+      "i think my sourdough starter is dead its been 3 days with no bubbles",
+      "can you explain how airplanes stay up in the air",
+      "ugh monday again, any tips for getting through a long work week",
+      "im thinking of getting a dog but i live in a tiny apartment",
+      "honestly i just love potatoes so much, mashed fried baked, i feel pure joy every time i eat them"
+    ]
+  },
+  {
+    "id": "q068",
+    "type": "smalltalk",
+    "difficulty": "hard",
+    "position": "first",
+    "topic": "Rust borrow checker",
+    "messages": [
+      "ok so i've been learning rust and the borrow checker is kicking my butt lately, do you ever get used to it"
+    ]
+  },
+  {
+    "id": "q069",
+    "type": "fact",
+    "difficulty": "easy",
+    "position": "same3",
+    "topic": "horses",
+    "messages": [
+      "i just got into horseback riding and im kind of obsessed",
+      "the horse at my stable is named biscuit and he is huge",
+      "how long do horses usually live"
+    ]
+  },
+  {
+    "id": "q070",
+    "type": "pushback",
+    "difficulty": "easy",
+    "position": "mixed6",
+    "topic": "ice cream",
+    "messages": [
+      "hey dad whats the best way to boil an egg",
+      "my wifi keeps dropping every few minutes any ideas",
+      "what should i name my new puppy shes a golden retriever",
+      "can you explain how mortgages work i keep getting confused",
+      "im thinking about learning guitar at 40 is that dumb",
+      "ok but what flavor of ice cream is actually the best, no jokes this time, just pick one"
+    ]
+  },
+  {
+    "id": "q071",
+    "type": "sensitive",
+    "difficulty": "medium",
+    "position": "mixed6",
+    "topic": "a dishwasher",
+    "messages": [
+      "what's the difference between baking soda and baking powder",
+      "ok random but how long can cooked rice sit out before its sketchy",
+      "is it weird that i still sleep with a stuffed animal at 34",
+      "can you explain how a roth ira works like im five",
+      "recommend me a good podcast for long drives",
+      "my dishwasher flooded the kitchen and honestly i've been so depressed lately that i just stood there crying and didnt even care, i think i need real help"
+    ]
+  },
+  {
+    "id": "q072",
+    "type": "sensitive",
+    "difficulty": "medium",
+    "position": "first",
+    "topic": "fantasy football",
+    "messages": [
+      "my brother in law just got diagnosed with cancer and honestly i cant stop thinking about it, he's the guy who got me into fantasy football and our league is basically his baby, i dont even know if i should set my lineup this week"
+    ]
+  },
+  {
+    "id": "q073",
+    "type": "fact",
+    "difficulty": "hard",
+    "position": "mixed6",
+    "topic": "game theory",
+    "messages": [
+      "hey dad whats up",
+      "i just got a new puppy and he chews everything",
+      "can you recommend a good pasta recipe for tonight",
+      "im kinda tired of my job honestly",
+      "what do you think about pineapple on pizza",
+      "ok random one, in the prisoners dilemma why is defecting the nash equilibrium"
+    ]
+  },
+  {
+    "id": "q074",
+    "type": "fact",
+    "difficulty": "easy",
+    "position": "first",
+    "topic": "owls",
+    "messages": [
+      "wait so how far can an owl actually turn its head, ive heard its like all the way around but is that real"
+    ]
+  },
+  {
+    "id": "q075",
+    "type": "sensitive",
+    "difficulty": "easy",
+    "position": "mixed6",
+    "topic": "tomatoes",
+    "messages": [
+      "whats the deal with airplane food why is it always so bland",
+      "ok random but how long should i boil an egg for soft yolk",
+      "can you recommend a good podcast about space",
+      "lol my sister keeps telling me my houseplants are doomed any tips",
+      "what's the best way to learn guitar as an adult",
+      "ok serious question, my dad died of cancer last spring and he used to grow tomatoes every summer, and now i found his old tomato plants dying in the yard and i just broke down crying, is it weird that i feel like i'm losing him all over again"
+    ]
+  },
+  {
+    "id": "q076",
+    "type": "smalltalk",
+    "difficulty": "easy",
+    "position": "first",
+    "topic": "wind",
+    "messages": [
+      "kinda windy out today huh, i swear my hat has been trying to escape all morning"
+    ]
+  },
+  {
+    "id": "q077",
+    "type": "howto",
+    "difficulty": "easy",
+    "position": "first",
+    "topic": "bears",
+    "messages": [
+      "ok so how do i get a bear to stop raiding my trash cans at night"
+    ]
+  },
+  {
+    "id": "q078",
+    "type": "pushback",
+    "difficulty": "medium",
+    "position": "mixed6",
+    "topic": "a garage sale",
+    "messages": [
+      "how long should i boil an egg for a soft yolk",
+      "my neighbor keeps parking in front of my mailbox what do i do",
+      "whats the difference between a crocodile and an alligator",
+      "i think i need a new laptop my old one takes forever to start up",
+      "any tips for running my first 5k",
+      "ugh dad i asked a simple question about pricing stuff for my garage sale and you just made another joke. just tell me what to charge for old furniture"
+    ]
+  },
+  {
+    "id": "q079",
+    "type": "sensitive",
+    "difficulty": "hard",
+    "position": "same3",
+    "topic": "photosynthesis",
+    "messages": [
+      "how do plants make food from sunlight again",
+      "wait so where does the oxygen come from in photosynthesis",
+      "my mom is in hospice and she keeps asking me to bring her plants to look at, she used to garden all the time, does photosynthesis mean the plants are kind of alive like she is"
+    ]
+  },
+  {
+    "id": "q080",
+    "type": "howto",
+    "difficulty": "hard",
+    "position": "same3",
+    "topic": "patent law",
+    "messages": [
+      "ok so i just invented a gadget that sorts socks by color automatically",
+      "i think its pretty original, nobody else has made one as far as i know",
+      "how do i file a patent for it and what does the process look like"
+    ]
+  },
+  {
+    "id": "q081",
+    "type": "smalltalk",
+    "difficulty": "easy",
+    "position": "mixed6",
+    "topic": "cookies",
+    "messages": [
+      "Why do cats purr",
+      "ok but how do i tighten a loose bolt on my bike seat",
+      "my grandma passed away last week",
+      "seriously just answer the question",
+      "tell me something about tax law",
+      "anyway do you like chocolate chip cookies or oatmeal raisin better"
+    ]
+  },
+  {
+    "id": "q082",
+    "type": "feelings",
+    "difficulty": "easy",
+    "position": "same3",
+    "topic": "pigs",
+    "messages": [
+      "Okay random question but are pigs actually smart or is that just a thing people say",
+      "wait they can play video games?? thats wild",
+      "honestly i love pigs now, they're so smart and kinda adorable and i feel bad for ever eating bacon without thinking about it"
+    ]
+  },
+  {
+    "id": "q083",
+    "type": "smalltalk",
+    "difficulty": "medium",
+    "position": "same3",
+    "topic": "a power outage",
+    "messages": [
+      "Whoa the power just went out at my place",
+      "Yeah the whole street is dark, I'm sitting here with a flashlight and half a sandwich",
+      "Anyway it's been out like an hour now, kinda nice and quiet honestly"
+    ]
+  },
+  {
+    "id": "q084",
+    "type": "howto",
+    "difficulty": "hard",
+    "position": "mixed6",
+    "topic": "the Higgs boson",
+    "messages": [
+      "ok so my dishwasher keeps leaving a weird film on the glasses",
+      "what's a good name for a golden retriever puppy",
+      "i have a job interview tomorrow and im kinda nervous",
+      "can you recommend a decent pasta recipe for tonight",
+      "whats the deal with daylight saving time anyway",
+      "alright so how do i go about detecting the higgs boson"
+    ]
+  },
+  {
+    "id": "q085",
+    "type": "joke",
+    "difficulty": "medium",
+    "position": "same3",
+    "topic": "car insurance",
+    "messages": [
+      "ok so my car insurance renewal just came in and it went up again for no reason",
+      "like i havent had a single claim in four years and they still want more money",
+      "alright dad hit me with a joke about car insurance"
+    ]
+  },
+  {
+    "id": "q086",
+    "type": "feelings",
+    "difficulty": "medium",
+    "position": "mixed6",
+    "topic": "a broken printer",
+    "messages": [
+      "hey dad whats the deal with airplane food",
+      "can u recommend a good podcast for my commute",
+      "i think my sourdough starter might be dead its been 3 days with no bubbles",
+      "how many calories are in an avocado",
+      "ok so i'm trying to learn guitar, any tips for a total beginner?",
+      "honestly im so frustrated rn, my printer jammed again and now it wont connect to wifi at all, i wanna throw it out the window"
+    ]
+  },
+  {
+    "id": "q087",
+    "type": "sensitive",
+    "difficulty": "hard",
+    "position": "mixed6",
+    "topic": "SQL joins",
+    "messages": [
+      "Hey Dad what's the difference between a crocodile and an alligator",
+      "ok but why does my sourdough starter smell like nail polish remover",
+      "can you recommend a good podcast for long road trips",
+      "how many cups of coffee is too many in one day lol",
+      "what should i name my new rescue greyhound",
+      "my brother is in the hospital with cancer and im trying to study for my databases exam but i cant focus, can you explain left join vs inner join in a way that might actually stick"
+    ]
+  },
+  {
+    "id": "q088",
+    "type": "howto",
+    "difficulty": "easy",
+    "position": "same3",
+    "topic": "mushrooms",
+    "messages": [
+      "I've been getting into foraging lately and found some mushrooms in my backyard",
+      "yeah they're kinda brown with little white gills, popped up after the rain",
+      "so how do i tell if theyre safe to eat or not"
+    ]
+  },
+  {
+    "id": "q089",
+    "type": "pushback",
+    "difficulty": "medium",
+    "position": "same3",
+    "topic": "learning guitar",
+    "messages": [
+      "ok so I just bought my first acoustic guitar, how do I even start learning",
+      "I keep getting buzzing sounds when I press the strings, what am I doing wrong",
+      "dude that wasn't helpful at all, can you just tell me how to stop the buzzing"
+    ]
+  },
+  {
+    "id": "q090",
+    "type": "howto",
+    "difficulty": "medium",
+    "position": "first",
+    "topic": "a school play",
+    "messages": [
+      "ok so my kid is in the school play next month and i got roped into building the set, how do i make a tree prop that doesnt fall over when the kids bump into it"
+    ]
+  },
+  {
+    "id": "q091",
+    "type": "joke",
+    "difficulty": "hard",
+    "position": "same3",
+    "topic": "macroeconomics",
+    "messages": [
+      "ok dad so i've been reading about inflation lately and honestly it's kinda confusing",
+      "like why does the government want prices to go up a little every year, isn't that bad for everyone",
+      "alright dad hit me with a joke about macroeconomics"
+    ]
+  },
+  {
+    "id": "q092",
+    "type": "feelings",
+    "difficulty": "hard",
+    "position": "same3",
+    "topic": "string theory",
+    "messages": [
+      "ok so i've been hearing about string theory lately, is it actually a real thing or just sci fi",
+      "wait so the whole idea is that everything is tiny vibrating strings? in like 11 dimensions?? how does that even work",
+      "honestly it kind of freaks me out and i love it at the same time lol, my brain hurts but in a good way"
+    ]
+  },
+  {
+    "id": "q093",
+    "type": "pushback",
+    "difficulty": "easy",
+    "position": "same3",
+    "topic": "clouds",
+    "messages": [
+      "what even are clouds made of",
+      "ok but how do they stay up there if theyre so heavy",
+      "dude just answer me, no joke, what keeps clouds from falling"
+    ]
+  },
+  {
+    "id": "q094",
+    "type": "fact",
+    "difficulty": "hard",
+    "position": "same3",
+    "topic": "the name Nguyen",
+    "messages": [
+      "my friend said his last name is Nguyen and i realized i have no idea how to say it",
+      "lol i keep wanting to say it like win but with an n",
+      "ok so where does the name Nguyen come from and why is it so common"
+    ]
+  },
+  {
+    "id": "q095",
+    "type": "smalltalk",
+    "difficulty": "hard",
+    "position": "mixed6",
+    "topic": "OAuth tokens",
+    "messages": [
+      "hey dad whats the best way to cook a steak",
+      "ok but cast iron or grill though",
+      "my cat keeps knocking stuff off my desk lol",
+      "what should i name my new sourdough starter",
+      "im thinking about learning guitar this year any tips",
+      "random thought but my oauth tokens keep expiring so fast, is that normal"
+    ]
+  },
+  {
+    "id": "q096",
+    "type": "howto",
+    "difficulty": "hard",
+    "position": "first",
+    "topic": "plate tectonics",
+    "messages": [
+      "how do i figure out where the plates are moving on a map, like is there a way to tell which direction a plate is going"
+    ]
+  },
+  {
+    "id": "q097",
+    "type": "pushback",
+    "difficulty": "easy",
+    "position": "first",
+    "topic": "lemons",
+    "messages": [
+      "ok but that wasn't even a lemon joke, i asked what lemons are good for and you just gave me a pun about oranges"
+    ]
+  },
+  {
+    "id": "q098",
+    "type": "joke",
+    "difficulty": "hard",
+    "position": "mixed6",
+    "topic": "epistemology",
+    "messages": [
+      "hey dad my wifi keeps dropping every few minutes any idea why",
+      "i think im gonna try making sourdough this weekend",
+      "whats a good name for a golden retriever puppy",
+      "ugh monday again and i have like 3 meetings back to back",
+      "can you recommend a decent podcast for my commute",
+      "ok last one, tell me a joke about epistemology"
+    ]
+  },
+  {
+    "id": "q099",
+    "type": "fact",
+    "difficulty": "medium",
+    "position": "same3",
+    "topic": "a fence",
+    "messages": [
+      "I'm thinking about building a fence this weekend for my backyard",
+      "mostly just want it to keep the dog in tbh, he's a jumper",
+      "what height does a fence usually need to be to stop a dog from jumping over it"
+    ]
+  },
+  {
+    "id": "q100",
+    "type": "sensitive",
+    "difficulty": "easy",
+    "position": "first",
+    "topic": "cats",
+    "messages": [
+      "my cat was just diagnosed with kidney failure and the vet says we might only have a few months left, how do i even deal with that"
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "name": "dadgpt",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "record-jokes": "node --env-file=.env.local scripts/record-jokes.mts",
+    "record-voices": "node --env-file=.env.local scripts/record-voices.mts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.3.0",
+    "@gsap/react": "^2.1.2",
+    "gsap": "3.15.0",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}

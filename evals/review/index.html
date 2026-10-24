@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pun Review</title>
+<style>
+  :root {
+    --bg: #f7f5f0; --card: #ffffff; --text: #1d1b18; --muted: #6e6a62; --line: #e4e0d6;
+    --good: #2f7d4f; --good-bg: #e6f3eb; --bad: #b3402f; --bad-bg: #f8e7e3; --skip: #8a6d1f; --skip-bg: #f5eed8;
+    --user: #4a6fa5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513; --card: #211f1c; --text: #ece8df; --muted: #9a958a; --line: #34312c;
+      --good: #6cc492; --good-bg: #1d3226; --bad: #e98572; --bad-bg: #3a221d; --skip: #d9b85c; --skip-bg: #332b17;
+      --user: #8aa9d6;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 -apple-system, system-ui, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 48px; }
+  header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px; }
+  h1 { font-size: 18px; margin: 0; }
+  .count { color: var(--muted); font-size: 14px; }
+  .bar { height: 4px; background: var(--line); border-radius: 2px; overflow: hidden; margin-bottom: 24px; }
+  .bar div { height: 100%; background: var(--good); transition: width .2s; }
+  .question { color: var(--muted); font-size: 14px; margin: 0 0 20px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 24px; }
+  .label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-bottom: 4px; }
+  .user { border-left: 3px solid var(--user); padding-left: 12px; color: var(--muted); margin-bottom: 24px; }
+  .reply { font-size: 22px; line-height: 1.4; font-weight: 500; }
+  .status { margin-top: 16px; font-size: 14px; font-weight: 600; min-height: 21px; }
+  .status.good { color: var(--good); } .status.bad { color: var(--bad); } .status.skip { color: var(--skip); }
+  .actions { display: grid; grid-template-columns: 1fr 1fr auto; gap: 8px; margin-top: 20px; }
+  button { font: inherit; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--text); padding: 12px 16px; cursor: pointer; }
+  button kbd { font-size: 12px; color: var(--muted); margin-left: 6px; }
+  .good-btn { background: var(--good-bg); border-color: var(--good); color: var(--good); font-weight: 600; }
+  .bad-btn { background: var(--bad-bg); border-color: var(--bad); color: var(--bad); font-weight: 600; }
+  .skip-btn { background: var(--skip-bg); border-color: var(--skip); color: var(--skip); }
+  button.on { outline: 3px solid currentColor; outline-offset: 1px; }
+  textarea { width: 100%; margin-top: 12px; font: inherit; font-size: 14px; padding: 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--text); resize: vertical; min-height: 44px; }
+  nav { display: flex; justify-content: space-between; margin-top: 16px; }
+  .help { color: var(--muted); font-size: 13px; margin-top: 24px; text-align: center; }
+  .done { text-align: center; padding: 40px 0; }
+  @media (max-width: 480px) { .actions { grid-template-columns: 1fr 1fr; } .skip-btn { grid-column: span 2; } .reply { font-size: 19px; } }
+</style>
+</head>
+<body>
+<main>
+  <header><h1>Pun review</h1><span class="count" id="count"></span></header>
+  <div class="bar"><div id="bar"></div></div>
+  <p class="question">Does the pun land? Judge only the wordplay, not length or whether Dad answered.</p>
+  <div class="card">
+    <div class="label">User</div>
+    <div class="user" id="user"></div>
+    <div class="label">Dad</div>
+    <div class="reply" id="reply"></div>
+    <div class="status" id="status"></div>
+  </div>
+  <div class="actions">
+    <button class="good-btn" id="good">Good pun<kbd>1</kbd></button>
+    <button class="bad-btn" id="bad">Bad pun<kbd>2</kbd></button>
+    <button class="skip-btn" id="skip">Unsure<kbd>D</kbd></button>
+  </div>
+  <textarea id="note" placeholder="Optional note, like why it does or doesn't land"></textarea>
+  <nav><button id="prev">← Previous</button><button id="next">Next →</button></nav>
+  <p class="help">1 good · 2 bad · D unsure · ← → move · labels save automatically</p>
+</main>
+<script>
+  let items = [], labels = {}, i = 0;
+  const $ = (id) => document.getElementById(id);
+  const STATUS = { good: "Marked: good pun", bad: "Marked: bad pun", skip: "Marked: unsure" };
+
+  function save() {
+    fetch("/api/labels", { method: "POST", body: JSON.stringify(labels) });
+  }
+
+  function render() {
+    if (!items.length) return;
+    const item = items[i], l = labels[item.n] || {};
+    const done = items.filter((x) => labels[x.n]?.label).length;
+    $("count").textContent = `${i + 1} of ${items.length} · ${done} labeled`;
+    $("bar").style.width = `${(done / items.length) * 100}%`;
+    $("user").textContent = item.user;
+    $("reply").textContent = item.reply;
+    $("status").textContent = STATUS[l.label] || "";
+    $("status").className = `status ${l.label || ""}`;
+    for (const k of ["good", "bad", "skip"]) $(k).classList.toggle("on", l.label === k);
+    $("note").value = l.note || "";
+  }
+
+  function mark(label) {
+    const n = items[i].n;
+    labels[n] = { ...labels[n], label, user: items[i].user, reply: items[i].reply };
+    save();
+    if (i < items.length - 1) i++;
+    render();
+  }
+
+  function move(d) { i = Math.max(0, Math.min(items.length - 1, i + d)); render(); }
+
+  $("good").onclick = () => mark("good");
+  $("bad").onclick = () => mark("bad");
+  $("skip").onclick = () => mark("skip");
+  $("prev").onclick = () => move(-1);
+  $("next").onclick = () => move(1);
+  $("note").oninput = (e) => {
+    const n = items[i].n;
+    labels[n] = { ...labels[n], note: e.target.value, user: items[i].user, reply: items[i].reply };
+    save();
+  };
+
+  document.addEventListener("keydown", (e) => {
+    if (e.target.tagName === "TEXTAREA") { if (e.key === "Escape") e.target.blur(); return; }
+    if (e.key === "1") mark("good");
+    else if (e.key === "2") mark("bad");
+    else if (e.key.toLowerCase() === "d") mark("skip");
+    else if (e.key === "ArrowRight") move(1);
+    else if (e.key === "ArrowLeft") move(-1);
+  });
+
+  Promise.all([fetch("/api/items").then((r) => r.json()), fetch("/api/labels").then((r) => r.json())]).then(([it, lb]) => {
+    items = it; labels = lb;
+    const first = items.findIndex((x) => !labels[x.n]?.label);
+    i = first === -1 ? 0 : first;
+    render();
+  });
+</script>
+</body>
+</html>

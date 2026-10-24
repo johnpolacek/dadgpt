@@ -1,0 +1,63 @@
+(node:23459) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/johnpolacek/Projects/dadgpt/lib/dad-prompt.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/johnpolacek/Projects/dadgpt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+p007 -> Three months of feeding Gerald and he still hasn't risen to the occasion, so he's clearly a loafer.
+p003 -> I'm not gonna be the one to break your buddy's heart, so let's call it a tentacle-y tie.
+p001 -> Everest won't say its height because it's had a rough week, and honestly it's looking a little peaked.
+p005 -> Keep your ten dollars, I'd hate for you to lose the bet and suffer total heartbreak.
+p009 -> Three hours with a glue gun and you're one sticky rat, but you really cheesed off the competition.
+p011 -> Sixty-one pastries, a sprained ankle, and Ohio blocking the tram? Lisbon didn't stand a chance, it got completely tram-pled.
+p013 -> Are you a pizza? Because you're definitely the slice I've been craving, and I'm really hoping you're not a "crust" of a person.
+p008 -> Your costume's so basic the ghosts just logged off, leaving you a stump with no ax to grind.
+p004 -> Whatever the count, your girlfriend's got the one heart that matters, and you're clearly tentacle-ly smitten.
+p002 -> I'd love to help, but I'm more of a ground-floor kind of guy, so that one's a bit too towering for me.
+p006 -> Marcus is about to get burned, but only his wallet, since that twenty bucks is his stake.
+p015 -> Three of that green stuff already? Easy there, you're getting too spirited to find yourself a ghoul-friend tonight.
+p010 -> Forty minutes on your fantasy team and the taco still left unimpressed, so your roster's a total taco-bout disaster.
+p017 -> Skip the pumpkin, sweetheart, I'd only ever want to go for a dip with you.
+p019 -> Go with Snickers, because nothing gets a trick-or-treater laughing harder than a bar that's always ready to snicker.
+p012 -> Your bookshelf has more backbone than you, and frankly, you're running low on shelf-esteem.
+p021 -> Dave's not in costume anymore, he's just stuffed and taco bout it.
+p014 -> I'd love to take you for a spin, because you're clearly the best pickup around.
+p023 -> Pennywise is a real triumph, but carrying that head around, you clearly lost your head over it.
+p016 -> My back's still sore from lifting that three-toothed pumpkin, so I'm not in a position to pick you up.
+p018 -> Your cardigan's so cozy, I'd love to see if we're meant to be knit together.
+p027 -> Forget Dave, a zombie accountant is always dead on the balance sheet.
+p025 -> Costume? Nah, I'm a whole wardrobe, and asking me for straight answers would only cost you time.
+p020 -> Go big or go home, because the only thing more disappointing than a fun-size bar is a fun-size partner.
+p031 -> Your skeleton's left foot went missing? I guess it got tired of being left behind and went footloose.
+p029 -> Your car's clunking on left turns because it's been hitting the bottle too, and frankly it's an axle-solutely mess.
+p022 -> Your girlfriend's not lying, she's just kernel-ly confused, because candy corn is the corniest thing in the bowl.
+p024 -> Sounds like your last costume lost its head, so this year you're going with a body of work.
+p026 -> Straight answer? I'm as straight as a pretzel, which means I'm always a little twisted.
+p033 -> Don't worry, doc, that blood's just a little too much, so I'll get to it latte-r.
+p035 -> Honestly, that retriever stayed calm because he's a hot dog, so he was just happy to be the wiener in the room.
+p028 -> You want a straight answer? Sorry, I'm all bent out of shape in this costume.
+p032 -> Those tiny arms are a shame, but that inflatable gives you the whole T-rex package.
+p037 -> Too late? After ten years on the line, you're already medium rare, and nursing will make you well-done.
+p030 -> Cheer up, the brie vanished, but you're still a smooth catch, so go on and Brie-lieve.
+p039 -> Stay in Austin, because moving to Portland would make you a junior partner, and that's a design flaw.
+p041 -> Leap, because staying is a long root canal, and you should be bonding with a design job.
+p034 -> Mr Whiskers knocked a candle off the shelf, so now he really knows how to light up a room.
+p043 -> Your sanity isn't lost, it's been swallowed whole by a tiny, very persistent shark, and it's totally fin-ished.
+p045 -> Mattel tried to put Ryan Gosling back in the box after the premiere, but he insisted he was Ken-ough to stay out.
+p036 -> Gary's not insane, he's just a little overcooked, and honestly, that's how he likes his hot dogs, well done.
+p038 -> Six years of counting dough, and now you're just ready to knead some change.
+p040 -> Just ask already, you've been climbing toward her for three months, so stop hanging around.
+p047 -> Jeff Goldblum waves his hands like that because he's a real Malcolm-ly flexible guy, and honestly, he's just dino-sore.
+p042 -> Sounds like you're in a real pickle, so don't stew on it too long, or you'll end up half-baked.
+p049 -> Relax, the vampire didn't drink it all, he's just been bloodthirsty and totally punch-drunk.
+p051 -> Relax, it's guacamole, so dip in already, you're turning green with envy of the dip.
+p044 -> I won't beetle around the bush, so let's just say that sequel really bugs me.
+p053 -> That shark's been swimming in cider all night, so it's no wonder he's fin-ished.
+p046 -> Nothing spooks me more than a song this monstrously catchy, so I'd say it's a real mash-terpiece.
+p055 -> Sure, bleed me dry, nurse, because I'm a total sucker for anyone who knows where my veins are.
+p059 -> Under the sheets, Derek's girlfriend haunts him so well, he's basically dating his ghoul-friend.
+p048 -> You're both in a real pickle, but I'd say Dave's the one with his wick in a twist.
+p050 -> They're probably in the patch, so just follow the spice trail, it's a piece of cake.
+p052 -> Hot dog guy's been chugging cider all night, so the keg is probably feeling a bit bunned out.
+p056 -> Nothing under here? Let's just say I'm going full Roman, so I'm totally Caesar-exposed.
+p058 -> Matey, you're so hot the ocean is getting nervous, because you're clearly the sea-xiest pirate afloat.
+p060 -> I won't say it out loud, but that devil costume is totally tail-ored for trouble.
+58 traces written to /Users/johnpolacek/Projects/dadgpt/evals/data/traces-party-haiku.json

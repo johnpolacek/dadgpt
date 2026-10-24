@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  background: #000;
+  color: #fff;
+  min-height: 100%;
+}
+
+main {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(3.5rem, 16vw, 10rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+h1 .gpt {
+  font-weight: 1;
+}
+
+.mic {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, transform 0.15s;
+}
+
+@media (hover: hover) {
+  .mic:not(:disabled):hover {
+    transform: scale(1.05);
+  }
+}
+
+.mic.listening {
+  background: #fff;
+  color: #000;
+}
+
+.mic:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.status {
+  font-size: 1.25rem;
+  min-height: 1.5em;
+  opacity: 0.7;
+}
+
+.said {
+  font-size: 1.1rem;
+  opacity: 0.5;
+  max-width: 36rem;
+}
+
+.reply {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  max-width: 40rem;
+  line-height: 1.3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 18rem;
+}
+
+input,
+form button {
+  font: inherit;
+  font-size: 1.25rem;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  border: 2px solid #fff;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+form button {
+  background: #fff;
+  color: #000;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* Hero alone and centered; the chat panel slides in beside it (wide) or below it (tall) */
+.split {
+  /* Logo size fits both width and height, so short sideways phones scale down too.
+     The mic and the X size off it. */
+  --logo: clamp(2.5rem, min(11vw, 24vh), 10rem);
+  --clear: max(2.25rem, calc(var(--logo) * 0.36));
+  display: flex;
+  flex-direction: row;
+  height: 100dvh;
+  padding: 0;
+  gap: 0;
+  align-items: stretch;
+  justify-content: flex-start;
+  text-align: left;
+  overflow: hidden;
+}
+
+.hero {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--logo) * 0.3);
+  padding: 2rem max(1rem, env(safe-area-inset-left)) 2rem max(1rem, env(safe-area-inset-right));
+  text-align: center;
+}
+
+.split h1 {
+  font-size: var(--logo);
+  white-space: nowrap;
+}
+
+/* Character animation keeps spacing stable across split and revert */
+.split h1,
+.chat p {
+  font-kerning: none;
+  text-rendering: optimizeSpeed;
+}
+
+/* Hidden until the intro runs; revealed anyway after 3s if it never does */
+.js [data-intro] {
+  visibility: hidden;
+  animation: intro-fallback 0s 3s forwards;
+}
+
+@keyframes intro-fallback {
+  to {
+    visibility: visible;
+  }
+}
+
+/* The mic scales with the logo, never below a comfortable tap size */
+.split .mic {
+  width: max(2.75rem, calc(var(--logo) * 0.6));
+  height: max(2.75rem, calc(var(--logo) * 0.6));
+}
+
+/* Half the button, written out because grid tracks don't resolve percentages here */
+.split .mic svg {
+  width: max(1.375rem, calc(var(--logo) * 0.3));
+  height: max(1.375rem, calc(var(--logo) * 0.3));
+}
+
+.split .status {
+  font-size: max(0.9rem, calc(var(--logo) * 0.14));
+}
+
+.micWrap {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.chat {
+  position: relative;
+  flex: 0 0 0;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Fades in only at the edges where text is cut off; the script sets these */
+.scroller {
+  --fade-top: 0px;
+  --fade-bottom: 0px;
+  flex: 1;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #333 transparent;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 var(--fade-top), #000 calc(100% - var(--fade-bottom)), transparent calc(100% - var(--fade-bottom) * 0.4));
+  mask-image: linear-gradient(to bottom, transparent 0, #000 var(--fade-top), #000 calc(100% - var(--fade-bottom)), transparent calc(100% - var(--fade-bottom) * 0.4));
+}
+
+.split.open .chat {
+  flex-basis: 50%;
+  border-left: 1px solid #222;
+}
+
+/* Fixed width so text never rewraps while the panel slides */
+.messages {
+  width: 50vw;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.25rem;
+  /* Bottom room so the last line clears the X */
+  padding: 3rem max(clamp(1rem, 4vw, 4rem), env(safe-area-inset-right)) calc(var(--clear) + 3.5rem) clamp(1rem, 4vw, 4rem);
+}
+
+.chat .said,
+.chat .reply {
+  max-width: 36rem;
+}
+
+.chat .reply {
+  font-size: clamp(1.05rem, 1.5vw, 1.4rem);
+  line-height: 1.35;
+}
+
+.chat .said {
+  font-size: clamp(0.8rem, 1vw, 0.95rem);
+  margin-top: 1.5rem;
+}
+
+.chat .said:first-child {
+  margin-top: 0;
+}
+
+.thinking {
+  opacity: 0.5;
+}
+
+/* Pinned to the bottom of the chat panel, outside the scrolling text */
+.clear {
+  position: absolute;
+  left: 50%;
+  bottom: max(1.25rem, env(safe-area-inset-bottom));
+  margin-left: calc(var(--clear) / -2);
+  width: var(--clear);
+  height: var(--clear);
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  background: #000;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.3s;
+}
+
+.clear svg {
+  width: calc(var(--clear) * 0.45);
+  height: calc(var(--clear) * 0.45);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Hover: fills white, the X spins a quarter turn, and a soft glow lifts it */
+@media (hover: hover) {
+  .clear:hover {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.12), 0 0 24px rgba(255, 255, 255, 0.25);
+  }
+
+  .clear:hover svg {
+    transform: rotate(90deg) scale(1.1);
+  }
+}
+
+.clear:active svg {
+  transform: rotate(90deg) scale(0.85);
+}
+
+.clear:focus-visible,
+.mic:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+@media (orientation: portrait) {
+  .split {
+    flex-direction: column;
+  }
+
+  .split.open .chat {
+    flex-basis: 58%;
+    border-left: 0;
+    border-top: 1px solid #222;
+  }
+
+  .split {
+    --logo: clamp(2.5rem, min(20vw, 13vh), 8rem);
+  }
+
+  .messages {
+    width: 100%;
+    padding: 2rem 1rem calc(var(--clear) + 3rem);
+  }
+}
+
+/* Sideways phones: short and wide, so tighten everything vertically */
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .messages {
+    gap: 0.75rem;
+    padding-top: 1.25rem;
+    padding-bottom: calc(var(--clear) + 2.5rem);
+  }
+
+  .chat .reply {
+    font-size: 1rem;
+  }
+
+  .chat .said {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .clear {
+    bottom: max(0.75rem, env(safe-area-inset-bottom));
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "p024": {
+    "label": "bad"
+  },
+  "p058": {
+    "label": "good"
+  },
+  "p041": {
+    "label": "good"
+  },
+  "p011": {
+    "label": "bad"
+  },
+  "p034": {
+    "label": "good"
+  },
+  "p001": {
+    "label": "bad"
+  },
+  "p046": {
+    "label": "bad"
+  },
+  "p052": {
+    "label": "good"
+  },
+  "p038": {
+    "label": "good"
+  },
+  "p002": {
+    "label": "skip"
+  },
+  "p032": {
+    "label": "good"
+  },
+  "p033": {
+    "label": "good"
+  },
+  "p021": {
+    "label": "good"
+  },
+  "p037": {
+    "label": "good"
+  },
+  "p028": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "p048": {
+    "label": "bad"
+  },
+  "p007": {
+    "label": "bad"
+  },
+  "p027": {
+    "label": "bad"
+  },
+  "p022": {
+    "label": "good"
+  },
+  "p031": {
+    "label": "good"
+  },
+  "p030": {
+    "label": "good"
+  },
+  "p047": {
+    "label": "good"
+  },
+  "p040": {
+    "label": "good"
+  },
+  "p055": {
+    "label": "good"
+  },
+  "p006": {
+    "label": "bad"
+  },
+  "p016": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "p059": {
+    "label": "bad"
+  },
+  "p053": {
+    "label": "good"
+  },
+  "p060": {
+    "label": "bad"
+  },
+  "p018": {
+    "label": "bad"
+  },
+  "p045": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "p049": {
+    "label": "bad"
+  },
+  "p043": {
+    "label": "good"
+  },
+  "p042": {
+    "label": "bad"
+  },
+  "p003": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "p010": {
+    "label": "good"
+  },
+  "p025": {
+    "label": "bad"
+  },
+  "p019": {
+    "label": "good"
+  },
+  "p044": {
+    "label": "good"
+  },
+  "p008": {
+    "label": "bad"
+  },
+  "p004": {
+    "label": "good"
+  },
+  "p051": {
+    "label": "good"
+  },
+  "p012": {
+    "label": "good"
+  },
+  "p020": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "p036": {
+    "label": "bad"
+  },
+  "p017": {
+    "label": "good"
+  },
+  "p014": {
+    "label": "good"
+  },
+  "p015": {
+    "label": "bad"
+  },
+  "p009": {
+    "label": "bad"
+  },
+  "p026": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "p035": {
+    "label": "good"
+  },
+  "p056": {
+    "label": "good"
+  },
+  "p029": {
+    "label": "good"
+  },
+  "p050": {
+    "note": "should just be \"keeping gourd company\" though",
+    "label": "good"
+  },
+  "p005": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "p013": {
+    "label": "good"
+  },
+  "p039": {
+    "note": "both bad",
+    "label": "skip"
+  },
+  "p023": {
+    "note": "both bad",
+    "label": "skip"
+  }
+}

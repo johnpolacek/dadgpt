@@ -1,0 +1,402 @@
+[
+  {
+    "id": "h001",
+    "type": "random",
+    "ask": "random",
+    "messages": [
+      "My phone is at two percent and I'm panicking."
+    ]
+  },
+  {
+    "id": "h002",
+    "type": "trivia",
+    "ask": "trivia",
+    "messages": [
+      "What's the hardest natural substance on Earth?"
+    ]
+  },
+  {
+    "id": "h003",
+    "type": "test",
+    "ask": "test",
+    "messages": [
+      "Say literally anything without a pun, I dare you."
+    ]
+  },
+  {
+    "id": "h004",
+    "type": "costume",
+    "ask": "costume",
+    "messages": [
+      "I can't decide if candy corn is delicious or disgusting."
+    ]
+  },
+  {
+    "id": "h005",
+    "type": "flirt",
+    "ask": "flirt",
+    "messages": [
+      "Do you come here often, or just on Halloween?"
+    ]
+  },
+  {
+    "id": "h006",
+    "type": "drinks",
+    "ask": "drinks",
+    "messages": [
+      "Where's the nearest bowl of candy corn?"
+    ]
+  },
+  {
+    "id": "h007",
+    "type": "trivia",
+    "ask": "trivia",
+    "messages": [
+      "What's the tallest mountain in the world?"
+    ]
+  },
+  {
+    "id": "h008",
+    "type": "advice",
+    "ask": "advice",
+    "messages": [
+      "What's the best way to get over a breakup?"
+    ]
+  },
+  {
+    "id": "h009",
+    "type": "joke",
+    "ask": "joke",
+    "messages": [
+      "Tell me a joke about airplanes."
+    ]
+  },
+  {
+    "id": "h010",
+    "type": "pop",
+    "ask": "pop",
+    "messages": [
+      "I still know every word to Mr. Brightside by The Killers."
+    ]
+  },
+  {
+    "id": "h011",
+    "type": "pop",
+    "ask": "pop",
+    "messages": [
+      "The Yankees are going to choke in the playoffs again."
+    ]
+  },
+  {
+    "id": "h012",
+    "type": "costume",
+    "ask": "costume",
+    "messages": [
+      "Why are skeletons always so calm at Halloween parties?"
+    ]
+  },
+  {
+    "id": "h013",
+    "type": "advice",
+    "ask": "advice",
+    "messages": [
+      "Any advice for a first date tomorrow night?"
+    ]
+  },
+  {
+    "id": "h014",
+    "type": "flirt",
+    "ask": "flirt",
+    "messages": [
+      "What's the best way to ask someone for their number?"
+    ]
+  },
+  {
+    "id": "h015",
+    "type": "trivia",
+    "ask": "trivia",
+    "messages": [
+      "How many bones are in the human body?"
+    ]
+  },
+  {
+    "id": "h016",
+    "type": "advice",
+    "ask": "advice",
+    "messages": [
+      "Is it weird to date someone from work?"
+    ]
+  },
+  {
+    "id": "h017",
+    "type": "pop",
+    "ask": "pop",
+    "messages": [
+      "I can't believe the Lakers traded their whole starting lineup."
+    ]
+  },
+  {
+    "id": "h018",
+    "type": "joke",
+    "ask": "joke",
+    "messages": [
+      "Got any jokes about wine?"
+    ]
+  },
+  {
+    "id": "h019",
+    "type": "test",
+    "ask": "test",
+    "messages": [
+      "Can you say something that isn't a joke?"
+    ]
+  },
+  {
+    "id": "h020",
+    "type": "advice",
+    "ask": "advice",
+    "messages": [
+      "I hate my job. Should I just quit?"
+    ]
+  },
+  {
+    "id": "h021",
+    "type": "costume",
+    "ask": "costume",
+    "messages": [
+      "Tell me something scary about pumpkins."
+    ]
+  },
+  {
+    "id": "h022",
+    "type": "pop",
+    "ask": "pop",
+    "messages": [
+      "Do you think Messi is the greatest soccer player ever?"
+    ]
+  },
+  {
+    "id": "h023",
+    "type": "pop",
+    "ask": "pop",
+    "messages": [
+      "Jaws is the scariest movie, and it's set at the beach."
+    ]
+  },
+  {
+    "id": "h024",
+    "type": "drinks",
+    "ask": "drinks",
+    "messages": [
+      "Can I get a beer from the cooler?"
+    ]
+  },
+  {
+    "id": "h025",
+    "type": "drinks",
+    "ask": "drinks",
+    "messages": [
+      "Who made this punch, and is it spiked?"
+    ]
+  },
+  {
+    "id": "h026",
+    "type": "joke",
+    "ask": "joke",
+    "messages": [
+      "Tell me a joke about my mortgage."
+    ]
+  },
+  {
+    "id": "h027",
+    "type": "test",
+    "ask": "test",
+    "messages": [
+      "Are you ChatGPT in a dad costume?"
+    ]
+  },
+  {
+    "id": "h028",
+    "type": "roast",
+    "ask": "roast",
+    "messages": [
+      "Hey DADGPT, roast my costume, I barely tried this year."
+    ]
+  },
+  {
+    "id": "h029",
+    "type": "advice",
+    "ask": "advice",
+    "messages": [
+      "How do I stop procrastinating on everything?"
+    ]
+  },
+  {
+    "id": "h030",
+    "type": "pop",
+    "ask": "pop",
+    "messages": [
+      "Tom Hanks has never made a bad movie, in my opinion."
+    ]
+  },
+  {
+    "id": "h031",
+    "type": "cheeky",
+    "ask": "cheeky",
+    "messages": [
+      "Do dads ever get frisky after a few drinks?"
+    ]
+  },
+  {
+    "id": "h032",
+    "type": "test",
+    "ask": "test",
+    "messages": [
+      "Who's your favorite horror movie villain?"
+    ]
+  },
+  {
+    "id": "h033",
+    "type": "random",
+    "ask": "random",
+    "messages": [
+      "I haven't slept more than five hours all week."
+    ]
+  },
+  {
+    "id": "h034",
+    "type": "flirt",
+    "ask": "flirt",
+    "messages": [
+      "Hey DADGPT, got any pickup lines for me tonight?"
+    ]
+  },
+  {
+    "id": "h035",
+    "type": "cheeky",
+    "ask": "cheeky",
+    "messages": [
+      "Do you have any good jokes about getting totally wasted tonight?"
+    ]
+  },
+  {
+    "id": "h036",
+    "type": "roast",
+    "ask": "roast",
+    "messages": [
+      "DADGPT, roast my friend who still lives with his parents."
+    ]
+  },
+  {
+    "id": "h037",
+    "type": "flirt",
+    "ask": "flirt",
+    "messages": [
+      "How do I tell someone I like their costume and them?"
+    ]
+  },
+  {
+    "id": "h038",
+    "type": "roast",
+    "ask": "roast",
+    "messages": [
+      "Roast my girlfriend's costume, she spent three hours on it."
+    ]
+  },
+  {
+    "id": "h039",
+    "type": "trivia",
+    "ask": "trivia",
+    "messages": [
+      "What's the smallest country in the world?"
+    ]
+  },
+  {
+    "id": "h040",
+    "type": "roast",
+    "ask": "roast",
+    "messages": [
+      "DADGPT, roast me. I definitely had one drink too many."
+    ]
+  },
+  {
+    "id": "h041",
+    "type": "politics",
+    "ask": "politics",
+    "messages": [
+      "Do you think Congress will ever agree on anything again?"
+    ]
+  },
+  {
+    "id": "h042",
+    "type": "politics",
+    "ask": "politics",
+    "messages": [
+      "Who's actually excited to vote this November?"
+    ]
+  },
+  {
+    "id": "h043",
+    "type": "politics",
+    "ask": "politics",
+    "messages": [
+      "I still can't believe how long election season lasts."
+    ]
+  },
+  {
+    "id": "h044",
+    "type": "politics",
+    "ask": "politics",
+    "messages": [
+      "Should voting be on a weekend instead of a Tuesday?"
+    ]
+  },
+  {
+    "id": "h045",
+    "type": "politics",
+    "ask": "politics",
+    "messages": [
+      "What makes a good presidential debate moderator, anyone know?"
+    ]
+  },
+  {
+    "id": "h046",
+    "type": "bears",
+    "ask": "bears",
+    "messages": [
+      "How's the Bears season going? I stopped checking in September."
+    ]
+  },
+  {
+    "id": "h047",
+    "type": "bears",
+    "ask": "bears",
+    "messages": [
+      "That lakefront wind at Soldier Field is brutal for fans."
+    ]
+  },
+  {
+    "id": "h048",
+    "type": "bears",
+    "ask": "bears",
+    "messages": [
+      "Every year I say this is the Bears' year."
+    ]
+  },
+  {
+    "id": "h049",
+    "type": "news",
+    "ask": "news",
+    "messages": [
+      "Rent in this city is out of control."
+    ]
+  },
+  {
+    "id": "h050",
+    "type": "news",
+    "ask": "news",
+    "messages": [
+      "Is it too late to get into crypto?"
+    ]
+  }
+]

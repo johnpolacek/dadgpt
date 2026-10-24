@@ -1,0 +1,63 @@
+(node:23460) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/johnpolacek/Projects/dadgpt/lib/dad-prompt.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/johnpolacek/Projects/dadgpt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+p001 -> Mount Everest’s confidence is sky-high; it’s always trying to peak above the competition.
+p003 -> That bet sounds heartfelt, but don’t let your buddy wrap you around his finger—or eight of them.
+p005 -> That ten-dollar bet is getting out of hand, and then seven more hands joined in.
+p007 -> You’ve fed Gerald daily for three months, so he’s less a starter and more your high-maintenance breadwinner.
+p009 -> Three hours with a glue gun, and that costume’s so cheesy the rat calls it a grate escape.
+p008 -> That costume’s so rough, even the ghosts are asking for a better cut.
+p013 -> Careful, dressed like that, everyone’s going to want a pizza you.
+p011 -> After 61 custard tarts, your scale gave you a look, because Portugal had you on a roll.
+p002 -> It’s so tall, even the clouds look up to it.
+p004 -> That claim is heartfelt, but the evidence is hanging by a tentacle.
+p006 -> Twenty bucks at stake in a Salem argument? Now that’s a high-stakes witchuation.
+p015 -> That ghostly green stuff must be potent, you’re feeling spirited enough to deliver a knockout punch line.
+p017 -> Are you pumpkin dip? Because I’d double-dip just to get a little closer to your sweet side.
+p010 -> You explained fantasy football to a taco for forty minutes; no wonder your defense is full of holes.
+p019 -> Snickers are perfect because they laugh before you even unwrap the punchline.
+p021 -> Dave’s crossed from costume party to fine dining, and now he’s offering full shell service.
+p012 -> You didn’t build a bookshelf, you built a case for buying books digitally.
+p025 -> For a straight answer, ask a ruler; it’s always on the level.
+p014 -> Are you a library book? Because I can’t stop checking you out.
+p023 -> That Pennywise costume was so committed, even the car door couldn’t handle the headliner.
+p016 -> Are you a tow truck? Because you’ve got a license to pull.
+p018 -> Your cardigan’s cute, but that smile is sew much better.
+p027 -> Dave says vampire, but you’re a zombie accountant, here to raise the dead accounts.
+p029 -> Your car’s suspension keeps getting grounded every time you turn left.
+p020 -> Halloween candy is a sticky situation, but the wrappers always make a sweet escape.
+p022 -> You two should settle the candy-corn debate by splitting the kernel.
+p033 -> Pumpkin spice lattes make terrible surgeons, they always leave a latte incision.
+p031 -> Your skeleton costume lost its left foot, so it has no leg to stand on, except the right.
+p024 -> Your sister’s dog isn’t a costume critic, it’s the curator of a chew-seum.
+p028 -> A chatbot in costume is just a digital masquerade.
+p026 -> Costumes are great at hiding identities, but terrible at keeping a straight face.
+p030 -> The brie vanished so fast, it must’ve made a grate escape.
+p035 -> That retriever wore a hot-dog costume because he wanted to relish the attention.
+p037 -> After ten years on the line, nursing school swaps hot plates for bedpans, and suddenly you’ll need more patients.
+p034 -> Mr. Whiskers is fifteen pounds and knocked down a candle, so that shelf has a serious shelf-esteem issue.
+p039 -> Portland’s calling, Austin’s promoting, and your relationship has moving baggage—sounds like love is really going places.
+p041 -> Six years at Brightwater means you already know how to make a strong impression.
+p032 -> That inflatable T-rex has tiny arms but a fully inflated ego.
+p043 -> Baby Shark’s so catchy, it’ll have you swimming in circles till you’re fin-ished.
+p045 -> Ryan Gosling brought such strong beach vibes, even the soundtrack asked if he was Kenough.
+p036 -> Gary’s Weber is so seasoned, the hot dogs call it the grillfather.
+p047 -> Jurassic Park still holds up, because nothing says staying power like a roaring success.
+p049 -> The vampire finished it, so the punch is now fang-cy.
+p040 -> Three months of climbing dates means your romance is going places, mostly up the wall.
+p042 -> You’re caught between a wok and a hard place.
+p038 -> Trading accounting for baking means your bread can finally bring in dough.
+p044 -> A sequel to Beetlejuice needs serious dead-ication.
+p051 -> That mysterious dip has the whole snack table stuck in a guacward silence.
+p053 -> If the shark finished the spiked cider, he’s probably feeling a little fin-spirational.
+p046 -> It only slaps in October because the beat is dead the rest of the year.
+p055 -> A vampire nurse’s bedside manner is so good, patients leave totally drained and still ask for a follow-up.
+p048 -> On John Wick, a stunt double’s downtime must feel like a Wick-end.
+p059 -> Casper saw her tiny skirt and wondered if it was a haunting or a boo-ty call.
+p052 -> That hotdog’s so tipsy, he’s starting to relish the attention.
+p050 -> They’re in the pumpkin patch, keeping good gourd company.
+p058 -> That pirate booty’s got the whole crew hoping to find buried treasure.
+p056 -> One breeze and that toga goes from Grecian to cheek-ian.
+p060 -> That devil costume’s less trick-or-treat and more cheek-or-retreat.
+58 traces written to /Users/johnpolacek/Projects/dadgpt/evals/data/traces-party-luna.json

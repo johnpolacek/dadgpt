@@ -1,0 +1,45 @@
+# Verification
+
+Check in proportion to what changed. Do not turn a focused animation task into a full audit.
+
+## Always
+
+- Run the repo's `svelte-check`, lint, format, and test commands where they exist.
+- Confirm settled content is visible, interactive, and free of leftover GSAP inline styles.
+- Confirm timelines, triggers, listeners, and plugin DOM changes are cleaned up on unmount and on a reused page's re-run.
+- Confirm the page is readable with JavaScript disabled and with the pre-paint mark set but hydration blocked.
+- Test reduced motion: the same settled state, every completion callback fired, for GSAP and for any Svelte directive.
+- At phone width: readable text, stable boxes, no horizontal overflow.
+- Touch-treated controls release after taps. For device changes, run the [device checks](devices.md#verify).
+
+## Initially hidden content
+
+Run the [failure verification matrix](initialization.md#failure-verification) when adding or changing hiding, preparation, or recovery. It covers disabled JavaScript, a blocked bundle after the marker, throws before/after styles and splits, stalled fonts/media, late initialization, no-flash success, reduced motion, and interruption/repeated setup. Assert text and native links, not opacity alone. Include shell/footer and intentionally hidden content.
+
+Use this framework's [integration rules](motion-system.md#initialization-and-recovery) for rendering and navigation expectations. Measure document-load LCP separately from transitions when first-load behavior changes; report measured results and untested paths.
+
+## Runtime changes
+
+Check the changed lifecycle in a real browser when practical:
+
+- Initial state is applied before reveal. Throttle the network and reload; no settled server HTML flashes before hydration.
+- Intro ends in one settled state.
+- Outro keeps the node mounted until completion runs, and only then does the held navigation re-issue or the `onNavigate` promise resolve. On the `beforeNavigate` path the URL is unchanged for the whole outro.
+- Rapid or interrupted input ends in one coherent state.
+- Layout boxes do not jump.
+
+For route navigation, test the paths the change affects: an ordinary internal link, back and forward, a rapid double navigation, a same-route param change, a search-param-only change, a `goto`, and a reload. Confirm URL, visible page, focus, history, and scroll agree, and that `navigating` returns to `null`.
+
+For a reused page, the returning lifecycle must run initial state and intro on its preserved DOM with no doubled tweens, and scroll triggers must measure correctly after new data renders.
+
+When Svelte directives or View Transitions are involved, confirm no element is animated by two engines, outroing blocks are gone once their outro ends, and clicks land during a running transition.
+
+With a smooth scroller, run the [scroll checks](smooth-scroll.md#verify) on a link, a `popstate`, a `noScroll` link, and a hash-only link; `to.scroll` in `afterNavigate` matches where the page sits, and a page reused with new params keeps the same scroller. With a curtain, preloader, or shared element, run the [archetype checks](transition-archetypes.md#verify); also confirm the curtain covers the whole swap gap on the `beforeNavigate` path, the preloader shows only on `enter`, and a shared element still morphs when a `{#key}` block keeps the old page in the DOM.
+
+For conditional components, test show, hide, and one interruption. Confirm removal happens after the outro.
+
+## Builds and wider checks
+
+Run a production build for changes to routes, `svelte.config.js`, page options, dependencies, `src/app.html`, or anything release-facing; the dev server hydrates differently from the built output. Serve the build the way the adapter does: under `adapter-node` that is `node build`, since `vite preview` serves no server-rendered routes there. Run wider browser, accessibility, responsive, streaming, and performance checks only when the change touches them or the user asks for a full audit.
+
+Report which checks ran and which could not. Do not claim runtime behavior was verified when only static review was possible.

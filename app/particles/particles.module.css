@@ -1,0 +1,79 @@
+.page {
+  padding: 3rem 1rem 6rem;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 2.5rem;
+}
+
+.header h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  text-align: left;
+}
+
+.header p {
+  margin-top: 1rem;
+  opacity: 0.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 40rem), 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #262626;
+}
+
+.stage {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.logo {
+  font-size: clamp(3.5rem, 11vw, 8rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Inline blocks give each word a box the edge sampler can measure */
+.logo span {
+  display: inline-block;
+}
+
+.gpt {
+  font-weight: 1;
+}
+
+.caption {
+  padding: 1rem;
+  border-top: 1px solid #262626;
+  font-size: 0.9rem;
+}
+
+.caption p {
+  opacity: 0.55;
+  margin-top: 0.25rem;
+}
+
+.num {
+  opacity: 0.4;
+  margin-right: 0.6rem;
+}

@@ -1,0 +1,63 @@
+.page {
+  padding: 3rem 1rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: clamp(2.5rem, 10vw, 5rem);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.joke {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.style {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+.instructions,
+.script {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  max-width: 44rem;
+}
+
+.script {
+  font-style: italic;
+}
+
+.voices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.voice {
+  font: inherit;
+  font-size: 1rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  border: 1.5px solid currentColor;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.playing {
+  background: #fff;
+  color: #000;
+}

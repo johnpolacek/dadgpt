@@ -1,0 +1,906 @@
+[
+  {
+    "id": "d001",
+    "type": "costume",
+    "ask": "costume",
+    "messages": [
+      "Do you believe in ghosts?"
+    ]
+  },
+  {
+    "id": "d002",
+    "type": "pop",
+    "ask": "pop",
+    "messages": [
+      "Beyoncé's Renaissance tour was the best concert I've ever been to."
+    ]
+  },
+  {
+    "id": "d003",
+    "type": "advice",
+    "ask": "advice",
+    "messages": [
+      "How do I tell my coworker to stop talking so loud?"
+    ]
+  },
+  {
+    "id": "d004",
+    "type": "joke",
+    "ask": "joke",
+    "messages": [
+      "Got a good joke about skeletons?"
+    ]
+  },
+  {
+    "id": "d005",
+    "type": "trivia",
+    "ask": "trivia",
+    "messages": [
+      "How many hearts does an octopus have?"
+    ]
+  },
+  {
+    "id": "d006",
+    "type": "joke",
+    "ask": "joke",
+    "messages": [
+      "Tell me a joke about the gym."
+    ]
+  },
+  {
+    "id": "d007",
+    "type": "roast",
+    "ask": "roast",
+    "messages": [
+      "DADGPT, roast my taste in music. I picked the playlist tonight."
+    ]
+  },
+  {
+    "id": "d008",
+    "type": "drinks",
+    "ask": "drinks",
+    "messages": [
+      "Who brought the chips and guacamole?"
+    ]
+  },
+  {
+    "id": "d009",
+    "type": "test",
+    "ask": "test",
+    "messages": [
+      "Do you actually know what a dad joke is?"
+    ]
+  },
+  {
+    "id": "d010",
+    "type": "test",
+    "ask": "test",
+    "messages": [
+      "Tell me something serious for once."
+    ]
+  },
+  {
+    "id": "d011",
+    "type": "joke",
+    "ask": "joke",
+    "messages": [
+      "Do you know any jokes about tacos?"
+    ]
+  },
+  {
+    "id": "d012",
+    "type": "roast",
+    "ask": "roast",
+    "messages": [
+      "Can you roast my dance moves? I think they're pretty good."
+    ]
+  },
+  {
+    "id": "d013",
+    "type": "drinks",
+    "ask": "drinks",
+    "messages": [
+      "I need another drink, where's the bar?"
+    ]
+  },
+  {
+    "id": "d014",
+    "type": "costume",
+    "ask": "costume",
+    "messages": [
+      "Which is better, chocolate candy or the fruity kind?"
+    ]
+  },
+  {
+    "id": "d015",
+    "type": "advice",
+    "ask": "advice",
+    "messages": [
+      "How do I handle a micromanaging boss?"
+    ]
+  },
+  {
+    "id": "d016",
+    "type": "test",
+    "ask": "test",
+    "messages": [
+      "I'm having a really bad day, any advice?"
+    ]
+  },
+  {
+    "id": "d017",
+    "type": "flirt",
+    "ask": "flirt",
+    "messages": [
+      "Is it hot in here, or is it just your costume?"
+    ]
+  },
+  {
+    "id": "d018",
+    "type": "cheeky",
+    "ask": "cheeky",
+    "messages": [
+      "How does a dad flirt with someone at a party?"
+    ]
+  },
+  {
+    "id": "d019",
+    "type": "joke",
+    "ask": "joke",
+    "messages": [
+      "Tell me a joke about pumpkins."
+    ]
+  },
+  {
+    "id": "d020",
+    "type": "random",
+    "ask": "random",
+    "messages": [
+      "Is it just me or is it hot in here?"
+    ]
+  },
+  {
+    "id": "d021",
+    "type": "flirt",
+    "ask": "flirt",
+    "messages": [
+      "If you were single, what would you say to me?"
+    ]
+  },
+  {
+    "id": "d022",
+    "type": "trivia",
+    "ask": "trivia",
+    "messages": [
+      "How fast can a cheetah run?"
+    ]
+  },
+  {
+    "id": "d023",
+    "type": "drinks",
+    "ask": "drinks",
+    "messages": [
+      "Are these pumpkin cookies gluten free?"
+    ]
+  },
+  {
+    "id": "d024",
+    "type": "drinks",
+    "ask": "drinks",
+    "messages": [
+      "Great party, but the music is too loud!"
+    ]
+  },
+  {
+    "id": "d025",
+    "type": "joke",
+    "ask": "joke",
+    "messages": [
+      "Can you do a joke about coffee?"
+    ]
+  },
+  {
+    "id": "d026",
+    "type": "drinks",
+    "ask": "drinks",
+    "messages": [
+      "This spiced cider is amazing, what's in it?"
+    ]
+  },
+  {
+    "id": "d027",
+    "type": "cheeky",
+    "ask": "cheeky",
+    "messages": [
+      "What happens if I kiss a robot at midnight?"
+    ]
+  },
+  {
+    "id": "d028",
+    "type": "pop",
+    "ask": "pop",
+    "messages": [
+      "Taylor Swift's last album has been on repeat for me all month."
+    ]
+  },
+  {
+    "id": "d029",
+    "type": "joke",
+    "ask": "joke",
+    "messages": [
+      "How about a joke about cats?"
+    ]
+  },
+  {
+    "id": "d030",
+    "type": "pop",
+    "ask": "pop",
+    "messages": [
+      "Who's your pick to win the Super Bowl this year?"
+    ]
+  },
+  {
+    "id": "d031",
+    "type": "pop",
+    "ask": "pop",
+    "messages": [
+      "Have you seen The Shining? That hotel still creeps me out."
+    ]
+  },
+  {
+    "id": "d032",
+    "type": "trivia",
+    "ask": "trivia",
+    "messages": [
+      "Which planet has the most moons?"
+    ]
+  },
+  {
+    "id": "d033",
+    "type": "random",
+    "ask": "random",
+    "messages": [
+      "Does anyone know a good place for tacos around here?"
+    ]
+  },
+  {
+    "id": "d034",
+    "type": "flirt",
+    "ask": "flirt",
+    "messages": [
+      "Say something charming so I can steal it for later."
+    ]
+  },
+  {
+    "id": "d035",
+    "type": "roast",
+    "ask": "roast",
+    "messages": [
+      "Go ahead and roast me for being late to my own party."
+    ]
+  },
+  {
+    "id": "d036",
+    "type": "costume",
+    "ask": "costume",
+    "messages": [
+      "I spent three weeks building this costume, what do you think?"
+    ]
+  },
+  {
+    "id": "d037",
+    "type": "trivia",
+    "ask": "trivia",
+    "messages": [
+      "How long does it take light from the sun to reach Earth?"
+    ]
+  },
+  {
+    "id": "d038",
+    "type": "costume",
+    "ask": "costume",
+    "messages": [
+      "Do you think my vampire teeth look convincing?"
+    ]
+  },
+  {
+    "id": "d039",
+    "type": "cheeky",
+    "ask": "cheeky",
+    "messages": [
+      "Tell me something naughty about the bar over there."
+    ]
+  },
+  {
+    "id": "d040",
+    "type": "flirt",
+    "ask": "flirt",
+    "messages": [
+      "Can you flirt with me? I'm terrible at it."
+    ]
+  },
+  {
+    "id": "d041",
+    "type": "flirt",
+    "ask": "flirt",
+    "messages": [
+      "Give me a line to use on that person by the snacks."
+    ]
+  },
+  {
+    "id": "d042",
+    "type": "cheeky",
+    "ask": "cheeky",
+    "messages": [
+      "What's your best pickup line for someone in a tight costume?"
+    ]
+  },
+  {
+    "id": "d043",
+    "type": "cheeky",
+    "ask": "cheeky",
+    "messages": [
+      "Can you tell me a dirty joke, or is that off-limits?"
+    ]
+  },
+  {
+    "id": "d044",
+    "type": "random",
+    "ask": "random",
+    "messages": [
+      "What's the best movie you've seen this year?"
+    ]
+  },
+  {
+    "id": "d045",
+    "type": "roast",
+    "ask": "roast",
+    "messages": [
+      "Roast my buddy who just ate the whole bowl of candy."
+    ]
+  },
+  {
+    "id": "d046",
+    "type": "pop",
+    "ask": "pop",
+    "messages": [
+      "Did you see the new Dune movie? The sandworms looked incredible."
+    ]
+  },
+  {
+    "id": "d047",
+    "type": "trivia",
+    "ask": "trivia",
+    "messages": [
+      "How many times per day does a hummingbird's heart beat?"
+    ]
+  },
+  {
+    "id": "d048",
+    "type": "joke",
+    "ask": "joke",
+    "messages": [
+      "Tell me a joke about working from home."
+    ]
+  },
+  {
+    "id": "d049",
+    "type": "costume",
+    "ask": "costume",
+    "messages": [
+      "Do you like my costume, or is it a little too basic?"
+    ]
+  },
+  {
+    "id": "d050",
+    "type": "random",
+    "ask": "random",
+    "messages": [
+      "I have to be at work at eight tomorrow."
+    ]
+  },
+  {
+    "id": "d051",
+    "type": "costume",
+    "ask": "costume",
+    "messages": [
+      "What do you call a witch who lives at the beach?"
+    ]
+  },
+  {
+    "id": "d052",
+    "type": "trivia",
+    "ask": "trivia",
+    "messages": [
+      "Why is the sky blue?"
+    ]
+  },
+  {
+    "id": "d053",
+    "type": "random",
+    "ask": "random",
+    "messages": [
+      "Who's in charge of the music tonight?"
+    ]
+  },
+  {
+    "id": "d054",
+    "type": "trivia",
+    "ask": "trivia",
+    "messages": [
+      "What's the only mammal that can truly fly?"
+    ]
+  },
+  {
+    "id": "d055",
+    "type": "roast",
+    "ask": "roast",
+    "messages": [
+      "Roast my friend over there, he's been on his phone all night."
+    ]
+  },
+  {
+    "id": "d056",
+    "type": "flirt",
+    "ask": "flirt",
+    "messages": [
+      "I need a pickup line that actually works. Help me out."
+    ]
+  },
+  {
+    "id": "d057",
+    "type": "costume",
+    "ask": "costume",
+    "messages": [
+      "Where do ghosts go to get a drink around here?"
+    ]
+  },
+  {
+    "id": "d058",
+    "type": "cheeky",
+    "ask": "cheeky",
+    "messages": [
+      "What's the naughtiest thing you've ever said to your wife?"
+    ]
+  },
+  {
+    "id": "d059",
+    "type": "cheeky",
+    "ask": "cheeky",
+    "messages": [
+      "Would you rather skinny dip or tell a spicy joke?"
+    ]
+  },
+  {
+    "id": "d060",
+    "type": "advice",
+    "ask": "advice",
+    "messages": [
+      "When should I say I love you to someone?"
+    ]
+  },
+  {
+    "id": "d061",
+    "type": "costume",
+    "ask": "costume",
+    "messages": [
+      "What's the best candy to hand out to trick-or-treaters?"
+    ]
+  },
+  {
+    "id": "d062",
+    "type": "joke",
+    "ask": "joke",
+    "messages": [
+      "Can you tell me a joke about taxes?"
+    ]
+  },
+  {
+    "id": "d063",
+    "type": "costume",
+    "ask": "costume",
+    "messages": [
+      "Is it weird that I still love trick-or-treating?"
+    ]
+  },
+  {
+    "id": "d064",
+    "type": "drinks",
+    "ask": "drinks",
+    "messages": [
+      "Do you have anything stronger than wine?"
+    ]
+  },
+  {
+    "id": "d065",
+    "type": "flirt",
+    "ask": "flirt",
+    "messages": [
+      "Tell me something that'll make the cute bartender smile."
+    ]
+  },
+  {
+    "id": "d066",
+    "type": "cheeky",
+    "ask": "cheeky",
+    "messages": [
+      "Be honest, DADGPT, what's the sexiest thing about a dad bod?"
+    ]
+  },
+  {
+    "id": "d067",
+    "type": "test",
+    "ask": "test",
+    "messages": [
+      "Are you secretly a robot or just a guy?"
+    ]
+  },
+  {
+    "id": "d068",
+    "type": "drinks",
+    "ask": "drinks",
+    "messages": [
+      "What time are they cutting the cake?"
+    ]
+  },
+  {
+    "id": "d069",
+    "type": "roast",
+    "ask": "roast",
+    "messages": [
+      "DADGPT, roast me for turning thirty-five and still wearing this costume."
+    ]
+  },
+  {
+    "id": "d070",
+    "type": "roast",
+    "ask": "roast",
+    "messages": [
+      "Roast my haircut, I paid way too much for it."
+    ]
+  },
+  {
+    "id": "d071",
+    "type": "joke",
+    "ask": "joke",
+    "messages": [
+      "Give me a dad joke about golf."
+    ]
+  },
+  {
+    "id": "d072",
+    "type": "cheeky",
+    "ask": "cheeky",
+    "messages": [
+      "Got any jokes about hooking up with a ghost?"
+    ]
+  },
+  {
+    "id": "d073",
+    "type": "advice",
+    "ask": "advice",
+    "messages": [
+      "How do I ask my boss for a raise?"
+    ]
+  },
+  {
+    "id": "d074",
+    "type": "test",
+    "ask": "test",
+    "messages": [
+      "What's the capital of France?"
+    ]
+  },
+  {
+    "id": "d075",
+    "type": "test",
+    "ask": "test",
+    "messages": [
+      "What's two plus two?"
+    ]
+  },
+  {
+    "id": "d076",
+    "type": "drinks",
+    "ask": "drinks",
+    "messages": [
+      "Is the dip supposed to look like that?"
+    ]
+  },
+  {
+    "id": "d077",
+    "type": "random",
+    "ask": "random",
+    "messages": [
+      "I think I just ate a whole bag of candy."
+    ]
+  },
+  {
+    "id": "d078",
+    "type": "advice",
+    "ask": "advice",
+    "messages": [
+      "Should I text my ex back or leave it alone?"
+    ]
+  },
+  {
+    "id": "d079",
+    "type": "drinks",
+    "ask": "drinks",
+    "messages": [
+      "I'm starving, is there any food left?"
+    ]
+  },
+  {
+    "id": "d080",
+    "type": "test",
+    "ask": "test",
+    "messages": [
+      "How many drinks have you had tonight?"
+    ]
+  },
+  {
+    "id": "d081",
+    "type": "advice",
+    "ask": "advice",
+    "messages": [
+      "How do I make friends in a new city?"
+    ]
+  },
+  {
+    "id": "d082",
+    "type": "test",
+    "ask": "test",
+    "messages": [
+      "Can you please just stop making jokes for one minute?"
+    ]
+  },
+  {
+    "id": "d083",
+    "type": "advice",
+    "ask": "advice",
+    "messages": [
+      "Should I go back to school at thirty-five?"
+    ]
+  },
+  {
+    "id": "d084",
+    "type": "trivia",
+    "ask": "trivia",
+    "messages": [
+      "What's the oldest known musical instrument?"
+    ]
+  },
+  {
+    "id": "d085",
+    "type": "random",
+    "ask": "random",
+    "messages": [
+      "I can't believe how good this pumpkin dip is."
+    ]
+  },
+  {
+    "id": "d086",
+    "type": "flirt",
+    "ask": "flirt",
+    "messages": [
+      "I'm feeling lucky tonight. Hit me with your best line."
+    ]
+  },
+  {
+    "id": "d087",
+    "type": "pop",
+    "ask": "pop",
+    "messages": [
+      "My favorite song of all time is Bohemian Rhapsody."
+    ]
+  },
+  {
+    "id": "d088",
+    "type": "roast",
+    "ask": "roast",
+    "messages": [
+      "Tell me a joke that roasts anyone who works in finance."
+    ]
+  },
+  {
+    "id": "d089",
+    "type": "random",
+    "ask": "random",
+    "messages": [
+      "Why is parallel parking so hard?"
+    ]
+  },
+  {
+    "id": "d090",
+    "type": "random",
+    "ask": "random",
+    "messages": [
+      "My costume took me three hours and nobody gets it."
+    ]
+  },
+  {
+    "id": "d091",
+    "type": "cheeky",
+    "ask": "cheeky",
+    "messages": [
+      "Can you make a joke that would get us both in trouble?"
+    ]
+  },
+  {
+    "id": "d092",
+    "type": "random",
+    "ask": "random",
+    "messages": [
+      "I'm thinking about adopting a dog this winter."
+    ]
+  },
+  {
+    "id": "d093",
+    "type": "random",
+    "ask": "random",
+    "messages": [
+      "Do you know where the bathroom is?"
+    ]
+  },
+  {
+    "id": "d094",
+    "type": "politics",
+    "ask": "politics",
+    "messages": [
+      "Campaign ads are way too loud this time of year."
+    ]
+  },
+  {
+    "id": "d095",
+    "type": "politics",
+    "ask": "politics",
+    "messages": [
+      "Honestly, I just want to skip the debates and watch highlights."
+    ]
+  },
+  {
+    "id": "d096",
+    "type": "politics",
+    "ask": "politics",
+    "messages": [
+      "Taxes are the one thing nobody ever wants to talk about."
+    ]
+  },
+  {
+    "id": "d097",
+    "type": "politics",
+    "ask": "politics",
+    "messages": [
+      "Do you think the president ever gets a day off?"
+    ]
+  },
+  {
+    "id": "d098",
+    "type": "politics",
+    "ask": "politics",
+    "messages": [
+      "Is it weird that I like reading the ballot measures?"
+    ]
+  },
+  {
+    "id": "d099",
+    "type": "politics",
+    "ask": "politics",
+    "messages": [
+      "My uncle won't stop arguing about politics at every family dinner."
+    ]
+  },
+  {
+    "id": "d100",
+    "type": "politics",
+    "ask": "politics",
+    "messages": [
+      "Every candidate promises to lower taxes, but does it ever happen?"
+    ]
+  },
+  {
+    "id": "d101",
+    "type": "politics",
+    "ask": "politics",
+    "messages": [
+      "Do you ever get tired of all the political yard signs?"
+    ]
+  },
+  {
+    "id": "d102",
+    "type": "politics",
+    "ask": "politics",
+    "messages": [
+      "I waited in line forever to vote last time."
+    ]
+  },
+  {
+    "id": "d103",
+    "type": "bears",
+    "ask": "bears",
+    "messages": [
+      "Think the Bears will finally get a good quarterback this year?"
+    ]
+  },
+  {
+    "id": "d104",
+    "type": "bears",
+    "ask": "bears",
+    "messages": [
+      "Losing to the Packers again hurts every single time."
+    ]
+  },
+  {
+    "id": "d105",
+    "type": "bears",
+    "ask": "bears",
+    "messages": [
+      "Have you ever been to Soldier Field in December?"
+    ]
+  },
+  {
+    "id": "d106",
+    "type": "bears",
+    "ask": "bears",
+    "messages": [
+      "Do you think the Bears coach will survive another season?"
+    ]
+  },
+  {
+    "id": "d107",
+    "type": "bears",
+    "ask": "bears",
+    "messages": [
+      "The Bears defense is great, but the offense is a mess."
+    ]
+  },
+  {
+    "id": "d108",
+    "type": "news",
+    "ask": "news",
+    "messages": [
+      "Do you think AI is going to take all our jobs?"
+    ]
+  },
+  {
+    "id": "d109",
+    "type": "news",
+    "ask": "news",
+    "messages": [
+      "Have you seen grocery prices lately? My cart is crying."
+    ]
+  },
+  {
+    "id": "d110",
+    "type": "news",
+    "ask": "news",
+    "messages": [
+      "Gas prices got me thinking about buying a bicycle."
+    ]
+  },
+  {
+    "id": "d111",
+    "type": "news",
+    "ask": "news",
+    "messages": [
+      "This Chicago weather can't make up its mind, huh?"
+    ]
+  },
+  {
+    "id": "d112",
+    "type": "news",
+    "ask": "news",
+    "messages": [
+      "My landlord raised the rent again, and I'm furious."
+    ]
+  },
+  {
+    "id": "d113",
+    "type": "news",
+    "ask": "news",
+    "messages": [
+      "Every week my grocery bill gets bigger and my fridge gets emptier."
+    ]
+  }
+]
