@@ -389,7 +389,7 @@ export default function DadChat({ canned = false }: Props) {
   }, [open]);
 
   const statusText = !supported
-    ? "Dad can't hear you in this browser. Try Chrome or Safari."
+    ? "Dad can’t hear you in this browser. Try Chrome or Safari."
     : status === "listening"
       ? "Talk to send a message"
       : "";

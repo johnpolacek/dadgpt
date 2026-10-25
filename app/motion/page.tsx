@@ -154,7 +154,7 @@ const think: Play = (stage) => {
     .timeline()
     .to(el, scramble("Hmm..."))
     .to(el, scramble("Let me think..."), "+=0.8")
-    .to(el, scramble("Oh! I've got one."), "+=0.8");
+    .to(el, scramble("Oh! I’ve got one."), "+=0.8");
 };
 
 /* 7. Speak-in: words arrive at talking pace, the punchline tumbles in letter by letter */
@@ -273,7 +273,7 @@ const groan: Play = (stage) => {
     .to(q("." + styles.sigh), { autoAlpha: 1, y: 0, duration: 0.4, ease: "power2.out" }, "-=0.4");
 };
 
-const JOKE = "I'm reading a book about anti-gravity.";
+const JOKE = "I’m reading a book about anti-gravity.";
 
 export default function Motion() {
   return (
@@ -317,7 +317,7 @@ export default function Motion() {
             </span>
           </div>
         </Card>
-        <Card n={6} title="Scrambled thoughts" note="The status line scrambles through Dad's thinking." play={think}>
+        <Card n={6} title="Scrambled thoughts" note="The status line scrambles through Dad’s thinking." play={think}>
           <p className={styles.status}>&nbsp;</p>
         </Card>
       </div>
@@ -326,12 +326,12 @@ export default function Motion() {
       <div className={styles.grid}>
         <Card n={7} title="Speak-in" note="Words land at talking pace. The punchline tumbles in." play={speak}>
           <p className={`${styles.reply} ${styles.kern}`}>
-            {JOKE} It&apos;s <span className={styles.punch}>impossible</span> to put down.
+            {JOKE} It’s <span className={styles.punch}>impossible</span> to put down.
           </p>
         </Card>
         <Card n={8} title="Two-finger typing" note="Dad types it out slowly with a blinking caret." play={type}>
           <p className={styles.reply}>
-            <span className={styles.typed} data-text={`${JOKE} It's impossible to put down.`} />
+            <span className={styles.typed} data-text={`${JOKE} It’s impossible to put down.`} />
             <span className={styles.caret}>|</span>
           </p>
         </Card>
@@ -363,7 +363,7 @@ function ChatSample() {
   return (
     <div className={styles.chat}>
       <p className={`${styles.line} ${styles.said}`}>Can you make me a sandwich?</p>
-      <p className={`${styles.line} ${styles.kern}`}>Poof! You&apos;re a sandwich.</p>
+      <p className={`${styles.line} ${styles.kern}`}>Poof! You’re a sandwich.</p>
       <p className={`${styles.line} ${styles.said}`}>What time is it?</p>
       <p className={`${styles.line} ${styles.kern}`}>Time to get a watch, kiddo.</p>
       <button className={styles.clear} aria-label="Clear chat">

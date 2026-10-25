@@ -6,7 +6,7 @@ export type Turn = { role: "user" | "assistant"; content: string };
 export const LUNA_MODEL = "gpt-6-luna";
 export const HAIKU_MODEL = "claude-haiku-5-5";
 
-const REFUSAL_REPLY = "I'd tell you a joke about that, but it's above my pay grade. Ask your mother.";
+const REFUSAL_REPLY = "I’d tell you a joke about that, but it’s above my pay grade. Ask your mother.";
 
 /** Gets a joke from gpt-6-luna, which won the blind party face-off */
 export async function lunaJoke(history: Turn[], apiKey: string) {

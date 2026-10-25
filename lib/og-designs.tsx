@@ -76,7 +76,7 @@ export const DESIGNS: Design[] = [
   },
   {
     title: "Costume",
-    note: "The pen and ink drawing beside the logo, so people get it's a costume.",
+    note: "The pen and ink drawing beside the logo, so people get it’s a costume.",
     render: ({ costume }) => (
       <div style={{ ...frame, alignItems: "center", padding: "0 72px" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: 36, flex: 1 }}>
@@ -119,7 +119,7 @@ export const DESIGNS: Design[] = [
     render: () => (
       <div style={{ ...frame, flexDirection: "column", justifyContent: "center", padding: "0 90px", gap: 0 }}>
         <div style={{ display: "flex", background: FG, color: BG, borderRadius: 48, padding: "48px 56px", fontSize: 58, fontWeight: 700, lineHeight: 1.15, letterSpacing: -1 }}>
-          I don&apos;t trust stairs. They&apos;re always up to something.
+          I don’t trust stairs. They’re always up to something.
         </div>
         {/* Tail: a white triangle under the bubble, pointing at the logo */}
         <svg width={64} height={56} viewBox="0 0 64 56" style={{ marginLeft: 90, marginTop: -1 }}>
@@ -134,7 +134,7 @@ export const DESIGNS: Design[] = [
   },
   {
     title: "Mic and rings",
-    note: "The app's mic button mid pulse, under the logo.",
+    note: "The app’s mic button mid pulse, under the logo.",
     render: () => (
       <div style={{ ...frame, flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 20 }}>
         <Logo width={640} />
@@ -153,7 +153,7 @@ export const DESIGNS: Design[] = [
   },
   {
     title: "Embers",
-    note: "Sparks rise off the logo like the live site's ember effect.",
+    note: "Sparks rise off the logo like the live site’s ember effect.",
     render: () => (
       <div style={{ ...frame, flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative" }}>
         <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: "absolute", left: 0, top: 0 }}>

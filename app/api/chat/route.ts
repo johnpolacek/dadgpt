@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { smartQuotes } from "@/lib/smart-quotes";
 import { haikuJoke, lunaJoke, type Turn } from "@/lib/joke";
 
 export async function POST(request: Request) {
@@ -24,14 +25,14 @@ export async function POST(request: Request) {
   const openaiKey = process.env.OPENAI_API_KEY;
   if (openaiKey) {
     try {
-      return NextResponse.json({ reply: await lunaJoke(history, openaiKey) });
+      return NextResponse.json({ reply: smartQuotes(await lunaJoke(history, openaiKey)) });
     } catch (error) {
       console.error(error);
     }
   }
 
   try {
-    return NextResponse.json({ reply: await haikuJoke(history) });
+    return NextResponse.json({ reply: smartQuotes(await haikuJoke(history)) });
   } catch (error) {
     console.error(error);
     return NextResponse.json({ error: "Dad is napping. Try again." }, { status: 500 });

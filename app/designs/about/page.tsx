@@ -335,14 +335,14 @@ function Comic() {
           <figcaption>Put on the costume.</figcaption>
         </figure>
         <figure className={s.panel} data-a>
-          <div className={s.bubble}>Why can&apos;t you give me a real answer?</div>
+          <div className={s.bubble}>Why can’t you give me a real answer?</div>
           <div className={s.panelMic}>
             <MicIcon />
           </div>
           <figcaption>Someone taps the mic.</figcaption>
         </figure>
         <figure className={s.panel} data-a>
-          <div className={`${s.bubble} ${s.bubbleDad}`}>I&apos;m reading a book about anti-gravity. It&apos;s impossible to put down.</div>
+          <div className={`${s.bubble} ${s.bubbleDad}`}>I’m reading a book about anti-gravity. It’s impossible to put down.</div>
           <Logo className={s.panelLogo} />
           <figcaption>Dad answers. Out loud.</figcaption>
         </figure>
@@ -579,7 +579,7 @@ const DIRECTIONS: { title: string; note: string; play: Play; View: () => React.R
   { title: "Dad Facts", note: "A nutrition label. Real answers 0%, puns 100%.", play: label, View: Facts },
   { title: "Terminal", note: "A shell session that prints the about info, one command at a time.", play: typing, View: Terminal },
   { title: "Comic strip", note: "Three panels: wear it, tap the mic, Dad answers with a pun.", play: panels, View: Comic },
-  { title: "Dad explains", note: "Told as a chat in the app's own style, so it feels like the same place.", play: chat, View: Chat },
+  { title: "Dad explains", note: "Told as a chat in the app’s own style, so it feels like the same place.", play: chat, View: Chat },
 ];
 
 export default function AboutDesigns() {
