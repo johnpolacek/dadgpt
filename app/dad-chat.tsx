@@ -136,6 +136,9 @@ function snapPhoto(video: HTMLVideoElement) {
   return canvas.toDataURL("image/jpeg", 0.8);
 }
 
+/** How long the chat stays open with nothing happening */
+const IDLE_CLOSE_MS = 2 * 60 * 1000;
+
 const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 /** A chat line. New Dad replies scramble in word by word. */
@@ -414,6 +417,13 @@ export default function DadChat({ canned = false }: Props) {
       clear();
     });
   }
+
+  // After two quiet minutes the chat closes, so the next person walks up to a fresh Dad
+  useEffect(() => {
+    if (!history.length || status !== "idle") return;
+    const timer = setTimeout(clear, IDLE_CLOSE_MS);
+    return () => clearTimeout(timer);
+  }, [history, status]);
 
   useEffect(() => {
     const scroller = scrollerRef.current;
