@@ -11,7 +11,7 @@ import Sentences from "../sentences";
 import TransitionLink from "../transition-link";
 import styles from "./about.module.css";
 
-const SCENES = 6;
+const SCENES = 7;
 
 const LOGOS = [
   { name: "Black on white", file: "dadgpt-logo-black-on-white" },
@@ -206,7 +206,7 @@ export default function About() {
               <li>Set a phone sideways on the brim, screen out.</li>
               <li>Pin the printed logo to your chest.</li>
               <li>
-                <Sentences text="Open DADGPT. People walk up and talk to Dad." />
+                <Sentences text="Open DADGPT. People walk up, talk to Dad, or get roasted." />
               </li>
             </ol>
           </div>
@@ -239,7 +239,30 @@ export default function About() {
           </p>
         </section>
 
-        <section {...scene(4, "Printable logo")}>
+        <section {...scene(4, "Roast mode")}>
+          <h2 className={styles.title} data-fx="slam">
+            Snap. Roast. Burn.
+          </h2>
+          <div className={styles.micWrap} data-fx="pop">
+            <span className={`${styles.mic} mic`}>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <circle cx="12" cy="13" r="3.5" />
+              </svg>
+            </span>
+          </div>
+          <p className={styles.said} data-fx="type">
+            Roast me.
+          </p>
+          <p className={styles.reply} data-fx="scramble">
+            Nice vampire cape. Shame the only thing it scares off is dates.
+          </p>
+          <p className={styles.note} data-fx="rise">
+            <Sentences text="Tap the camera. Dad counts down, snaps a photo, and roasts what he sees. Photos are never saved." />
+          </p>
+        </section>
+
+        <section {...scene(5, "Printable logo")}>
           <h2 className={styles.title} data-fx="slam">
             Print the logo.
           </h2>
@@ -262,7 +285,7 @@ export default function About() {
           </p>
         </section>
 
-        <section {...scene(5, "Talk to Dad")} data-finale>
+        <section {...scene(6, "Talk to Dad")} data-finale>
           <h2 className={styles.huge} data-fx="slam" data-impact="big">
             Go talk to Dad.
           </h2>
@@ -276,7 +299,7 @@ export default function About() {
             <TransitionLink href="/live" className={`${styles.cta} ${styles.ctaLive}`}>
               <strong>Live</strong>
               <span>
-                <Sentences text="Fresh jokes for anything. Needs a passcode." />
+                <Sentences text="Fresh jokes and photo roasts. Needs a passcode." />
               </span>
             </TransitionLink>
             <button

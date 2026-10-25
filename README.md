@@ -4,11 +4,13 @@ Ask Dad anything. He answers with a dad joke. Every time.
 
 DADGPT is a voice app. You tap the mic, say something, and Dad replies out loud with one shameless pun. He never gives a real answer, no matter how hard you push.
 
+Roast mode: tap the camera, and Dad snaps a photo and roasts you out loud.
+
 It was built for a Halloween party, so the jokes lean a little cheeky.
 
 ## The costume
 
-DADGPT is a Halloween costume. Wear a black t-shirt and a black baseball hat. Set a phone sideways on the brim, screen out, and open the app. Pin the printable logo to your chest. People walk up, tap the mic, and talk to Dad.
+DADGPT is a Halloween costume. Wear a black t-shirt and a black baseball hat. Set a phone sideways on the brim, screen out, and open the app. Pin the printable logo to your chest. People walk up, tap the mic, and talk to Dad. Or they tap the camera and get roasted. The selfie camera faces out from the brim, so it sees whoever is in front of you.
 
 <p align="center">
   <img src="docs/costume.svg" alt="Fig. 1. A pen and ink style drawing of the costume. A phone sits sideways on the brim of a black baseball hat and shows the DADGPT logo. A clip holds it in place. The wearer has on a black t-shirt with the printed logo pinned to the chest." width="480">
@@ -36,16 +38,28 @@ Print it for a sign, a sticker, or the back of your shirt. The SVG and PDF files
 4. The reply goes to `/api/speak`, which turns it into a dad voice with OpenAI text to speech.
 5. The browser plays it. If the voice fails, it falls back to the built in browser voice.
 
+After two minutes with nothing happening, the chat clears itself so the next person gets a fresh Dad.
+
+## Roast mode
+
+1. You tap the camera next to the mic. The browser asks for camera access the first time.
+2. The selfie camera fills the screen with a 3, 2, 1 countdown, then a flash.
+3. The photo is shrunk to 768 pixels on its longest side and sent to `/api/roast`.
+4. A vision model writes one roast using the prompt in `lib/roast-prompt.ts`. It goes after the costume, outfit, pose, and props, never things people can’t change.
+5. Dad says it out loud, same as a joke.
+
+Photos are never saved. Each one goes to the model once and is thrown away. Roast mode is only in live mode, since canned mode has no model to look at the photo.
+
 ## Pages
 
 - `/` is the front page. It explains the costume in a click-through and links to both modes.
 - `/free` is canned mode. It tells 20 stock jokes with prerecorded audio. It needs no API keys and anyone can use it.
-- `/live` is live mode. It writes a new joke for whatever you say. It needs API keys and can sit behind a passcode. Visitors without the passcode get the prompt to make their own.
+- `/live` is live mode. It writes a new joke for whatever you say, and has roast mode. It needs API keys and can sit behind a passcode. Visitors without the passcode get the prompt to make their own.
 
 ## Models
 
-- Jokes come from `gpt-6-luna` first. It won a blind party face off in the evals.
-- `claude-haiku-5-5` is the backup if OpenAI is down or has no key.
+- Jokes and roasts come from `gpt-6-luna` first. It won a blind party face off in the evals.
+- `claude-haiku-5-5` is the backup if OpenAI is down or has no key. Both can see photos.
 - The voice is `gpt-4o-mini-tts` with the `ash` voice.
 
 ## Stack
@@ -55,6 +69,7 @@ Print it for a sign, a sticker, or the back of your shirt. The SVG and PDF files
 - GSAP for all the motion
 - Anthropic and OpenAI APIs
 - Web Speech API for listening in the browser
+- Camera access through `getUserMedia` for roast mode
 
 ## Make your own
 
@@ -65,7 +80,7 @@ Set up my own copy of DADGPT, the dad joke costume app at https://github.com/joh
 
 1. Clone it and install with pnpm. It needs Node 24.
 2. Copy .env.example to .env.local. Ask me for my Anthropic API key and a passcode to lock live mode. An OpenAI key is optional and gives Dad a better voice.
-3. Run pnpm dev. Open /live and confirm Dad answers out loud with a joke.
+3. Run pnpm dev. Open /live and confirm Dad answers out loud with a joke, and that the camera button roasts a photo.
 4. Deploy it to Vercel with the same environment variables, then give me the URL.
 ```
 
@@ -85,8 +100,8 @@ Open http://localhost:3000.
 
 | Name | What it does |
 |---|---|
-| `ANTHROPIC_API_KEY` | Claude Haiku, the backup joke writer |
-| `OPENAI_API_KEY` | Luna jokes and the dad voice. Leave it empty to use the browser voice |
+| `ANTHROPIC_API_KEY` | Claude Haiku, the backup joke and roast writer |
+| `OPENAI_API_KEY` | Luna jokes and roasts, and the dad voice. Leave it empty to use the browser voice |
 | `PASSCODE` | Locks everything except `/` and `/free`. Leave it empty to skip the lock |
 
 With no keys at all, canned mode still works.
@@ -124,13 +139,15 @@ app/
   _about/           the click-through deck
   free/             canned mode
   live/             live mode
-  dad-chat.tsx      the chat UI, mic, and audio
+  dad-chat.tsx      the chat UI, mic, camera, and audio
   api/chat/         writes the joke
+  api/roast/        roasts a photo
   api/speak/        turns the joke into speech
   api/unlock/       checks the passcode
   unlock/           the passcode page
 lib/
-  dad-prompt.ts     the system prompt
+  dad-prompt.ts     the joke prompt
+  roast-prompt.ts   the roast prompt
   joke.ts           model calls for Luna and Haiku
   jokes.ts          the 20 canned jokes
   voice.ts          text to speech
@@ -145,7 +162,7 @@ evals/              prompt and model evals
 
 ## Evals
 
-The prompt was tuned with evals in `evals/`. They run through the local Claude CLI, so they do not spend API credits.
+The joke prompt was tuned with evals in `evals/`. The roast prompt has no evals yet. It was only spot checked by hand. They run through the local Claude CLI, so they do not spend API credits.
 
 - `evals/failure-modes.md` lists the ten ways Dad went wrong in the first run.
 - `build-queries.mjs` and `build-party-queries.mjs` make synthetic test chats.
