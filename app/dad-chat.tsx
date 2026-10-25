@@ -10,7 +10,7 @@ import TransitionLink from "./transition-link";
 import { JOKES, jokeAudioPath, randomJoke } from "@/lib/jokes";
 
 type Turn = { role: "user" | "assistant"; content: string };
-type Status = "idle" | "listening" | "thinking" | "speaking";
+type Status = "idle" | "listening" | "posing" | "thinking" | "speaking";
 
 // Minimal Web Speech API types, not all browsers ship them in lib.dom
 type Recognition = {
@@ -123,6 +123,21 @@ function speakWithBrowser(text: string, onDone: () => void) {
   window.speechSynthesis.speak(utterance);
 }
 
+/** Longest side of the photo sent for a roast. Plenty for the model, small enough to upload fast. */
+const PHOTO_SIZE = 768;
+
+/** Grabs the current video frame as a downscaled JPEG data URL */
+function snapPhoto(video: HTMLVideoElement) {
+  const scale = Math.min(1, PHOTO_SIZE / Math.max(video.videoWidth, video.videoHeight));
+  const canvas = document.createElement("canvas");
+  canvas.width = Math.round(video.videoWidth * scale);
+  canvas.height = Math.round(video.videoHeight * scale);
+  canvas.getContext("2d")!.drawImage(video, 0, 0, canvas.width, canvas.height);
+  return canvas.toDataURL("image/jpeg", 0.8);
+}
+
+const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
 /** A chat line. New Dad replies scramble in word by word. */
 function Message({ text, className, animate }: { text: string; className: string; animate: boolean }) {
   const ref = useRef<HTMLParagraphElement>(null);
@@ -145,6 +160,11 @@ export default function DadChat({ canned = false }: Props) {
   const [status, setStatus] = useState<Status>("idle");
   const [heard, setHeard] = useState("");
   const [supported, setSupported] = useState(true);
+  const [hasCamera, setHasCamera] = useState(false);
+  const [countdown, setCountdown] = useState(0);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const flashRef = useRef<HTMLDivElement>(null);
+  const streamRef = useRef<MediaStream | null>(null);
   const recognitionRef = useRef<Recognition | null>(null);
   const mainRef = useRef<HTMLElement>(null);
   const chatRef = useRef<HTMLElement>(null);
@@ -162,6 +182,7 @@ export default function DadChat({ canned = false }: Props) {
 
   useEffect(() => {
     setSupported(Boolean(getRecognition()));
+    setHasCamera(Boolean(navigator.mediaDevices?.getUserMedia));
     // Chrome loads voices async, so trigger the load before the first reply
     window.speechSynthesis?.getVoices();
     try {
@@ -219,6 +240,7 @@ export default function DadChat({ canned = false }: Props) {
       registerOutro(() => {
         recognitionRef.current?.stop();
         stopSpeaking();
+        stopCamera();
         stopLogoRef.current?.();
         const hero = heroRef.current!;
         const rest = [micWrapRef.current, ...hero.querySelectorAll("canvas, .status, .about"), chatRef.current].filter((el): el is Element => Boolean(el));
@@ -226,6 +248,9 @@ export default function DadChat({ canned = false }: Props) {
       }),
     [],
   );
+
+  // Never leave the camera light on after leaving the page
+  useEffect(() => () => streamRef.current?.getTracks().forEach((track) => track.stop()), []);
 
   // Rings: a slow breath now and then while idle, fast pulses while listening
   useEffect(() => {
@@ -248,7 +273,7 @@ export default function DadChat({ canned = false }: Props) {
     } catch {}
   }
 
-  async function send(text: string) {
+  async function send(text: string, photo?: string) {
     const next: Turn[] = [...history, { role: "user", content: text }];
     save(next);
     setStatus("thinking");
@@ -265,10 +290,10 @@ export default function DadChat({ canned = false }: Props) {
 
     let reply = "Dad is napping. Try again.";
     try {
-      const res = await fetch("/api/chat", {
+      const res = await fetch(photo ? "/api/roast" : "/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: next }),
+        body: JSON.stringify(photo ? { photo } : { messages: next }),
       });
       const data = await res.json();
       if (data.reply) reply = data.reply;
@@ -316,8 +341,50 @@ export default function DadChat({ canned = false }: Props) {
     recognition.start();
   }
 
+  function stopCamera() {
+    streamRef.current?.getTracks().forEach((track) => track.stop());
+    streamRef.current = null;
+    setCountdown(0);
+  }
+
+  /** Roast mode: the selfie camera faces whoever is in front of the costume. Count down, snap, roast. */
+  async function roast() {
+    if (status === "posing") return stopCameraAndIdle();
+    stopSpeaking();
+    recognitionRef.current?.stop();
+    unlockAudio();
+    goFullscreen();
+    setStatus("posing");
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "user", width: { ideal: 1280 } }, audio: false });
+      streamRef.current = stream;
+      const video = videoRef.current!;
+      video.srcObject = stream;
+      await video.play();
+      for (const n of [3, 2, 1]) {
+        if (streamRef.current !== stream) return;
+        setCountdown(n);
+        await wait(1000);
+      }
+      if (streamRef.current !== stream) return;
+      const photo = snapPhoto(video);
+      stopCamera();
+      if (!prefersReducedMotion()) gsap.fromTo(flashRef.current, { autoAlpha: 1 }, { autoAlpha: 0, duration: 0.6, ease: "power2.out" });
+      send("Roast me.", photo);
+    } catch {
+      stopCamera();
+      setStatus("idle");
+    }
+  }
+
+  function stopCameraAndIdle() {
+    stopCamera();
+    setStatus("idle");
+  }
+
   function clear() {
     stopSpeaking();
+    stopCamera();
     recognitionRef.current?.stop();
     loadedCountRef.current = 0;
     setHeard("");
@@ -407,7 +474,7 @@ export default function DadChat({ canned = false }: Props) {
           <button
             className={`mic ${status === "listening" ? "listening" : ""}`}
             onClick={listen}
-            disabled={!supported || status === "thinking"}
+            disabled={!supported || status === "thinking" || status === "posing"}
             aria-label={status === "listening" ? "Stop listening" : "Talk to Dad"}
           >
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -416,8 +483,33 @@ export default function DadChat({ canned = false }: Props) {
               <path d="M12 18v4" />
             </svg>
           </button>
+          {/* Roast mode needs the photo model, so the free canned Dad skips it */}
+          {!canned && hasCamera && (
+            <button className="mic camera" onClick={roast} disabled={status === "thinking"} aria-label={status === "posing" ? "Cancel roast" : "Roast me"}>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <circle cx="12" cy="13" r="3.5" />
+              </svg>
+            </button>
+          )}
         </div>
         <p className="status">{statusText}</p>
+        {!canned && <div ref={flashRef} className="flash" />}
+        {!canned && (
+          <div className={`pose ${status === "posing" ? "on" : ""}`} aria-hidden={status !== "posing"}>
+            <video ref={videoRef} muted playsInline />
+            {countdown > 0 && (
+              <span key={countdown} className="count">
+                {countdown}
+              </span>
+            )}
+            <button className="poseCancel" onClick={stopCameraAndIdle} aria-label="Cancel roast">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden="true">
+                <path d="M6 6l12 12M18 6L6 18" />
+              </svg>
+            </button>
+          </div>
+        )}
         <TransitionLink className="about" href="/">
           About
         </TransitionLink>

@@ -464,3 +464,101 @@ form button {
     bottom: max(0.75rem, env(safe-area-inset-bottom));
   }
 }
+
+/* Roast mode: a smaller camera button to the right of the mic, so the mic stays centered */
+.split .mic.camera {
+  position: absolute;
+  left: calc(100% + var(--mic) * 0.35);
+  top: 50%;
+  translate: 0 -50%;
+  width: calc(var(--mic) * 0.7);
+  height: calc(var(--mic) * 0.7);
+}
+
+.split .mic.camera svg {
+  width: calc(var(--mic) * 0.36);
+  height: calc(var(--mic) * 0.36);
+}
+
+/* The live selfie view with a big countdown, full screen even with the chat open */
+.pose {
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  background: #000;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0s 0.3s;
+}
+
+.pose.on {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s;
+}
+
+.pose video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Mirrored like a mirror, which is what people expect from a selfie view */
+  transform: scaleX(-1);
+}
+
+.pose .count {
+  position: relative;
+  font-size: min(50vw, 60vh);
+  font-weight: 800;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+  animation: count-pop 1s ease-out forwards;
+}
+
+@keyframes count-pop {
+  from {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+  15% {
+    transform: scale(1);
+    opacity: 0.95;
+  }
+  75% {
+    opacity: 0.95;
+  }
+  to {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+.poseCancel {
+  position: absolute;
+  top: max(1rem, env(safe-area-inset-top));
+  right: max(1rem, env(safe-area-inset-right));
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+/* The camera flash when the photo is snapped */
+.flash {
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  background: #fff;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
