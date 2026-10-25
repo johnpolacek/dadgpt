@@ -451,13 +451,20 @@ form button {
     padding-bottom: calc(var(--clear) + 2.5rem);
   }
 
+  /* Big enough to read from a few steps away, filling the chat half */
+  .messages {
+    padding-left: max(1.25rem, env(safe-area-inset-left));
+    padding-right: max(1.25rem, env(safe-area-inset-right));
+  }
+
   .chat .reply {
-    font-size: 1rem;
+    font-size: 8vh;
+    line-height: 1.25;
   }
 
   .chat .said {
     margin-top: 0.75rem;
-    font-size: 0.8rem;
+    font-size: 4.5vh;
   }
 
   .clear {
